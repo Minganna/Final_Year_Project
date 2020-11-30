@@ -17,6 +17,7 @@ public class QuestionsAndAnswers : MonoBehaviour
     List<string> PartiallyCorrect;
 
     int indexAnswer;
+    string[] bit;
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +34,27 @@ public class QuestionsAndAnswers : MonoBehaviour
         TMP_Text question = GameObject.FindGameObjectWithTag("Question").GetComponent<TMP_Text>();
         string questionstring = question.text;
         indexAnswer=CompareQuestion(questionstring);
+        bit = GetInput();
+        StartBrain();
+    }
 
+    void StartBrain()
+    {
+        Brain getB = brain.GetComponent<Brain>();
+        int inputs = bit.Length;
+        int outputs;
+        if(inputs>1)
+        {
+            outputs = 2;
+        }
+        else
+        {
+            outputs = 1;
+        }
+
+        string path = inputs + "Inputs" + outputs + "OutputsData.txt";
+        getB.StartTheBrain(path);
+        
 
     }
 
@@ -67,12 +88,12 @@ public class QuestionsAndAnswers : MonoBehaviour
             if(switchqa)
             {
                 Questions.Add(bit[i]);
-                Debug.Log(Questions[i]);
+                //Debug.Log(Questions[i]);
             }
             else
             {
                 Answers.Add(bit[i]);
-                Debug.Log(Answers[i-1]);
+               // Debug.Log(Answers[i-1]);
             }
             switchqa = !switchqa;
             
@@ -101,12 +122,16 @@ public class QuestionsAndAnswers : MonoBehaviour
         
     }
 
-    List<int> AnswerCheck(string Submitted)
+    string[] GetInput()
     {
-        List<int> Result=new List<int>();
+       return Answers[indexAnswer].Split(' ');
+    }
+
+    List<double> AnswerCheck(string Submitted)
+    {
+        List<double> Result=new List<double>();
         TraintheANN tr = brain.GetComponent<TraintheANN>();
         string[] Submittedbit=Submitted.Split(' ');
-        string[] bit = Answers[indexAnswer].Split(' ');
         if (Submittedbit.Length != tr.numberofImput &&  Submittedbit.Length != bit.Length)
         {
             for(int i=0;i<tr.numberofImput;i++)
@@ -136,10 +161,15 @@ public class QuestionsAndAnswers : MonoBehaviour
     {
         Brain ai = brain.GetComponent<Brain>();
         TMP_InputField UserAnswer = GameObject.FindGameObjectWithTag("Answer").GetComponent<TMP_InputField>();
-        List<int> UserResult = new List<int>();
+        List<double> UserResult = new List<double>();
         UserResult = AnswerCheck(UserAnswer.text);
         List<double> output = new List<double>();
-        output= ai.Run(UserResult[0], UserResult[1], UserResult[2], false);
-        Debug.Log(UserResult[0]+","+UserResult[1]+ "," + UserResult[2]+":" + (float)output[0] + " , " + (float)output[1]);
+        output = ai.Run(UserResult, false);
+        string debug="";
+        for(int i=0;i<UserResult.Count;i++)
+        {
+            debug += UserResult[i] + ","; 
+        }
+        Debug.Log(debug+ ":" + (float)output[0] + " , " + (float)output[1]);
     }
 }

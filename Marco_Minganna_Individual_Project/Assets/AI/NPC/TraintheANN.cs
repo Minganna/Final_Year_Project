@@ -16,6 +16,7 @@ public class TraintheANN : MonoBehaviour
     public int ActivationFunction;
     public int ActivationFunctionO;
     public string usage;
+    public string path;
 
     //training fields
     public int numberoftraining;
@@ -26,10 +27,10 @@ public class TraintheANN : MonoBehaviour
 
     public void SafeLoadData()
     {
-        string path = Application.dataPath + "/AI/DataforTraintheANN/3Inputs2OutputsData.txt";
-        if (File.Exists(path))
+       string fullpath = Application.dataPath + "/AI/DataforTraintheANN/"+ path;
+        if (File.Exists(fullpath))
         {
-            var sr = File.OpenText(path);
+            var sr = File.OpenText(fullpath);
             string line = sr.ReadLine();
             Debug.Log("loading");
             string[] data = line.Split(',');
@@ -68,6 +69,7 @@ public class Training : Editor
             myScript.ActivationFunction = EditorGUILayout.IntField("activation per hidden: ", myScript.ActivationFunction);
             myScript.ActivationFunctionO = EditorGUILayout.IntField("activation per output: ", myScript.ActivationFunctionO);
             myScript.usage = EditorGUILayout.TextField("usage", myScript.usage);
+            myScript.path=EditorGUILayout.TextField("path", myScript.path);
 
             //enable training if required
             myScript.train = GUILayout.Toggle(myScript.train, "Training required");
@@ -89,8 +91,8 @@ public class Training : Editor
 
             if(myScript.SaveData)
                 {
-                      string path = Application.dataPath +"/AI/DataforTraintheANN/3Inputs2OutputsData.txt";
-                      var sr = File.CreateText(path);
+                      string fullpath = Application.dataPath + "/AI/DataforTraintheANN/"+ myScript.path+".txt";
+                      var sr = File.CreateText(fullpath);
                       Debug.Log("saving");
                       string content = myScript.numberofImput.ToString()+","+
                                        myScript.numberofOutput.ToString() + "," +
