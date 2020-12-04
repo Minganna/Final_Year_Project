@@ -10,6 +10,9 @@ TagManager:
   - Question
   - Brain
   - Answer
+  - MasterMenu
+  - UICanvas
+  - NextSubmitButton
   layers:
   - Default
   - TransparentFX
@@ -19,8 +22,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Room
+  - World
   - 
   - 
   - 

@@ -10,7 +10,7 @@ public class MenuManager : MonoBehaviour
     public List<GameObject> SelectLanguage = new List<GameObject>();
     public void MainButtons(GameObject tag)
     {
-        Canvas maincanvas = tag.GetComponentInParent<Canvas>();
+        GameObject maincanvas = GameObject.FindGameObjectWithTag("MasterMenu");
         switch(tag.name.ToString())
         {
             case "Play":
@@ -72,7 +72,7 @@ public class MenuManager : MonoBehaviour
         return datafromdropdown;
     }
 
-    void BackToMainMenu(Canvas maincanvas,GameObject pressed)
+    void BackToMainMenu(GameObject maincanvas,GameObject pressed)
     {
         DestroymenuItems();
         foreach (GameObject mainmenu in PlaySettings)
@@ -82,7 +82,7 @@ public class MenuManager : MonoBehaviour
     }
 
 
-    void PlayPressed(Canvas maincanvas,GameObject tag)
+    void PlayPressed(GameObject maincanvas,GameObject tag)
     {
         DeactivateStartandSettings(tag);
         if (SelectLanguage.Count != 0)
@@ -107,7 +107,7 @@ public class MenuManager : MonoBehaviour
         }
     }
 
-    void NextPressed(Canvas maincanvas)
+    void NextPressed(GameObject maincanvas)
     {
         List<string> SelectedValues = new List<string>();
         SelectedValues= DestroymenuItems();

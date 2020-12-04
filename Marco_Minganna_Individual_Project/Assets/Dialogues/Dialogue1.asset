@@ -13,15 +13,14 @@ MonoBehaviour:
   m_Name: MainNode
   m_EditorClassIdentifier: 
   PlayerSpeaking: 0
-  Question: 1
-  Text: 
+  Question: 0
+  Text: Hello young man!
   children:
   - 421d737c-adfa-4517-9a51-c0fc88110ca9
-  - b5c87b65-851e-463f-9764-d7072d77fd5c
   position:
     serializedVersion: 2
-    x: 0
-    y: 0
+    x: -1
+    y: 54
     width: 250
     height: 100
 --- !u!114 &11400000
@@ -39,7 +38,6 @@ MonoBehaviour:
   nodes:
   - {fileID: -6355586037236234957}
   - {fileID: 3844886530219334087}
-  - {fileID: 7037786308543451908}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &3844886530219334087
 MonoBehaviour:
@@ -53,35 +51,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
   m_Name: 421d737c-adfa-4517-9a51-c0fc88110ca9
   m_EditorClassIdentifier: 
-  PlayerSpeaking: 1
-  Question: 0
-  Text: 
+  PlayerSpeaking: 0
+  Question: 1
+  Text: How are you?
   children: []
   position:
     serializedVersion: 2
-    x: 291
-    y: 6
-    width: 250
-    height: 100
---- !u!114 &7037786308543451908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
-  m_Name: b5c87b65-851e-463f-9764-d7072d77fd5c
-  m_EditorClassIdentifier: 
-  PlayerSpeaking: 1
-  Question: 0
-  Text: 
-  children: []
-  position:
-    serializedVersion: 2
-    x: 295
-    y: 151
+    x: 344
+    y: 43
     width: 250
     height: 100

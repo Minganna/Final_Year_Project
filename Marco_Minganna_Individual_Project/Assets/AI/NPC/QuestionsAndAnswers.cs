@@ -12,31 +12,52 @@ public class QuestionsAndAnswers : MonoBehaviour
 
     List<string> Questions;
     List<string> Answers;
-    List<string> CorrectAnswer;
-    List<string> WrongAnswer;
-    List<string> PartiallyCorrect;
+    CommonVariables cv;
+
 
     int indexAnswer;
     string[] bit;
 
     // Start is called before the first frame update
-    void Start()
+    public void StartConverstation(bool logic)
+    {
+     ConversationSetUP(logic);
+        if(logic)
+        {
+            StartBrain();
+        }
+  
+    }
+    private void ConversationSetUP(bool logic)
     {
         brain = GameObject.FindGameObjectWithTag("Brain");
+        string questionstring="";
+        if (logic)
+        {
         Questions = new List<string>();
         Answers = new List<string>();
-        CorrectAnswer = new List<string>();
-        WrongAnswer = new List<string>();
-        PartiallyCorrect = new List<string>();
         string line = LoadFile();
-        Debug.Log(line);
         DivideQandA(line);
         TMP_Text question = GameObject.FindGameObjectWithTag("Question").GetComponent<TMP_Text>();
-        string questionstring = question.text;
-        indexAnswer=CompareQuestion(questionstring);
-        bit = GetInput();
-        StartBrain();
+          questionstring = question.text;
+        }
+        cv = new CommonVariables();
+        cv.UICanvas = GameObject.Find("UICanvas");
+        cv.UICanvas.SetActive(false);
+        if(logic)
+        {
+            indexAnswer = CompareQuestion(questionstring);
+            bit = GetInput();
+        }
+       
+      
     }
+
+    public CommonVariables GetCV()
+    {
+        return cv;
+    }
+   
 
     void StartBrain()
     {
@@ -159,17 +180,26 @@ public class QuestionsAndAnswers : MonoBehaviour
 
     public void CheckCorrectAnswer()
     {
-        Brain ai = brain.GetComponent<Brain>();
-        TMP_InputField UserAnswer = GameObject.FindGameObjectWithTag("Answer").GetComponent<TMP_InputField>();
-        List<double> UserResult = new List<double>();
-        UserResult = AnswerCheck(UserAnswer.text);
-        List<double> output = new List<double>();
-        output = ai.Run(UserResult, false);
-        string debug="";
-        for(int i=0;i<UserResult.Count;i++)
+        string name = GameObject.FindGameObjectWithTag("NextSubmitButton").GetComponent<TMP_Text>().text;
+        if(name!= "Next >")
         {
-            debug += UserResult[i] + ","; 
+            Brain ai = brain.GetComponent<Brain>();
+            TMP_InputField UserAnswer = GameObject.FindGameObjectWithTag("Answer").GetComponent<TMP_InputField>();
+            List<double> UserResult = new List<double>();
+            UserResult = AnswerCheck(UserAnswer.text);
+            List<double> output = new List<double>();
+            output = ai.Run(UserResult, false);
+            string debug = "";
+            for (int i = 0; i < UserResult.Count; i++)
+            {
+                debug += UserResult[i] + ",";
+            }
+            Debug.Log(debug + ":" + (float)output[0] + " , " + (float)output[1]);
         }
-        Debug.Log(debug+ ":" + (float)output[0] + " , " + (float)output[1]);
+        else
+        {
+            Debug.Log("Success!");
+        }
+        
     }
 }

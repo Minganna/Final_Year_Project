@@ -63,7 +63,7 @@ namespace Dialogue
             {
                 foreach (DialogueNode node in GetAllNodes())
                 {
-                    if (AssetDatabase.GetAssetPath(node) == "")
+                    if (AssetDatabase.GetAssetPath(node) == ""&&node!=null)
                     {
                         AssetDatabase.AddObjectToAsset(node, this);
                     }
