@@ -13,6 +13,10 @@ TagManager:
   - MasterMenu
   - UICanvas
   - NextSubmitButton
+  - DialogueMaster
+  - SuggestionsMaster
+  - NPCconversant
+  - Avatar
   layers:
   - Default
   - TransparentFX
@@ -24,7 +28,7 @@ TagManager:
   - 
   - Room
   - World
-  - 
+  - Enviroment
   - 
   - 
   - 

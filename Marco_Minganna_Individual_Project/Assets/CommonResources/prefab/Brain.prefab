@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3194996224787784960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3194996224787784962}
+  - component: {fileID: 3194996224787784963}
+  - component: {fileID: 3194996224787784973}
+  m_Layer: 0
+  m_Name: Brain
+  m_TagString: Brain
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3194996224787784962
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3194996224787784960}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.523296, y: 49.070427, z: 61.10803}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3194996224787784963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3194996224787784960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 349d22e462a71594188579394022c949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3194996224787784973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3194996224787784960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4ab91e6dcb55246858146df2701747, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  train: 0
+  numberofImput: 2
+  numberofOutput: 2
+  numberofHidden: 1
+  numberofNperHidden: 2
+  learningRate: 0.11
+  ActivationFunction: 2
+  ActivationFunctionO: 0
+  usage: multiple selection
+  path: 2Inputs2OutputsData
+  numberoftraining: 2000
+  inputsandoutputs: 1,1,1,0,n,0,0,0,1,n,0,1,0,0,n,1,0,0,0,n
+  numberofdata: 4
+  LoadData: 0
+  SaveData: 0
