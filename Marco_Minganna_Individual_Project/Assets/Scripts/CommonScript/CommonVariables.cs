@@ -5,4 +5,5 @@ using UnityEngine;
 public class CommonVariables
 {
     public GameObject UICanvas;
+    public GameObject GameCanvas;
 }

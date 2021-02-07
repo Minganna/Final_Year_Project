@@ -36,7 +36,6 @@ public class ComputerInputs : MonoBehaviour
                 {
                     CommonVariables cv = this.GetComponent<QuestionsAndAnswers>().GetCV();
                     // whatever tag you are looking for on your game object
-                    Debug.Log("Something Hit");
 
 
                     if (raycastHit.collider.CompareTag("NPCconversant"))
@@ -49,6 +48,7 @@ public class ComputerInputs : MonoBehaviour
                         int RandomIndex = Random.Range(0, options.Length);
                         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>().StartDialogue(raycastHit.collider.GetComponent<NPCDialogues>(), options[RandomIndex]);             
                         cv.UICanvas.SetActive(true);
+                        cv.GameCanvas.SetActive(false);
                     }
                     return;
                 }

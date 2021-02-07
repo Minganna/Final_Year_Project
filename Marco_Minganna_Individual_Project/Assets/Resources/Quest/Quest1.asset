@@ -10,8 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40a854ba24a0cd741ae20398b57f69ea, type: 3}
-  m_Name: hdhjdvhjdahjvdaj
+  m_Name: Quest1
   m_EditorClassIdentifier: 
   objectives:
-  - 
-  - 
+  - reference: 1
+    description: Go to the beach
+  - reference: 2
+    description: Talk to the old man friend
+  rewards:
+  - number: 300
+    item: gold

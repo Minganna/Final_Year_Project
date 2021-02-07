@@ -25,6 +25,8 @@ MonoBehaviour:
     height: 100
   OnEnterAction: 
   OnExitAction: 
+  condition:
+    and: []
 --- !u!114 &-6355586037236234957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,14 +44,17 @@ MonoBehaviour:
   Text: Hello young man!
   children:
   - 421d737c-adfa-4517-9a51-c0fc88110ca9
+  - de6f49f4-8cd9-4dfa-a0eb-26f2fee37ad0
   position:
     serializedVersion: 2
-    x: 2
-    y: 61
+    x: 18
+    y: 452
     width: 250
     height: 100
   OnEnterAction: 
   OnExitAction: 
+  condition:
+    and: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,6 +79,7 @@ MonoBehaviour:
   - {fileID: 805590362909658163}
   - {fileID: 6786155946060210690}
   - {fileID: 3731692647062079393}
+  - {fileID: 8655799272769194039}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &805590362909658163
 MonoBehaviour:
@@ -100,6 +106,8 @@ MonoBehaviour:
     height: 100
   OnEnterAction: 
   OnExitAction: 
+  condition:
+    and: []
 --- !u!114 &1460111342770914935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,6 +133,8 @@ MonoBehaviour:
     height: 100
   OnEnterAction: 
   OnExitAction: 
+  condition:
+    and: []
 --- !u!114 &1545733450612417358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,6 +161,8 @@ MonoBehaviour:
     height: 100
   OnEnterAction: 
   OnExitAction: 
+  condition:
+    and: []
 --- !u!114 &2250693155632495807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,12 +182,14 @@ MonoBehaviour:
   - 7184d112-8ae6-4e9b-ab36-c3ae877578c2
   position:
     serializedVersion: 2
-    x: 682
-    y: 246
+    x: 684
+    y: 264
     width: 250
     height: 100
   OnEnterAction: 
   OnExitAction: 
+  condition:
+    and: []
 --- !u!114 &2416033377949970957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,6 +215,8 @@ MonoBehaviour:
     height: 100
   OnEnterAction: 
   OnExitAction: 
+  condition:
+    and: []
 --- !u!114 &3731692647062079393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,6 +241,8 @@ MonoBehaviour:
     height: 100
   OnEnterAction: 
   OnExitAction: beach unlocked
+  condition:
+    and: []
 --- !u!114 &3844886530219334087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,6 +270,13 @@ MonoBehaviour:
     height: 100
   OnEnterAction: 
   OnExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Quest1
+        negate: 1
 --- !u!114 &6786155946060210690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -277,6 +302,39 @@ MonoBehaviour:
     height: 100
   OnEnterAction: 
   OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &8655799272769194039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: de6f49f4-8cd9-4dfa-a0eb-26f2fee37ad0
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: Did you find him?
+  children: []
+  position:
+    serializedVersion: 2
+    x: 328
+    y: 581
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Quest1
+        negate: 0
 --- !u!114 &9052664428525665958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,3 +360,5 @@ MonoBehaviour:
     height: 100
   OnEnterAction: 
   OnExitAction: 
+  condition:
+    and: []

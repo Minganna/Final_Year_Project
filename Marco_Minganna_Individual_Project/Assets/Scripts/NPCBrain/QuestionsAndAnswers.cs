@@ -46,6 +46,7 @@ public class QuestionsAndAnswers : MonoBehaviour
             cv = new CommonVariables();
             cv.UICanvas = GameObject.Find("UICanvas");
             cv.UICanvas.SetActive(false);
+            cv.GameCanvas = GameObject.Find("InGameCanvas");
         }
         if(logic)
         {
@@ -78,7 +79,6 @@ public class QuestionsAndAnswers : MonoBehaviour
         }
 
         string path = inputs + "Inputs" + outputs + "OutputsData.txt";
-        Debug.Log(path);
         getB.StartTheBrain(path);
         
 
@@ -105,7 +105,6 @@ public class QuestionsAndAnswers : MonoBehaviour
                     UserAnswer.text += button.GetComponentInChildren<TMP_Text>().text;
                     UserAnswer.text += " ";
                 }
-                Debug.Log(button.GetComponentInChildren<TMP_Text>().text);
             });
         }
        
@@ -128,7 +127,6 @@ public class QuestionsAndAnswers : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Starting");
                     sgt.Add(a);
                 }
             }
@@ -182,7 +180,6 @@ public class QuestionsAndAnswers : MonoBehaviour
                     
                     if(Result.Count== bitLenght)
                     {
-                        Debug.Log("Correct Guess"+ TempCorrectguess);
                         if (TempCorrectguess== bitLenght)
                         {
                             return Result;

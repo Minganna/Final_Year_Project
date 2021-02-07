@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using System;
+using Core;
 
 namespace Dialogue
 {
@@ -110,7 +111,7 @@ namespace Dialogue
         public void Next()
         {
 
-            int numPlayerResponses = currentDialogue.GetPlayerChildren(currentNode).Count();
+            int numPlayerResponses = filterOnCondition(currentDialogue.GetPlayerChildren(currentNode)).Count();
             if (numPlayerResponses > 0)
             {
                 isChoosing = true;
@@ -119,7 +120,7 @@ namespace Dialogue
                 return;
             }
         
-            DialogueNode[] children= currentDialogue.GetAllChildren(currentNode).ToArray();
+            DialogueNode[] children= filterOnCondition(currentDialogue.GetAIChildren(currentNode)).ToArray();
             int RandomIndex = UnityEngine.Random.Range(0, children.Count());
             TriggerExitAction();
             currentNode= children[RandomIndex];
@@ -129,13 +130,30 @@ namespace Dialogue
 
         public IEnumerable<DialogueNode> GetChoices()
         {
-            return currentDialogue.GetPlayerChildren(currentNode);
+            return filterOnCondition(currentDialogue.GetPlayerChildren(currentNode));
         }
 
 
         public bool hasNext()
         {
-            return currentDialogue.GetAllChildren(currentNode).Count()>0;
+            return filterOnCondition(currentDialogue.GetAllChildren(currentNode)).Count()>0;
+        }
+
+        private IEnumerable<DialogueNode> filterOnCondition(IEnumerable<DialogueNode> inputNode)
+        {
+            foreach(var node in inputNode)
+            {
+                if(node.checkCondition(getEvaluators()))
+                {
+                    yield return node;
+                }
+            }    
+
+        }
+
+        private IEnumerable<IpredicateEvaluator> getEvaluators()
+        {
+            return GetComponents<IpredicateEvaluator>();
         }
 
         private void TriggerEnterAction()

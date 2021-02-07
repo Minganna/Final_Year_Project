@@ -73,7 +73,10 @@
     <Compile Include="Assets\MainMenu\Prefab\Sript\Rotate.cs" />
     <Compile Include="Assets\Scripts\CommonScript\CommonVariables.cs" />
     <Compile Include="Assets\Scripts\CommonScript\ComputerInputs.cs" />
+    <Compile Include="Assets\Scripts\CommonScript\Condition.cs" />
+    <Compile Include="Assets\Scripts\CommonScript\IpredicateEvaluator.cs" />
     <Compile Include="Assets\Scripts\CommonScript\MobilePhoneImputs.cs" />
+    <Compile Include="Assets\Scripts\CommonScript\Wallet.cs" />
     <Compile Include="Assets\Scripts\Dialogue&amp;Quest\Dialogue.cs" />
     <Compile Include="Assets\Scripts\Dialogue&amp;Quest\DialogueNode.cs" />
     <Compile Include="Assets\Scripts\Dialogue&amp;Quest\DialogueTrigger.cs" />
@@ -88,9 +91,15 @@
     <Compile Include="Assets\Scripts\NPCBrain\SaveandLoadWeights.cs" />
     <Compile Include="Assets\Scripts\NPCBrain\TraintheANN.cs" />
     <Compile Include="Assets\Scripts\Quest\Quest.cs" />
+    <Compile Include="Assets\Scripts\Quest\QuestCompletion.cs" />
+    <Compile Include="Assets\Scripts\Quest\QuestDummy.cs" />
+    <Compile Include="Assets\Scripts\Quest\QuestGiver.cs" />
     <Compile Include="Assets\Scripts\Quest\QuestItemUI.cs" />
+    <Compile Include="Assets\Scripts\Quest\QuestList.cs" />
     <Compile Include="Assets\Scripts\Quest\QuestListUI.cs" />
+    <Compile Include="Assets\Scripts\Quest\QuestStatus.cs" />
     <Compile Include="Assets\Scripts\Quest\QuestTooltip.cs" />
+    <Compile Include="Assets\Scripts\Quest\QuestTooltipUI.cs" />
     <Compile Include="Assets\Scripts\Quest\ShowHideQuests.cs" />
     <Compile Include="Assets\Scripts\Quest\TooltipSpawner.cs" />
     <Compile Include="Assets\Scripts\TerrainScripts\Block.cs" />

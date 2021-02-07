@@ -14,6 +14,8 @@ namespace QuestUI
 
         public override void UpdateTooltip(GameObject tooltip)
         {
+            QuestStatus status=GetComponent<QuestItemUI>().GetQuestStatus();
+            tooltip.GetComponent<QuestTooltipUI>().SetUp(status);
         }
     }
 }
