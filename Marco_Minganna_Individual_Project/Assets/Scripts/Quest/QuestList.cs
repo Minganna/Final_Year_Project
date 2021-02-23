@@ -9,7 +9,7 @@ namespace QuestUI
 {
     public class QuestList : MonoBehaviour,IpredicateEvaluator
     {
-        List<QuestStatus> statuses=new List<QuestStatus>();
+        static List<QuestStatus> statuses=new List<QuestStatus>();
         public event Action onUpdate;
         
        

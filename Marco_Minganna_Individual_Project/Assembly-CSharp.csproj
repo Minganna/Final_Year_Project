@@ -105,6 +105,7 @@
     <Compile Include="Assets\Scripts\TerrainScripts\Block.cs" />
     <Compile Include="Assets\Scripts\TerrainScripts\Chunk.cs" />
     <Compile Include="Assets\Scripts\TerrainScripts\GetTexturedata.cs" />
+    <Compile Include="Assets\Scripts\TerrainScripts\MoveBetweenWorlds.cs" />
     <Compile Include="Assets\Scripts\TerrainScripts\ProcessTextureAtlas.cs" />
     <Compile Include="Assets\Scripts\TerrainScripts\SerializeMesh.cs" />
     <Compile Include="Assets\Scripts\TerrainScripts\Utils.cs" />

@@ -8,7 +8,7 @@ namespace QuestUI
     public class QuestStatus 
     {
          Quest quest;
-         List<string> completedObjectives=new List<string>();
+          static List<string> completedObjectives=new List<string>();
 
         public QuestStatus(Quest quest)
         {
