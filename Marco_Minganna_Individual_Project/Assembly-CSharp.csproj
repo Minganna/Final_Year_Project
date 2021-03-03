@@ -69,7 +69,6 @@
     <Compile Include="Assets\AI\ANN.cs" />
     <Compile Include="Assets\AI\Layer.cs" />
     <Compile Include="Assets\AI\Neuron.cs" />
-    <Compile Include="Assets\IDoc\Example\CSClass.cs" />
     <Compile Include="Assets\MainMenu\Prefab\Sript\Rotate.cs" />
     <Compile Include="Assets\Scripts\CommonScript\CommonVariables.cs" />
     <Compile Include="Assets\Scripts\CommonScript\ComputerInputs.cs" />
@@ -82,6 +81,7 @@
     <Compile Include="Assets\Scripts\Dialogue&amp;Quest\DialogueTrigger.cs" />
     <Compile Include="Assets\Scripts\Dialogue&amp;Quest\DialogueUI.cs" />
     <Compile Include="Assets\Scripts\Dialogue&amp;Quest\NPCDialogues.cs" />
+    <Compile Include="Assets\Scripts\LoadingScreen\LoadingScreenManager.cs" />
     <Compile Include="Assets\Scripts\MenuScript\DayAndNight.cs" />
     <Compile Include="Assets\Scripts\MenuScript\MenuGetTime.cs" />
     <Compile Include="Assets\Scripts\MenuScript\MenuManager.cs" />
@@ -110,12 +110,14 @@
     <Compile Include="Assets\Scripts\TerrainScripts\SerializeMesh.cs" />
     <Compile Include="Assets\Scripts\TerrainScripts\Utils.cs" />
     <Compile Include="Assets\Scripts\TerrainScripts\World.cs" />
+    <Compile Include="Assets\Unity Asset Store imported\IDoc\Example\CSClass.cs" />
     <None Include="Assets\3DModels\Shaders\Waves.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\3DModels\Shaders\ToonOutline.shader" />
-    <None Include="Assets\IDoc\Templates\DefaultTemplate\js\idoc.js.txt" />
+    <None Include="Assets\Unity Asset Store imported\IDoc\Templates\DefaultTemplate\js\idoc.js.txt" />
     <None Include="Assets\3DModels\Shaders\StencilWindowShader.shader" />
+    <None Include="Assets\Unity Asset Store imported\SimplePixelUI\fonts\Font1\readme.txt" />
     <None Include="Assets\3DModels\Shaders\ToonNormalMap.shader" />
     <None Include="Assets\3DModels\Shaders\Extrude.shader" />
     <None Include="Assets\AI\Weights\multiple selection,3,2.txt" />
@@ -123,7 +125,7 @@
     <None Include="Assets\UVLocations\Grass.txt" />
     <None Include="Assets\AI\DataforTraintheANN\3Inputs2OutputsData.txt" />
     <None Include="Assets\3DModels\Shaders\Cutoff.shader" />
-    <None Include="Assets\IDoc\Templates\DefaultTemplate\templates\template.apis.js.txt" />
+    <None Include="Assets\Unity Asset Store imported\IDoc\Templates\DefaultTemplate\templates\template.apis.js.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\Scripts\NPCBrain\Questions&amp;Answers\Questions&amp;Answers.txt" />
     <None Include="Assets\3DModels\Shaders\Waves with animation.shader" />
@@ -132,31 +134,34 @@
     <None Include="Assets\3DModels\Shaders\TextureScroll.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\IDoc\Templates\DefaultTemplate\templates\template.error.js.txt" />
+    <None Include="Assets\Unity Asset Store imported\IDoc\Templates\DefaultTemplate\templates\template.error.js.txt" />
     <None Include="Assets\3DModels\Shaders\ToonHologram.shader" />
-    <None Include="Assets\IDoc\Dll\Newtonsoft.Json.xml" />
+    <None Include="Assets\Unity Asset Store imported\IDoc\Dll\Newtonsoft.Json.xml" />
     <None Include="Assets\3DModels\Shaders\BumpDiffuseStencil.shader" />
+    <None Include="Assets\Unity Asset Store imported\SimplePixelUI\fonts\Font2\license.txt" />
     <None Include="Assets\3DModels\Shaders\Glass.shader" />
-    <None Include="Assets\IDoc\Templates\DefaultTemplate\guides\quick-start.js.txt" />
+    <None Include="Assets\Unity Asset Store imported\IDoc\Templates\DefaultTemplate\guides\quick-start.js.txt" />
     <None Include="Assets\UVLocations\Beach.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\IDoc\Templates\DefaultTemplate\templates\template.default.cs.js.txt" />
+    <None Include="Assets\Unity Asset Store imported\IDoc\Templates\DefaultTemplate\templates\template.default.cs.js.txt" />
     <None Include="Assets\AI\DataforTraintheANN\2Inputs2OutputsData.txt" />
     <None Include="Assets\3DModels\Shaders\ToonRamp.shader" />
     <None Include="Assets\AI\Weights\multiple selection,2,2.txt" />
-    <None Include="Assets\IDoc\Templates\DefaultTemplate\js\idoc-search.js.txt" />
+    <None Include="Assets\Unity Asset Store imported\IDoc\Templates\DefaultTemplate\js\idoc-search.js.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\IDoc\Templates\DefaultTemplate\templates\template.guides.js.txt" />
+    <None Include="Assets\Unity Asset Store imported\IDoc\Templates\DefaultTemplate\templates\template.guides.js.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\Unity Asset Store imported\SimplePixelUI\fonts\Font2\readme.txt" />
     <None Include="Assets\UVLocations\Concrete.txt" />
-    <None Include="Assets\IDoc\Templates\DefaultTemplate\js\idoc-data.js.txt" />
+    <None Include="Assets\Unity Asset Store imported\IDoc\Templates\DefaultTemplate\js\idoc-data.js.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\IDoc\Templates\DefaultTemplate\README.txt" />
+    <None Include="Assets\Unity Asset Store imported\IDoc\Templates\DefaultTemplate\README.txt" />
+    <None Include="Assets\Unity Asset Store imported\SimplePixelUI\fonts\Font1\license.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\3DModels\Shaders\Cameraandshader\Sketch.shader" />
@@ -364,11 +369,11 @@
     <Reference Include="UnityEngine.XRModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
-    <Reference Include="Idoc.Lib">
-      <HintPath>C:/Users/Marco/Desktop/University Last Year/Dissertation/Marco_Minganna_Individual_Project/Assets/IDoc/Dll/Idoc.Lib.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>C:/Users/Marco/Desktop/University Last Year/Dissertation/Marco_Minganna_Individual_Project/Assets/IDoc/Dll/Newtonsoft.Json.dll</HintPath>
+      <HintPath>C:/Users/Marco/Desktop/University Last Year/Dissertation/Marco_Minganna_Individual_Project/Assets/Unity Asset Store imported/IDoc/Dll/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Idoc.Lib">
+      <HintPath>C:/Users/Marco/Desktop/University Last Year/Dissertation/Marco_Minganna_Individual_Project/Assets/Unity Asset Store imported/IDoc/Dll/Idoc.Lib.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.8f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

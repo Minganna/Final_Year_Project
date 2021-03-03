@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 using TMPro;
 public class MenuManager : MonoBehaviour
 {
     private List<GameObject> PlaySettings=new List<GameObject>();
     public List<GameObject> SelectLanguage = new List<GameObject>();
+    public List<GameObject> Confirm = new List<GameObject>();
+    CommonVariables cv = new CommonVariables();
     public void MainButtons(GameObject tag)
     {
         GameObject maincanvas = GameObject.FindGameObjectWithTag("MasterMenu");
@@ -21,6 +24,9 @@ public class MenuManager : MonoBehaviour
                 break;
             case "Next(Clone)":
                 NextPressed(maincanvas);
+                break;
+            case "Confirm(Clone)":
+                SceneManager.LoadScene(1);
                 break;
             default:
                 break;
@@ -57,8 +63,7 @@ public class MenuManager : MonoBehaviour
                 TMP_Dropdown dpd = lui.GetComponent<TMP_Dropdown>();
                 int index = dpd.value;
                 List<TMP_Dropdown.OptionData> menuOptions = dpd.options;
-                string[] name = lui.name.Split('(');
-                datafromdropdown.Add(name[0]+": "+menuOptions[index].text);
+                datafromdropdown.Add(menuOptions[index].text);
 
 
             }
@@ -111,9 +116,38 @@ public class MenuManager : MonoBehaviour
     {
         List<string> SelectedValues = new List<string>();
         SelectedValues= DestroymenuItems();
-        Debug.Log(SelectedValues[0]);
-        Debug.Log(SelectedValues[1]);
+        cv.SetLearn(SelectedValues[0]);
+        cv.SetKnown(SelectedValues[1]);
+        cv.setTransp("car");
+        ConfirmationPart();
+    }
 
+    private void ConfirmationPart()
+    {
+        GameObject maincanvas = GameObject.FindGameObjectWithTag("MasterMenu");
+        for (int i = 0; i < SelectLanguage.Count; i++)
+        {
+            GameObject newButton = Instantiate(Confirm[i]) as GameObject;
+            newButton.transform.SetParent(maincanvas.transform, false);
+            if (Confirm[i].GetComponent<Button>() != null)
+            {
+                Button Back = newButton.GetComponent<Button>();
+                Back.onClick.AddListener(delegate { MainButtons(newButton); });
+            }
+            else
+            {
+                newButton.tag = "LanguageMenu";
+                if(newButton.name== "template1(Clone)")
+                {
+                    newButton.GetComponent<TextMeshProUGUI>().text = cv.GetKnown();
+                }
+                if (newButton.name == "template2(Clone)")
+                {
+                    newButton.GetComponent<TextMeshProUGUI>().text = cv.GetLearn();
+                }
+            }
+            newButton.SetActive(true);
 
+        }
     }
 }
