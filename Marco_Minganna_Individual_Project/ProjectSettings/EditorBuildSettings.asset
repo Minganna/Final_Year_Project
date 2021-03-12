@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Loading Screen.unity
     guid: a87f3caf3d5d22144a7513ca71250c06
   - enabled: 1
+    path: Assets/Scenes/Tutorial Airport.unity
+    guid: 1463656bbd6f1884ea8ef2eaa461719a
+  - enabled: 1
     path: Assets/Scenes/AIExperiments.unity
     guid: 05d31a6a00c083b4c9f4b7f8a11f6542
   m_configObjects: {}

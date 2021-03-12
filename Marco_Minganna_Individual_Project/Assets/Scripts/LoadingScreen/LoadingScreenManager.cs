@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class LoadingScreenManager : MonoBehaviour
 {
+    [SerializeField]
+    GameObject[] vehicles;
     CommonVariables cv=new CommonVariables();
     // Start is called before the first frame update
     void Start()
@@ -16,9 +18,25 @@ public class LoadingScreenManager : MonoBehaviour
         }
         else
         {
-            Debug.Log(vehicleToLoad);
+            if(vehicleToLoad=="car")
+            {
+                vehicles[0].SetActive(true);
+            }
+            if (vehicleToLoad == "plane")
+            {
+                vehicles[1].SetActive(true);
+            }
+
         }
-        SceneManager.LoadSceneAsync(2);
+
+        StartCoroutine(LoadNextScene());
+        
+    }
+
+    IEnumerator LoadNextScene()
+    {
+        yield return new WaitForSeconds(1.0f);
+        SceneManager.LoadSceneAsync(cv.getSceneToLoad());
     }
 
     // Update is called once per frame

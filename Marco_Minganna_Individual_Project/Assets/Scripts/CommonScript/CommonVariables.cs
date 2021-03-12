@@ -12,6 +12,26 @@ public class CommonVariables
     static string languageToLearn;
     static string languageKnown;
 
+    static bool translations;
+    static int sceneToLoad;
+
+
+    public void SetTranslation(bool state)
+    {
+        translations = state;
+        Debug.Log("current translation state: " + translations);
+    }
+
+    public void setSceneToLoad(int scene)
+    {
+        sceneToLoad = scene;
+    }
+
+    public int getSceneToLoad()
+    {
+        return sceneToLoad;
+    }
+
     public void SetLearn(string ltl)
     {
         languageToLearn = ltl;

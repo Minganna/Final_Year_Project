@@ -49,7 +49,7 @@ public class TraintheANN : MonoBehaviour
 
 }
 
-
+#if UNITY_EDITOR
 [CustomEditor(typeof(TraintheANN))]
 [CanEditMultipleObjects]
 public class Training : Editor
@@ -112,3 +112,4 @@ public class Training : Editor
     }
 
 }
+#endif

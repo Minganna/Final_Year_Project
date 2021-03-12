@@ -75,12 +75,14 @@
     <Compile Include="Assets\Scripts\CommonScript\Condition.cs" />
     <Compile Include="Assets\Scripts\CommonScript\IpredicateEvaluator.cs" />
     <Compile Include="Assets\Scripts\CommonScript\MobilePhoneImputs.cs" />
+    <Compile Include="Assets\Scripts\CommonScript\SetScreenResolution.cs" />
     <Compile Include="Assets\Scripts\CommonScript\Wallet.cs" />
     <Compile Include="Assets\Scripts\Dialogue&amp;Quest\Dialogue.cs" />
     <Compile Include="Assets\Scripts\Dialogue&amp;Quest\DialogueNode.cs" />
     <Compile Include="Assets\Scripts\Dialogue&amp;Quest\DialogueTrigger.cs" />
     <Compile Include="Assets\Scripts\Dialogue&amp;Quest\DialogueUI.cs" />
     <Compile Include="Assets\Scripts\Dialogue&amp;Quest\NPCDialogues.cs" />
+    <Compile Include="Assets\Scripts\LoadingScreen\CarWheel.cs" />
     <Compile Include="Assets\Scripts\LoadingScreen\LoadingScreenManager.cs" />
     <Compile Include="Assets\Scripts\MenuScript\DayAndNight.cs" />
     <Compile Include="Assets\Scripts\MenuScript\MenuGetTime.cs" />
@@ -110,6 +112,7 @@
     <Compile Include="Assets\Scripts\TerrainScripts\SerializeMesh.cs" />
     <Compile Include="Assets\Scripts\TerrainScripts\Utils.cs" />
     <Compile Include="Assets\Scripts\TerrainScripts\World.cs" />
+    <Compile Include="Assets\Scripts\TutorialLevel\TutorialManager.cs" />
     <Compile Include="Assets\Unity Asset Store imported\IDoc\Example\CSClass.cs" />
     <None Include="Assets\3DModels\Shaders\Waves.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
@@ -369,11 +372,11 @@
     <Reference Include="UnityEngine.XRModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>C:/Users/Marco/Desktop/University Last Year/Dissertation/Marco_Minganna_Individual_Project/Assets/Unity Asset Store imported/IDoc/Dll/Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Idoc.Lib">
       <HintPath>C:/Users/Marco/Desktop/University Last Year/Dissertation/Marco_Minganna_Individual_Project/Assets/Unity Asset Store imported/IDoc/Dll/Idoc.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:/Users/Marco/Desktop/University Last Year/Dissertation/Marco_Minganna_Individual_Project/Assets/Unity Asset Store imported/IDoc/Dll/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.8f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

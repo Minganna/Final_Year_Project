@@ -306,11 +306,11 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>C:/Users/Marco/Desktop/University Last Year/Dissertation/Marco_Minganna_Individual_Project/Assets/Unity Asset Store imported/IDoc/Dll/Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Idoc.Lib">
       <HintPath>C:/Users/Marco/Desktop/University Last Year/Dissertation/Marco_Minganna_Individual_Project/Assets/Unity Asset Store imported/IDoc/Dll/Idoc.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:/Users/Marco/Desktop/University Last Year/Dissertation/Marco_Minganna_Individual_Project/Assets/Unity Asset Store imported/IDoc/Dll/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>C:/Users/Marco/Desktop/University Last Year/Dissertation/Marco_Minganna_Individual_Project/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
