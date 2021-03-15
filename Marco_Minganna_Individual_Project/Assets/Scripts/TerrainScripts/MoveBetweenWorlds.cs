@@ -8,11 +8,16 @@ public class MoveBetweenWorlds : MonoBehaviour
     [SerializeField] GameObject NextArea;
     [SerializeField] GameObject ThisArea;
     [SerializeField] GameObject PreviousArea;
+    [SerializeField] GameObject[] Movebutton;
+    CommonVariables cv = new CommonVariables();
 
     [SerializeField] 
     static bool nextAreaUnlocked=false;
 
     [SerializeField] int NextAreaSceneN;
+    [SerializeField] int PreviousAreaSceneN;
+
+    int MoveTo;
 
 
     public void SetAreaUnlock()
@@ -26,12 +31,15 @@ public class MoveBetweenWorlds : MonoBehaviour
         {
             ThisArea.SetActive(false);
             NextArea.SetActive(true);
+            Movebutton[1].SetActive(true);
+            NextWorld(NextAreaSceneN);
             return;
         }
         if(PreviousArea.activeSelf)
         {
             PreviousArea.SetActive(false);
             ThisArea.SetActive(true);
+            Movebutton[0].SetActive(false);
             return;
         }
     }
@@ -42,6 +50,8 @@ public class MoveBetweenWorlds : MonoBehaviour
         {
             NextArea.SetActive(false);
             ThisArea.SetActive(true);
+            Movebutton[0].SetActive(true);
+            NextWorld(PreviousAreaSceneN);
             return;
         }
         if(ThisArea.activeSelf)
@@ -50,13 +60,20 @@ public class MoveBetweenWorlds : MonoBehaviour
             {
                 ThisArea.SetActive(false);
                 PreviousArea.SetActive(true);
+                Movebutton[1].SetActive(false);
             }
             return;
         }
     }
 
+    public void NextWorld(int next)
+    {
+        MoveTo = next;
+    }
     public void ChangeScene()
     {
-        SceneManager.LoadScene(NextAreaSceneN);
+        cv.setTransp("train");
+        cv.setSceneToLoad(MoveTo);
+        SceneManager.LoadScene(1);
     }
 }

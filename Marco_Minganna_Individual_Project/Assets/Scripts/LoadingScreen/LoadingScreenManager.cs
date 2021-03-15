@@ -26,6 +26,10 @@ public class LoadingScreenManager : MonoBehaviour
             {
                 vehicles[1].SetActive(true);
             }
+            if (vehicleToLoad == "train")
+            {
+                vehicles[2].SetActive(true);
+            }
 
         }
 

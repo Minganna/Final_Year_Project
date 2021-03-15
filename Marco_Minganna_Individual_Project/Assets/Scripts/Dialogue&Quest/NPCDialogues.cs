@@ -7,11 +7,34 @@ namespace Dialogue
 {
     public class NPCDialogues : MonoBehaviour
     {
-        [SerializeField] Dialogue[] characterDialouges;
+        Dialogue[] characterDialouges;
+        [SerializeField] Dialogue[] ItalianDialogue;
+        [SerializeField] Dialogue[] EnglishDialogue;
         [SerializeField] string converstantname;
         [SerializeField] RenderTexture converstantAvatar;
+        CommonVariables cv = new CommonVariables();
 
 
+        private void Start()
+        {
+            if(cv.GetLearn()!=null)
+            {
+                if (cv.GetLearn().Trim().ToLower().Contains("english"))
+                {
+                    characterDialouges = ItalianDialogue;
+                }
+                if (cv.GetLearn().Trim().ToLower().Contains("italian"))
+                {
+                    characterDialouges = EnglishDialogue;
+                }
+            }
+            else
+            {
+                characterDialouges = EnglishDialogue;
+            }
+            
+
+        }
         public Dialogue[] GetDialogues()
         {
             return characterDialouges;
