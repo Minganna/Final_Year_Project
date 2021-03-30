@@ -61,6 +61,7 @@ public class MoveBetweenWorlds : MonoBehaviour
                 ThisArea.SetActive(false);
                 PreviousArea.SetActive(true);
                 Movebutton[1].SetActive(false);
+                Movebutton[0].SetActive(true);
             }
             return;
         }
@@ -74,6 +75,6 @@ public class MoveBetweenWorlds : MonoBehaviour
     {
         cv.setTransp("train");
         cv.setSceneToLoad(MoveTo);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }

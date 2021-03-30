@@ -87,27 +87,32 @@ public class QuestionsAndAnswers : MonoBehaviour
     {
         List<string[]> Allsuggest = GetInput();
         List<string> suggest= GetSuggest(Allsuggest);
-        for (int i=0;i<suggest.Count;i++)
+        int count = suggest.Count;
+        for (int i=0;i<count;i++)
         {
             GameObject parent = GameObject.FindGameObjectWithTag("SuggestionsMaster");
             GameObject button = Instantiate(SuggestionButton.gameObject, parent.transform.position, Quaternion.identity);
+            int spawn = UnityEngine.Random.Range(0, suggest.Count - 1);
+
             button.transform.SetParent(parent.gameObject.transform, false);
-            button.GetComponentInChildren<TMP_Text>().text = suggest[i];
+            button.GetComponentInChildren<TMP_Text>().text = suggest[spawn];
+            suggest.Remove(suggest[spawn]);
             button.GetComponent<Button>().onClick.AddListener(() =>
             {
                 TMP_InputField UserAnswer = GameObject.FindGameObjectWithTag("Answer").GetComponent<TMP_InputField>();
-                if(UserAnswer.text.Contains((button.GetComponentInChildren<TMP_Text>().text)))
-                    {
-                        return;
-                    }   
+                if (UserAnswer.text.Contains((button.GetComponentInChildren<TMP_Text>().text)))
+                {
+                    return;
+                }
                 else
                 {
                     UserAnswer.text += button.GetComponentInChildren<TMP_Text>().text;
                     UserAnswer.text += " ";
                 }
-            });
+
+            })
+            ;
         }
-       
     }
 
     private List<string> GetSuggest(List<string[]> allsuggest)

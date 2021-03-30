@@ -18,8 +18,8 @@ public class TutorialManager : MonoBehaviour
     public void NextScene()
     {
         cv.setTransp("plane");
-        cv.setSceneToLoad(3);
-        SceneManager.LoadScene(1);
+        cv.setSceneToLoad(4);
+        SceneManager.LoadScene(2);
     }
 
     private void Start()

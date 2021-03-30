@@ -15,6 +15,8 @@ namespace UI
         [SerializeField]
         TMP_InputField UserAnswer;
         [SerializeField]
+        TextMeshProUGUI SuggestionText;
+        [SerializeField]
         TextMeshProUGUI ButtonText;
         [SerializeField]
         Button MainButton;
@@ -62,12 +64,14 @@ namespace UI
             if (!logic)
             {
                 UserAnswer.gameObject.SetActive(false);
+                SuggestionText.gameObject.SetActive(false);
                 ButtonText.text = "Next >";
 
             }
             else
             {
                 UserAnswer.gameObject.SetActive(true);
+                SuggestionText.gameObject.SetActive(true);
                 ButtonText.text = "Submit";
                 
                 foreach (DialogueNode choice in playerConversant.GetChoices())
@@ -163,6 +167,9 @@ namespace UI
             }
         }
 
-
+        public void ChangeSuggestion(int suggestionnumber)
+        {
+            SuggestionText.text = "word needed: " + suggestionnumber;
+        }
     }
 }

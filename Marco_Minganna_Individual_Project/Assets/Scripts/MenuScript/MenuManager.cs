@@ -26,7 +26,7 @@ public class MenuManager : MonoBehaviour
                 NextPressed(maincanvas);
                 break;
             case "Confirm(Clone)":
-                cv.setSceneToLoad(2);
+                cv.setSceneToLoad(3);
                 SceneManager.LoadScene(1);
                 break;
             default:

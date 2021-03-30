@@ -35,6 +35,9 @@ public class TraintheANN : MonoBehaviour
             Debug.Log("loading");
             string[] data = line.Split(',');
             numberofImput = int.Parse(data[0]);
+            ///Change the number of suggestions in DialogueUI
+            UI.DialogueUI du=FindObjectOfType<UI.DialogueUI>();
+            du.ChangeSuggestion(numberofImput);
             numberofOutput = int.Parse(data[1]);
             numberofHidden = int.Parse(data[2]);
             numberofNperHidden = int.Parse(data[3]);

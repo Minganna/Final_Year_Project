@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\CommonScript\Condition.cs" />
     <Compile Include="Assets\Scripts\CommonScript\IpredicateEvaluator.cs" />
     <Compile Include="Assets\Scripts\CommonScript\MobilePhoneImputs.cs" />
+    <Compile Include="Assets\Scripts\CommonScript\SetPlayer.cs" />
     <Compile Include="Assets\Scripts\CommonScript\SetScreenResolution.cs" />
     <Compile Include="Assets\Scripts\CommonScript\Wallet.cs" />
     <Compile Include="Assets\Scripts\Dialogue&amp;Quest\Dialogue.cs" />
@@ -85,6 +86,7 @@
     <Compile Include="Assets\Scripts\LoadingScreen\CarWheel.cs" />
     <Compile Include="Assets\Scripts\LoadingScreen\LoadingScreenManager.cs" />
     <Compile Include="Assets\Scripts\MenuScript\DayAndNight.cs" />
+    <Compile Include="Assets\Scripts\MenuScript\DecideGender.cs" />
     <Compile Include="Assets\Scripts\MenuScript\MenuGetTime.cs" />
     <Compile Include="Assets\Scripts\MenuScript\MenuManager.cs" />
     <Compile Include="Assets\Scripts\NPCBrain\Brain.cs" />

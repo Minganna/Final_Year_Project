@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenuSample.unity
     guid: 91272a1599470954aa9f8cf90e529d39
   - enabled: 1
+    path: Assets/Scenes/GenderChoiceMenu.unity
+    guid: 04732460a35555c42902e8f7239ac63e
+  - enabled: 1
     path: Assets/Scenes/Loading Screen.unity
     guid: a87f3caf3d5d22144a7513ca71250c06
   - enabled: 1

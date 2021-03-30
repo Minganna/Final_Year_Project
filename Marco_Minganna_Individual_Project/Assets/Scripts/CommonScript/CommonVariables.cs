@@ -15,6 +15,8 @@ public class CommonVariables
     static bool translations;
     static int sceneToLoad;
 
+    static string Gender;
+
 
     public void SetTranslation(bool state)
     {
@@ -43,6 +45,11 @@ public class CommonVariables
         Debug.Log("language known: " + languageKnown);
     }
 
+    public void SetGender(string gender)
+    {
+        Gender = gender;
+    }
+
     public string GetLearn()
     {
         return languageToLearn;
@@ -61,5 +68,9 @@ public class CommonVariables
         return transportation;
     }
 
+    public string getGender()
+    {
+        return Gender;
+    }
 
 }
