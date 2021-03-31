@@ -51,7 +51,6 @@ public class MoveBetweenWorlds : MonoBehaviour
             NextArea.SetActive(false);
             ThisArea.SetActive(true);
             Movebutton[0].SetActive(true);
-            NextWorld(PreviousAreaSceneN);
             return;
         }
         if(ThisArea.activeSelf)
@@ -62,6 +61,7 @@ public class MoveBetweenWorlds : MonoBehaviour
                 PreviousArea.SetActive(true);
                 Movebutton[1].SetActive(false);
                 Movebutton[0].SetActive(true);
+                NextWorld(PreviousAreaSceneN);
             }
             return;
         }
