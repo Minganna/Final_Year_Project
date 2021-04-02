@@ -12,6 +12,8 @@ namespace UI
         PlayerConversant playerConversant;
         [SerializeField]
         TextMeshProUGUI AIText;
+        [SerializeField] 
+        TextMeshProUGUI TranslationText;
         [SerializeField]
         TMP_InputField UserAnswer;
         [SerializeField]
@@ -28,12 +30,19 @@ namespace UI
         TextMeshProUGUI ConversantName;
         [SerializeField]
         RawImage ConversantAvatar;
+        
+
+        CommonVariables cv = new CommonVariables();
 
 
 
         // Start is called before the first frame update
         void Start()
         {
+            if (cv.getTranslation())
+            {
+                TranslationText.gameObject.SetActive(true);
+            }
             playerConversant = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>();
             playerConversant.onConversationUpdated += UpdateUI;
             UpdateUI();
@@ -145,7 +154,16 @@ namespace UI
             }
             Debug.Log("Noice");
             AIText.color = Color.black;
-            AIText.text = playerConversant.GetText();
+            if (!TranslationText.gameObject.activeSelf)
+            {
+                AIText.text = playerConversant.GetText();
+            }
+            else
+            {
+                string[] temp = playerConversant.GetText().Split('/');
+                AIText.text = temp[0];
+                TranslationText.text = temp[1];
+            }
             if(this.isActiveAndEnabled)
             {
                 StopAllCoroutines();
@@ -159,12 +177,48 @@ namespace UI
 
         IEnumerator TypeSentence (string sentence)
         {
-            AIText.text = "";
-            foreach(char letter in sentence.ToCharArray())
+            if(!cv.getTranslation())
             {
-                AIText.text += letter;
-                yield return null;
+                AIText.text = "";
+                foreach (char letter in sentence.ToCharArray())
+                {
+                    AIText.text += letter;
+                    yield return null;
+                }
             }
+            else
+            {
+                AIText.text = "";
+                TranslationText.text = "";
+                bool Translated=false;
+                foreach (char letter in sentence.ToCharArray())
+                {
+                    if (letter == '/')
+                    {
+                        Translated = true;
+                    }
+                    if(Translated)
+                    {
+                        if(letter!= '/')
+                        {
+                            TranslationText.text += letter;
+                        }
+                        yield return null;
+                    }
+                    else
+                    {
+                        if (letter != '/')
+                        {
+                            AIText.text += letter;
+                        }
+                        yield return null;
+                    }
+                   
+                }
+            }
+
+
+          
         }
 
         public void ChangeSuggestion(int suggestionnumber)

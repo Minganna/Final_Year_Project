@@ -73,4 +73,9 @@ public class CommonVariables
         return Gender;
     }
 
+    public bool getTranslation()
+    {
+        return translations;
+    }
+
 }

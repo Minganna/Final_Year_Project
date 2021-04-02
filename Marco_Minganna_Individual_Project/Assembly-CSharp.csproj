@@ -77,12 +77,14 @@
     <Compile Include="Assets\Scripts\CommonScript\MobilePhoneImputs.cs" />
     <Compile Include="Assets\Scripts\CommonScript\SetPlayer.cs" />
     <Compile Include="Assets\Scripts\CommonScript\SetScreenResolution.cs" />
+    <Compile Include="Assets\Scripts\CommonScript\UKITAchanges.cs" />
     <Compile Include="Assets\Scripts\CommonScript\Wallet.cs" />
     <Compile Include="Assets\Scripts\Dialogue&amp;Quest\Dialogue.cs" />
     <Compile Include="Assets\Scripts\Dialogue&amp;Quest\DialogueNode.cs" />
     <Compile Include="Assets\Scripts\Dialogue&amp;Quest\DialogueTrigger.cs" />
     <Compile Include="Assets\Scripts\Dialogue&amp;Quest\DialogueUI.cs" />
     <Compile Include="Assets\Scripts\Dialogue&amp;Quest\NPCDialogues.cs" />
+    <Compile Include="Assets\Scripts\HotelRoom\HotelManager.cs" />
     <Compile Include="Assets\Scripts\LoadingScreen\CarWheel.cs" />
     <Compile Include="Assets\Scripts\LoadingScreen\LoadingScreenManager.cs" />
     <Compile Include="Assets\Scripts\MenuScript\DayAndNight.cs" />

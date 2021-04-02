@@ -45,8 +45,17 @@ public class ComputerInputs : MonoBehaviour
                     {
                         Hide();
                         Dialogue.Dialogue[] options = raycastHit.collider.GetComponent<NPCDialogues>().GetDialogues();
-                        int RandomIndex = Random.Range(0, options.Length);
-                        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>().StartDialogue(raycastHit.collider.GetComponent<NPCDialogues>(), options[RandomIndex]);             
+                        int Index;
+                        if (cv.getTranslation())
+                        {
+                            Index = 1;
+                        }
+                        else
+                        {
+                            Index = 0;
+                        }
+                        
+                        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>().StartDialogue(raycastHit.collider.GetComponent<NPCDialogues>(), options[Index]);             
                         cv.UICanvas.SetActive(true);
                         cv.GameCanvas.SetActive(false);
                     }

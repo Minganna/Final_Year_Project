@@ -114,7 +114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerSpeaking: 0
   Question: 0
-  Text: hello
+  Text: 'hello '
   children:
   - bfdc3e41-4561-42bc-a8b0-947efd362c2f
   position:
