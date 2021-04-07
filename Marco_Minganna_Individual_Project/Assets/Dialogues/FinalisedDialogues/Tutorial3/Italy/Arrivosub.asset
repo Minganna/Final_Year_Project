@@ -1,0 +1,610 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9165193066821750908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: dd23057f-0403-43fc-af66-4028feabedb4
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: ok, spero di rincontrarti presto!  / ok, I hope to see you soon!
+  children: []
+  position:
+    serializedVersion: 2
+    x: 2157
+    y: 149
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: MoveAllowed
+  condition:
+    and: []
+--- !u!114 &-8441202875407455166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: ff7fd830-da07-4eec-8d8d-ef77c55666c1
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: yes, please
+  children:
+  - d9014fe9-8e4d-46b4-b916-9786f3fb28c3
+  position:
+    serializedVersion: 2
+    x: 1889
+    y: 28
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-6163820051961066467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: af1fdcc6-5f63-405b-a88e-75ba50a7a245
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 1
+  Text: Come ti senti?
+  children:
+  - 20689de0-09a3-4b95-88b8-3ce7111c60cf
+  - 079453e5-107b-44cc-a87b-f66af9f90005
+  - 73452d47-3403-4424-9cb7-171e9867a594
+  position:
+    serializedVersion: 2
+    x: 249
+    y: 0
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-6135349008054284234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: e82861f7-cc7c-4d3a-90a9-147116231b0d
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 1
+  Text: What do you think? /cosa ne pensi? -You are right = hai ragione
+  children:
+  - 8e3b8b3e-7615-4214-9506-08290436c9f0
+  - 35837bbc-a15d-4b95-9747-6cfe710882d6
+  position:
+    serializedVersion: 2
+    x: 1022
+    y: 6
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-5439871432051660529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 4a31b6bf-41a0-4177-8784-c6d2dd72cbf2
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 1
+  Text: 'do you need help to arrive there? /hai bisogno di aiuto per arrivarci? -
+    yes, please = si, grazie - no thanks = no, grazie '
+  children:
+  - ff7fd830-da07-4eec-8d8d-ef77c55666c1
+  - c80f1129-a311-4318-b169-5f7cf24dc5f9
+  - a4aa31de-5674-43e5-9690-7087f2a81a29
+  position:
+    serializedVersion: 2
+    x: 1622
+    y: 154
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-4667961394869557892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 35837bbc-a15d-4b95-9747-6cfe710882d6
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: wrong answer
+  children:
+  - ae8de295-6606-4c1f-a246-e29bbc7d1ce9
+  position:
+    serializedVersion: 2
+    x: 1322
+    y: 156
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-4523951349972044438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: f41a8efc-5c00-4772-a2c8-b8940eefd00d
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: "perfect, it seems that we both need to reach the city center /perfetto! dobbiamo
+    entrambi raggiungere il centro citt\xE0.... "
+  children:
+  - 4a31b6bf-41a0-4177-8784-c6d2dd72cbf2
+  position:
+    serializedVersion: 2
+    x: 1555
+    y: 24
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-514207185460108869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 079453e5-107b-44cc-a87b-f66af9f90005
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: Mi sento stanco
+  children:
+  - 42a1d025-b81c-4dc6-97ad-ae79d82cabd9
+  position:
+    serializedVersion: 2
+    x: 497
+    y: 112
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-473862281450250291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 73452d47-3403-4424-9cb7-171e9867a594
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: wrong answer
+  children:
+  - 0cfc2280-5c7f-48bc-b9a7-97274eb51b21
+  position:
+    serializedVersion: 2
+    x: 500
+    y: 239
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 673d53dc60333cf4fa5c29c663d02f63, type: 3}
+  m_Name: Arrivosub
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 2236934812751671349}
+  - {fileID: -6163820051961066467}
+  - {fileID: 5327245045751551090}
+  - {fileID: -514207185460108869}
+  - {fileID: 2714536039397794755}
+  - {fileID: -473862281450250291}
+  - {fileID: 2551709473780450280}
+  - {fileID: 6797048413789646327}
+  - {fileID: -6135349008054284234}
+  - {fileID: 6299409746664833258}
+  - {fileID: -4667961394869557892}
+  - {fileID: 7624092556162495745}
+  - {fileID: -4523951349972044438}
+  - {fileID: -5439871432051660529}
+  - {fileID: -8441202875407455166}
+  - {fileID: 5906128982380367017}
+  - {fileID: 5195346199507381577}
+  - {fileID: 8835874523455886804}
+  - {fileID: 8041187616477379571}
+  - {fileID: 7222258551710442005}
+  - {fileID: -9165193066821750908}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &2236934812751671349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: MainNode
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: Siamo arrivati in inghilterra!
+  children:
+  - af1fdcc6-5f63-405b-a88e-75ba50a7a245
+  position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &2551709473780450280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 0cfc2280-5c7f-48bc-b9a7-97274eb51b21
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: scusa?
+  children:
+  - af1fdcc6-5f63-405b-a88e-75ba50a7a245
+  position:
+    serializedVersion: 2
+    x: 224
+    y: 238
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &2714536039397794755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 42a1d025-b81c-4dc6-97ad-ae79d82cabd9
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: Anche io!!
+  children:
+  - bd4e65f0-a929-4514-8c1e-41a48ca07f69
+  position:
+    serializedVersion: 2
+    x: 750
+    y: 0
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &5195346199507381577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: a4aa31de-5674-43e5-9690-7087f2a81a29
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: wrong answer
+  children:
+  - 1aa7aae7-eb07-4197-842a-f0440058919a
+  position:
+    serializedVersion: 2
+    x: 1904
+    y: 264
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &5327245045751551090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 20689de0-09a3-4b95-88b8-3ce7111c60cf
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: Mi sento bene
+  children:
+  - 42a1d025-b81c-4dc6-97ad-ae79d82cabd9
+  position:
+    serializedVersion: 2
+    x: 500
+    y: 0
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &5906128982380367017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: c80f1129-a311-4318-b169-5f7cf24dc5f9
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: no, thanks
+  children:
+  - dd23057f-0403-43fc-af66-4028feabedb4
+  position:
+    serializedVersion: 2
+    x: 1907
+    y: 149
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &6299409746664833258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 8e3b8b3e-7615-4214-9506-08290436c9f0
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: you are right
+  children:
+  - f41a8efc-5c00-4772-a2c8-b8940eefd00d
+  position:
+    serializedVersion: 2
+    x: 1272
+    y: 6
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &6797048413789646327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: bd4e65f0-a929-4514-8c1e-41a48ca07f69
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: "Ho un idea, da questo momento, dovremmo iniziare a parlare solo in inglese\u2026"
+  children:
+  - e82861f7-cc7c-4d3a-90a9-147116231b0d
+  position:
+    serializedVersion: 2
+    x: 768
+    y: 116
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &7222258551710442005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 255d7dfa-6e85-4133-8b37-e90a5b6238f7
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: click on the arrow on the top right corner and then on the button "Travel
+    here"/ clicca sulla freccia in alto a destra, e poi sul bottone "Travel here"
+  children: []
+  position:
+    serializedVersion: 2
+    x: 2389
+    y: 28
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: MoveAllowed
+  condition:
+    and: []
+--- !u!114 &7624092556162495745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: ae8de295-6606-4c1f-a246-e29bbc7d1ce9
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: sorry? -scusa?
+  children:
+  - e82861f7-cc7c-4d3a-90a9-147116231b0d
+  position:
+    serializedVersion: 2
+    x: 1037
+    y: 191
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &8041187616477379571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: d9014fe9-8e4d-46b4-b916-9786f3fb28c3
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: "ok, to reach the city center /ok, per raggiungere il centro citt\xE0 "
+  children:
+  - 255d7dfa-6e85-4133-8b37-e90a5b6238f7
+  position:
+    serializedVersion: 2
+    x: 2139
+    y: 28
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &8835874523455886804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 1aa7aae7-eb07-4197-842a-f0440058919a
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: sorry? -scusa?
+  children:
+  - 4a31b6bf-41a0-4177-8784-c6d2dd72cbf2
+  position:
+    serializedVersion: 2
+    x: 1618
+    y: 279
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []

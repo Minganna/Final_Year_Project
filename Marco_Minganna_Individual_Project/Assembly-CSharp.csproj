@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\CommonScript\Condition.cs" />
     <Compile Include="Assets\Scripts\CommonScript\IpredicateEvaluator.cs" />
     <Compile Include="Assets\Scripts\CommonScript\MobilePhoneImputs.cs" />
+    <Compile Include="Assets\Scripts\CommonScript\NPCHasStillDialogue.cs" />
     <Compile Include="Assets\Scripts\CommonScript\SetPlayer.cs" />
     <Compile Include="Assets\Scripts\CommonScript\SetScreenResolution.cs" />
     <Compile Include="Assets\Scripts\CommonScript\UKITAchanges.cs" />

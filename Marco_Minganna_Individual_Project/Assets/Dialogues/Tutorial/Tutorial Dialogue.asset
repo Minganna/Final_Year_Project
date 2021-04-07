@@ -237,8 +237,8 @@ MonoBehaviour:
   - 4c2ca60b-aed7-4a3c-be0d-a78ebc1ea4d8
   position:
     serializedVersion: 2
-    x: 3071
-    y: 379
+    x: 3161
+    y: 381
     width: 250
     height: 100
   OnEnterAction: 
@@ -1161,7 +1161,7 @@ MonoBehaviour:
   position:
     serializedVersion: 2
     x: 3090
-    y: 792
+    y: 793
     width: 250
     height: 100
   OnEnterAction: 

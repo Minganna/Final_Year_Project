@@ -1,0 +1,500 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7416945657882235109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: b8d58222-3369-45c5-a470-88007485aafd
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: 
+  children: []
+  position:
+    serializedVersion: 2
+    x: 1513
+    y: 108
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-7407993485087281639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: MainNode
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: Salve / Hello
+  children:
+  - 5949a988-4de9-4cd5-84e0-1260be8d7228
+  position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-6382250749556954914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 43801a1d-1a68-459a-859d-d94326a5ad4f
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: oppure potresti visitare il parco qui vicino./otherwise you could visit the
+    park nearby
+  children: []
+  position:
+    serializedVersion: 2
+    x: 1255
+    y: 201
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-3582429812648424960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 0ea6bd34-1db2-4d6e-bde5-0973e2da4344
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: "e\u2019 abbastanza lontano da qui, ti suggerisco di tornare alla tua stanza
+    d\u2019hotel  e partire da l\xEC. /It\u2019s quite far from here, I suggest you
+    to go back to your hotel room and travel from there. "
+  children:
+  - 43801a1d-1a68-459a-859d-d94326a5ad4f
+  position:
+    serializedVersion: 2
+    x: 1005
+    y: 201
+    width: 250
+    height: 100
+  OnEnterAction: ChefDialogue
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-3549681904803576643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: c8fe985a-14ca-444c-80cc-bc1d3dc0dcac
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: "e\u2019 abbastanza lontano da qui, ti suggerisco di tornare alla tua stanza
+    d\u2019hotel  e partire da l\xEC. /It\u2019s quite far from here, I suggest you
+    to go back to your hotel room and travel from there. "
+  children:
+  - 96388c58-262c-4d35-a15c-999fb730734f
+  position:
+    serializedVersion: 2
+    x: 1013
+    y: 108
+    width: 250
+    height: 100
+  OnEnterAction: ChefDialogue
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-2629414529682137433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: bbe481ca-9e6c-4493-921a-8061d43e088e
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: "capisco, stai cercando l\u2019hotel, \xE9 veramente vicino! / I see, you
+    are looking for the hotel, it\u2019s very close! "
+  children:
+  - 0fc6848b-0fd3-4063-838e-4b5e9efbcac8
+  position:
+    serializedVersion: 2
+    x: 750
+    y: 1
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Reach the hotel
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Reach the hotel
+        negate: 1
+--- !u!114 &-2461320340049606220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 5949a988-4de9-4cd5-84e0-1260be8d7228
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 1
+  Text: Serve aiuto? / Can I help you? -si grazie=yes please -no,grazie=no,thanks
+  children:
+  - 095441fe-e782-4c3c-a8ab-3f1d06b12b49
+  - af03787e-daea-47ff-9bff-052996bd76c7
+  - ede028fa-287d-4795-a57a-4125b30dbdbf
+  position:
+    serializedVersion: 2
+    x: 250
+    y: 0
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-2364525346335737094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 3fbf55a7-8d89-431d-8b9c-c1cd16f7a207
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: 'ok allora, ciao! / Ok then, bye! '
+  children: []
+  position:
+    serializedVersion: 2
+    x: 787
+    y: 325
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-102734161654837445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 96388c58-262c-4d35-a15c-999fb730734f
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: oppure potresti visitare il parco qui vicino./otherwise you could visit the
+    park nearby
+  children: []
+  position:
+    serializedVersion: 2
+    x: 1263
+    y: 108
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 673d53dc60333cf4fa5c29c663d02f63, type: 3}
+  m_Name: ChefSub
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -7407993485087281639}
+  - {fileID: -2461320340049606220}
+  - {fileID: 968784118650652495}
+  - {fileID: 4678326795500096632}
+  - {fileID: 6912962802544661154}
+  - {fileID: 9023325754133862775}
+  - {fileID: -2364525346335737094}
+  - {fileID: -2629414529682137433}
+  - {fileID: 689395164735586662}
+  - {fileID: 6829828282598890418}
+  - {fileID: 1176825521290611674}
+  - {fileID: -3549681904803576643}
+  - {fileID: -3582429812648424960}
+  - {fileID: -102734161654837445}
+  - {fileID: -6382250749556954914}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &689395164735586662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 0fc6848b-0fd3-4063-838e-4b5e9efbcac8
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: "Per arrivarci basta che clicchi sulla freccia in alto a sinistra e poi sul
+    tasto \u201CTravel here\u201D /to reach the hotel you just need to click on the
+    arrow on the top left and then on the button that says \u201CTravel here\u201D"
+  children: []
+  position:
+    serializedVersion: 2
+    x: 1000
+    y: 1
+    width: 250
+    height: 100
+  OnEnterAction: ChefDialogue
+  OnExitAction: completefirstquest
+  condition:
+    and: []
+--- !u!114 &968784118650652495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 095441fe-e782-4c3c-a8ab-3f1d06b12b49
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: si grazie
+  children:
+  - bbe481ca-9e6c-4493-921a-8061d43e088e
+  - 0561fadf-6188-43d0-8442-f47bf318ee85
+  - 43e81dc1-6771-41b0-ba9f-ba56824092dd
+  position:
+    serializedVersion: 2
+    x: 500
+    y: 0
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &1176825521290611674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 43e81dc1-6771-41b0-ba9f-ba56824092dd
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: "Capisco, sei appena arrivato in citt\xE0 e stai cercando qualcosa da fare\u2026
+    ti suggerisco di visitare il Colosseo/I see, you just arrived here and you are
+    looking for something to do\u2026 I suggest you to visit the Colosseum. "
+  children:
+  - 0ea6bd34-1db2-4d6e-bde5-0973e2da4344
+  position:
+    serializedVersion: 2
+    x: 755
+    y: 201
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Reach the hotel
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Reach the hotel
+        negate: 0
+--- !u!114 &4678326795500096632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: af03787e-daea-47ff-9bff-052996bd76c7
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: no, grazie
+  children:
+  - 3fbf55a7-8d89-431d-8b9c-c1cd16f7a207
+  position:
+    serializedVersion: 2
+    x: 504
+    y: 282
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &6829828282598890418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 0561fadf-6188-43d0-8442-f47bf318ee85
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: "Capisco, sei appena arrivato in citt\xE0 e stai cercando qualcosa da fare\u2026
+    ti suggerisco di visitare il Colosseo/I see, you just arrived here and you are
+    looking for something to do\u2026 I suggest you to visit the Colosseum. "
+  children:
+  - c8fe985a-14ca-444c-80cc-bc1d3dc0dcac
+  position:
+    serializedVersion: 2
+    x: 755
+    y: 107
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Reach the hotel
+        negate: 1
+--- !u!114 &6912962802544661154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: ede028fa-287d-4795-a57a-4125b30dbdbf
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: wrong answer
+  children:
+  - 82bf62f2-aede-4068-97cc-5274f58425db
+  position:
+    serializedVersion: 2
+    x: 490
+    y: 382
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &9023325754133862775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 82bf62f2-aede-4068-97cc-5274f58425db
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: puoi ripetere / could you repete that?
+  children:
+  - 5949a988-4de9-4cd5-84e0-1260be8d7228
+  position:
+    serializedVersion: 2
+    x: 7
+    y: 292
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []

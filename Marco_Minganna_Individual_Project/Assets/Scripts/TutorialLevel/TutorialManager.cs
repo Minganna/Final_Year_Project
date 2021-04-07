@@ -30,7 +30,7 @@ public class TutorialManager : MonoBehaviour
             {
                 if(isArrival)
                 {
-                    Departures.text = "Arrivi";
+                    Departures.text = "Arrival";
                 }
                 else
                 {
@@ -42,7 +42,7 @@ public class TutorialManager : MonoBehaviour
             {
                 if(isArrival)
                 {
-                    Departures.text = "Arrival";
+                    Departures.text = "Arrivi";
                 }
                 else
                 {
@@ -56,7 +56,7 @@ public class TutorialManager : MonoBehaviour
         {
             if (isArrival)
             {
-                Departures.text = "Arrival";
+                Departures.text = "Arrivi";
             }
             else
             {

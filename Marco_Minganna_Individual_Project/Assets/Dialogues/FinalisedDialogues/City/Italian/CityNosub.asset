@@ -1,0 +1,203 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8359970535853384858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: MainNode
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: 'We made it to the city center! '
+  children:
+  - ab0b692c-e832-4687-a597-7094c2e116f4
+  - e8ce1c78-492c-42fa-96bb-cc94f52be9ae
+  position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-2930764559978536420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 3f62046c-5ba7-44e5-850d-703ceb14dd6a
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: 'Try ask that person in front of the restaurant! '
+  children: []
+  position:
+    serializedVersion: 2
+    x: 500
+    y: 0
+    width: 250
+    height: 100
+  OnEnterAction: ReadDialogue
+  OnExitAction: reachHotel
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 673d53dc60333cf4fa5c29c663d02f63, type: 3}
+  m_Name: CityNosub
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -8359970535853384858}
+  - {fileID: 1010648190170682802}
+  - {fileID: -2930764559978536420}
+  - {fileID: 3474293085711911367}
+  - {fileID: 7068844989922585188}
+  - {fileID: 4534287037890691013}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &1010648190170682802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: ab0b692c-e832-4687-a597-7094c2e116f4
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: 'Now, according to the map, we are very close to your hotel room! '
+  children:
+  - 3f62046c-5ba7-44e5-850d-703ceb14dd6a
+  position:
+    serializedVersion: 2
+    x: 250
+    y: -1
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Reach the hotel
+        negate: 1
+--- !u!114 &3474293085711911367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: e8ce1c78-492c-42fa-96bb-cc94f52be9ae
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: You are back!
+  children:
+  - 29a7914e-a9ca-4b6b-a870-d3321e998d64
+  - 37d18ac5-2ea6-448e-9bac-963cb6d5bda8
+  position:
+    serializedVersion: 2
+    x: 249
+    y: 133
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Reach the hotel
+        negate: 0
+--- !u!114 &4534287037890691013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 37d18ac5-2ea6-448e-9bac-963cb6d5bda8
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: great! I think I will look around the city now, see you soon
+  children: []
+  position:
+    serializedVersion: 2
+    x: 494
+    y: 270
+    width: 250
+    height: 100
+  OnEnterAction: ReadDialogue
+  OnExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Reach the hotel
+        negate: 0
+--- !u!114 &7068844989922585188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 29a7914e-a9ca-4b6b-a870-d3321e998d64
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: try ask for help to that person in front of the restaurant
+  children: []
+  position:
+    serializedVersion: 2
+    x: 499
+    y: 133
+    width: 250
+    height: 100
+  OnEnterAction: ReadDialogue
+  OnExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Reach the hotel
+        negate: 1

@@ -162,7 +162,11 @@ namespace UI
             {
                 string[] temp = playerConversant.GetText().Split('/');
                 AIText.text = temp[0];
-                TranslationText.text = temp[1];
+                if(temp.Length>1)
+                {
+                    TranslationText.text = temp[1];
+                }
+                
             }
             if(this.isActiveAndEnabled)
             {
@@ -197,17 +201,21 @@ namespace UI
                     {
                         Translated = true;
                     }
-                    if(Translated)
+                    if (Translated)
                     {
-                        if(letter!= '/')
+                        if (letter != '/'|| letter != '-')
                         {
                             TranslationText.text += letter;
+                        }
+                        if (letter == '-')
+                        {
+                            TranslationText.text += "\n";
                         }
                         yield return null;
                     }
                     else
                     {
-                        if (letter != '/')
+                        if (letter != '/' || letter != '-')
                         {
                             AIText.text += letter;
                         }

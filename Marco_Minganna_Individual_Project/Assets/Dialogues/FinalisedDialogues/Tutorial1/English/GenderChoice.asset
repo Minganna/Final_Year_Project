@@ -1,0 +1,465 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5111117801360153975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 32ddd80e-d7f9-4df4-8471-f9301889ea53
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: I'm a girl
+  children:
+  - d92cecb9-155f-472b-ae8c-68dc531f00f3
+  position:
+    serializedVersion: 2
+    x: 901
+    y: 125
+    width: 250
+    height: 100
+  OnEnterAction: Female
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-4626963330037989531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 4e1e4f86-409e-45a3-875e-be58bdfb944d
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: 'Good! '
+  children:
+  - c8b16422-7936-4de9-964f-6d9ebd3ba28f
+  position:
+    serializedVersion: 2
+    x: 624
+    y: 34
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-3249530028515477622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 41013de4-08f1-4924-9b21-de1626818830
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: 
+  children: []
+  position:
+    serializedVersion: 2
+    x: 545
+    y: 153
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-2101802749570021570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: d92cecb9-155f-472b-ae8c-68dc531f00f3
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: "Thank you! Just a minute to finalize your ticket\u2026\u2026"
+  children:
+  - e7611fff-92f9-4823-9cf1-bf127695d628
+  position:
+    serializedVersion: 2
+    x: 1246
+    y: 32
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-329010791654811044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 9bad8c6e-94cd-4a32-9202-5d91c2032078
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: I am
+  children:
+  - 4e1e4f86-409e-45a3-875e-be58bdfb944d
+  position:
+    serializedVersion: 2
+    x: 298
+    y: 42
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-198758516035677810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 63cfd806-21ac-4712-97d4-766750640c2e
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: wrong answer
+  children:
+  - 47e7932c-4359-4bad-8794-62379559f9bd
+  position:
+    serializedVersion: 2
+    x: 315
+    y: 276
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 673d53dc60333cf4fa5c29c663d02f63, type: 3}
+  m_Name: GenderChoice
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 2854425355429988148}
+  - {fileID: 1083390643794427881}
+  - {fileID: 8670114529198407678}
+  - {fileID: -329010791654811044}
+  - {fileID: 5365773778262464775}
+  - {fileID: -198758516035677810}
+  - {fileID: 3128376853637262839}
+  - {fileID: -4626963330037989531}
+  - {fileID: 8303236533201105259}
+  - {fileID: 5203924840633127410}
+  - {fileID: -5111117801360153975}
+  - {fileID: 5030653208181497399}
+  - {fileID: 4971530012126070571}
+  - {fileID: -2101802749570021570}
+  - {fileID: 4896759689384537792}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &1083390643794427881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 1461558b-cf6d-48c1-b6e2-9a608e810044
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: Welcome to World in a Box tours, the best travel agency in the area!
+  children:
+  - 64f0cfcc-66c7-4626-ba1c-034fe85bfd4b
+  position:
+    serializedVersion: 2
+    x: -2
+    y: 97
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &2854425355429988148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: MainNode
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: Oh, hello there!
+  children:
+  - 1461558b-cf6d-48c1-b6e2-9a608e810044
+  position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &3128376853637262839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 47e7932c-4359-4bad-8794-62379559f9bd
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: pardon me?
+  children:
+  - 64f0cfcc-66c7-4626-ba1c-034fe85bfd4b
+  position:
+    serializedVersion: 2
+    x: 27
+    y: 371
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &4896759689384537792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: e7611fff-92f9-4823-9cf1-bf127695d628
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: 'Perfect! Everything is ready! I hope you enjoy your flight. '
+  children: []
+  position:
+    serializedVersion: 2
+    x: 1496
+    y: 32
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: Next
+  condition:
+    and: []
+--- !u!114 &4971530012126070571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 9162d79f-b52a-4030-9373-a3d0a062471c
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: pardon me?
+  children:
+  - c8b16422-7936-4de9-964f-6d9ebd3ba28f
+  position:
+    serializedVersion: 2
+    x: 618
+    y: 298
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &5030653208181497399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 3848a5cc-e0e0-41b6-a491-9cf29527ef2a
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: wrong answer
+  children:
+  - 9162d79f-b52a-4030-9373-a3d0a062471c
+  position:
+    serializedVersion: 2
+    x: 894
+    y: 260
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &5203924840633127410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 5a4e3af0-f3e4-4ac4-b7ee-2fcbf837387c
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: I'm a boy
+  children:
+  - d92cecb9-155f-472b-ae8c-68dc531f00f3
+  position:
+    serializedVersion: 2
+    x: 892
+    y: 27
+    width: 250
+    height: 100
+  OnEnterAction: Male
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &5365773778262464775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: dd29639d-1200-44c1-9abd-e5c2715c0d64
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: I guess
+  children:
+  - 4e1e4f86-409e-45a3-875e-be58bdfb944d
+  position:
+    serializedVersion: 2
+    x: 295
+    y: 153
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &8303236533201105259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: c8b16422-7936-4de9-964f-6d9ebd3ba28f
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 1
+  Text: Just as a formality, could you please confirm if you are a boy or a girl?
+  children:
+  - 5a4e3af0-f3e4-4ac4-b7ee-2fcbf837387c
+  - 32ddd80e-d7f9-4df4-8471-f9301889ea53
+  - 3848a5cc-e0e0-41b6-a491-9cf29527ef2a
+  position:
+    serializedVersion: 2
+    x: 625
+    y: 141
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &8670114529198407678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 64f0cfcc-66c7-4626-ba1c-034fe85bfd4b
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 1
+  Text: Your ticket for Italy is almost ready, are you excited to start your journey?
+  children:
+  - 9bad8c6e-94cd-4a32-9202-5d91c2032078
+  - dd29639d-1200-44c1-9abd-e5c2715c0d64
+  - 63cfd806-21ac-4712-97d4-766750640c2e
+  position:
+    serializedVersion: 2
+    x: 9
+    y: 194
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
