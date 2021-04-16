@@ -7,12 +7,20 @@ using Core;
 public class Wallet : MonoBehaviour,IpredicateEvaluator
 {
     public TextMeshProUGUI wallet;
-    int coinsHeld=0;
+    static int coinsHeld=0;
 
-
+    private void Start()
+    {
+        wallet.text = coinsHeld.ToString();
+    }
     public void addCoinsToWallet(int coins)
     {
         coinsHeld += coins;
+        wallet.text = coinsHeld.ToString();
+    }
+    public void removeCoinsToWallet(int coins)
+    {
+        coinsHeld -= coins;
         wallet.text = coinsHeld.ToString();
     }
 
@@ -24,5 +32,10 @@ public class Wallet : MonoBehaviour,IpredicateEvaluator
                 return coinsHeld > int.Parse(parameters[0]);
         }
         return null;
+    }
+
+    public int returnCoin()
+    {
+        return coinsHeld;
     }
 }

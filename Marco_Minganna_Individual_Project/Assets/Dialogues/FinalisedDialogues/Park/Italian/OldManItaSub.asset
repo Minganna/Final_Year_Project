@@ -1,0 +1,828 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9029458515525635166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 4c7e9130-b9e3-403c-98bf-cb6fbec59e9b
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 1
+  Text: "Oh oh, you just arrived in town! How do you like it? /Oh oh, sei appena arrivato
+    qui in citt\xE0! Ti piace? -I do=Mi piace molto -I don\u2019t=Non mi piace"
+  children:
+  - 31cf36d3-643f-42be-bb70-04ddd6ba1d11
+  - f0db8449-f7a5-4fe9-9bb3-eb06f9f18515
+  - df36fa40-38b5-47b4-b25e-7dfc2d3e2db4
+  position:
+    serializedVersion: 2
+    x: 756
+    y: 31
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-8859717316679153731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 032c6cb4-2ba1-45ec-8196-b896ef8cdd0d
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 1
+  Text: "you are not from around here, are you?/Non sei di queste parti vero? -No
+    I\u2019m not=Non lo sono"
+  children:
+  - 68e66d3e-8d74-4ab7-831c-776aaccca316
+  - 179ffaa0-e42d-4f1b-977b-f822c41a8bb4
+  position:
+    serializedVersion: 2
+    x: 256
+    y: 31
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Quest1
+        negate: 1
+--- !u!114 &-8692566582495574857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 08c92290-4f1c-44d7-b9db-5ce12b113c54
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: "if you do not know, these types of bird are very common in England. /Se non
+    ne sei a conoscenza, e\u2019 un tipo di volatile molto comune in Inghilterra."
+  children:
+  - 97db1707-af91-4cb5-aa23-26fa03a02b7e
+  position:
+    serializedVersion: 2
+    x: 2506
+    y: 31
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-8610541338923476453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: f2556947-abeb-432f-90b5-e45fc254202a
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: No, sorry
+  children:
+  - 119ded69-38ef-4a43-b9b0-800eb649bfbe
+  position:
+    serializedVersion: 2
+    x: 2012
+    y: 156
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-7133461216681976618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 4a9dcd6a-fcb4-4a63-9b68-6cd7ebb2341c
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: You should find him at the beach./dovresti trovarlo alla spiaggia.
+  children: []
+  position:
+    serializedVersion: 2
+    x: 257
+    y: 384
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Quest1
+        negate: 0
+--- !u!114 &-6971575909550254765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 97db1707-af91-4cb5-aa23-26fa03a02b7e
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: "I\u2019m digressing, I have promised my friend that I would deliver the sculpture
+    to him today, but these old legs are getting weak. /Ma sto divagando, ho promesso
+    al mio amico che avrei consegnato oggi la scultura, ma queste gambe anziane non
+    sono piu\u2019 quelle di una volta."
+  children:
+  - 6b70d2d4-eb1e-4938-9a97-4d628817ed2c
+  position:
+    serializedVersion: 2
+    x: 2756
+    y: 31
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-6461367115902053004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: MainNode
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: Hello youngster /Salve giovanotto
+  children:
+  - 032c6cb4-2ba1-45ec-8196-b896ef8cdd0d
+  - 4a9dcd6a-fcb4-4a63-9b68-6cd7ebb2341c
+  position:
+    serializedVersion: 2
+    x: -3
+    y: 206
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-6294166771766784721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: f0db8449-f7a5-4fe9-9bb3-eb06f9f18515
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: I don't
+  children:
+  - f2e66376-5307-4f6b-bc96-aad1b4d5be35
+  position:
+    serializedVersion: 2
+    x: 1000
+    y: 129
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-5878003508863047687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: f2e66376-5307-4f6b-bc96-aad1b4d5be35
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: I am sorry to hear that, Me and my wife lived our entire life here! /Oh mi
+    spiace di sentirlo, io e mia moglie abbiamo vissuto qua da sempre!
+  children:
+  - c9671c30-6cab-46bf-8626-a2fb9c0d20fa
+  position:
+    serializedVersion: 2
+    x: 1250
+    y: 129
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-5559091048316004004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 6b70d2d4-eb1e-4938-9a97-4d628817ed2c
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 1
+  Text: Could you deliver it in my stead? /Potresti consegnarlo tu per me? -yes I
+    can=Certo che posso
+  children:
+  - e5a31837-0770-4f7e-9f8c-4b6a1f4734b0
+  - bb6ab3db-bdcd-4125-b7f3-d2301dbeeae0
+  position:
+    serializedVersion: 2
+    x: 3006
+    y: 31
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-5536625879364467268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: c9671c30-6cab-46bf-8626-a2fb9c0d20fa
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: 'I am a woodworker you see? And I love to carve animals, so I take inspiration
+    from the local fauna. /Io sono un falegname sai? Mi piace scolpire animali, per
+    questor prendo ispirazione dalla fauna locale.  '
+  children:
+  - 4d3488ba-7558-4f32-8013-b4f3fd69552c
+  position:
+    serializedVersion: 2
+    x: 1506
+    y: 31
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-5461831917090834398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: a46e25e1-6414-4d09-9434-5077b40af1aa
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: wrong answer
+  children:
+  - b642d58f-f211-4301-b190-0df3abad148b
+  position:
+    serializedVersion: 2
+    x: 2006
+    y: 283
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-4483932192342517498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: f2d6e5f0-5008-454c-8651-97ab8f4155e0
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: pardon me? /perdonami?
+  children:
+  - 032c6cb4-2ba1-45ec-8196-b896ef8cdd0d
+  position:
+    serializedVersion: 2
+    x: 274
+    y: 183
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-3016138224412411672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 119ded69-38ef-4a43-b9b0-800eb649bfbe
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: "Oh okay, don\u2019t worry about it. /Oh va bene, non ti preoccupare. "
+  children: []
+  position:
+    serializedVersion: 2
+    x: 2262
+    y: 156
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-2232990093195522893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 4d475fd5-1563-4311-a8de-38b55e853ad0
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: Yes, sure
+  children:
+  - 3ab5a0bc-727c-470f-916e-56a74bb5cc29
+  position:
+    serializedVersion: 2
+    x: 2006
+    y: 31
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-2053479662031694926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 115a2e69-4e4d-4d98-a3b9-4f678912b0d2
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: 'Thank you! You should be able to find him fishing at the beach. /Grazie mille!
+    Dovresti trovarlo in spiaggia a pescare. '
+  children: []
+  position:
+    serializedVersion: 2
+    x: 3506
+    y: 31
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: beach unlocked
+  condition:
+    and: []
+--- !u!114 &-894764955063884066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: bb6ab3db-bdcd-4125-b7f3-d2301dbeeae0
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: wrong answer
+  children:
+  - f8fe7b94-e874-406d-afb3-197ec4f57c35
+  position:
+    serializedVersion: 2
+    x: 3254
+    y: 177
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 673d53dc60333cf4fa5c29c663d02f63, type: 3}
+  m_Name: OldManItaSub
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -6461367115902053004}
+  - {fileID: -8859717316679153731}
+  - {fileID: 736300743454747668}
+  - {fileID: 4791982284398936921}
+  - {fileID: -4483932192342517498}
+  - {fileID: -9029458515525635166}
+  - {fileID: 4949739337396717718}
+  - {fileID: -6294166771766784721}
+  - {fileID: 1535775478960930047}
+  - {fileID: 404569108213690900}
+  - {fileID: 5410324163550889646}
+  - {fileID: -5878003508863047687}
+  - {fileID: -5536625879364467268}
+  - {fileID: 1158417859548801609}
+  - {fileID: -2232990093195522893}
+  - {fileID: -8610541338923476453}
+  - {fileID: 5748685956073870440}
+  - {fileID: -3016138224412411672}
+  - {fileID: -5461831917090834398}
+  - {fileID: 8649011359524212072}
+  - {fileID: -8692566582495574857}
+  - {fileID: -6971575909550254765}
+  - {fileID: -5559091048316004004}
+  - {fileID: 38959388858079213}
+  - {fileID: -894764955063884066}
+  - {fileID: 74782089015123626}
+  - {fileID: -2053479662031694926}
+  - {fileID: -7133461216681976618}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &38959388858079213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: e5a31837-0770-4f7e-9f8c-4b6a1f4734b0
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: yes I can
+  children:
+  - 115a2e69-4e4d-4d98-a3b9-4f678912b0d2
+  position:
+    serializedVersion: 2
+    x: 3256
+    y: 31
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &74782089015123626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: f8fe7b94-e874-406d-afb3-197ec4f57c35
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: pardon me? /perdonami?
+  children:
+  - 6b70d2d4-eb1e-4938-9a97-4d628817ed2c
+  position:
+    serializedVersion: 2
+    x: 2984
+    y: 201
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &404569108213690900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 724ec409-511a-4901-84f1-d454ff3d7b23
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: pardon me? perdonami?
+  children:
+  - 4c7e9130-b9e3-403c-98bf-cb6fbec59e9b
+  position:
+    serializedVersion: 2
+    x: 728
+    y: 285
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &736300743454747668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 68e66d3e-8d74-4ab7-831c-776aaccca316
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: "No I\u2019m not"
+  children:
+  - 4c7e9130-b9e3-403c-98bf-cb6fbec59e9b
+  position:
+    serializedVersion: 2
+    x: 506
+    y: 31
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &1158417859548801609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 4d3488ba-7558-4f32-8013-b4f3fd69552c
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 1
+  Text: Before I forget, could you do me a favour?  /Prima che mi dimentico, potresti
+    farmi un favore? -Yes, sure=si, certo -No, sorry=No, scusa
+  children:
+  - 4d475fd5-1563-4311-a8de-38b55e853ad0
+  - f2556947-abeb-432f-90b5-e45fc254202a
+  - a46e25e1-6414-4d09-9434-5077b40af1aa
+  position:
+    serializedVersion: 2
+    x: 1756
+    y: 31
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &1535775478960930047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: df36fa40-38b5-47b4-b25e-7dfc2d3e2db4
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: wrong answer
+  children:
+  - 724ec409-511a-4901-84f1-d454ff3d7b23
+  position:
+    serializedVersion: 2
+    x: 1004
+    y: 240
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &4791982284398936921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 179ffaa0-e42d-4f1b-977b-f822c41a8bb4
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: wrong answer
+  children:
+  - f2d6e5f0-5008-454c-8651-97ab8f4155e0
+  position:
+    serializedVersion: 2
+    x: 572
+    y: 165
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &4949739337396717718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 31cf36d3-643f-42be-bb70-04ddd6ba1d11
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: 'I do '
+  children:
+  - 7109dd42-e2f9-46c1-836f-ed814f9f9cf0
+  position:
+    serializedVersion: 2
+    x: 1006
+    y: 31
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &5410324163550889646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 7109dd42-e2f9-46c1-836f-ed814f9f9cf0
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: I am happy to hear that, Me and my wife lived our entire life here! /Mi fa
+    piacere sentirlo, io e mia moglie abbiamo vissuto qua da sempre!
+  children:
+  - c9671c30-6cab-46bf-8626-a2fb9c0d20fa
+  position:
+    serializedVersion: 2
+    x: 1256
+    y: 31
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &5748685956073870440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 3ab5a0bc-727c-470f-916e-56a74bb5cc29
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: Thank you! My friend commissioned me a seagull sculpture, /Grazie! Un mio
+    amico ha ordinato una scultura di un gabbiano,
+  children:
+  - 08c92290-4f1c-44d7-b9db-5ce12b113c54
+  position:
+    serializedVersion: 2
+    x: 2256
+    y: 31
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &8649011359524212072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: b642d58f-f211-4301-b190-0df3abad148b
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: pardon me? perdonami?
+  children:
+  - 4d3488ba-7558-4f32-8013-b4f3fd69552c
+  position:
+    serializedVersion: 2
+    x: 1703
+    y: 266
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []

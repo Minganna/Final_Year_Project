@@ -154,8 +154,8 @@ MonoBehaviour:
   - dd1cbbd9-a20f-4081-8713-a989cbc58c9d
   position:
     serializedVersion: 2
-    x: 500
-    y: 349
+    x: 306
+    y: 354
     width: 250
     height: 100
   OnEnterAction: 

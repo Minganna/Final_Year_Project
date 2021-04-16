@@ -1,0 +1,277 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7730098384425622484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 10af2386-4181-49ae-89bd-a9f2b25b5e90
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 1
+  Text: "Sono impegnato al momento, puoi aspettare? /I am quite busy young man, can
+    it wait? - Si, posso aspettare = Yes I can - No, e\u2019 importante = No, it\u2019s
+    important "
+  children:
+  - a29dece3-e2b6-4a83-acdd-032e5e03cc69
+  - 774f355b-7ab5-4166-a4c2-04db24f52f53
+  - 51b2ff5f-7faa-4448-ac23-f7d5679d3444
+  position:
+    serializedVersion: 2
+    x: 249
+    y: 0
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-2486020270508324730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 858b48bf-457e-485a-94a6-bfcf0a34ff5d
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: Sono veramente concentrato al momento, parleremo dopo. / I am very concentrate
+    right now, I will speak with you later.
+  children: []
+  position:
+    serializedVersion: 2
+    x: 761
+    y: 227
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-2040628636879690056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 774f355b-7ab5-4166-a4c2-04db24f52f53
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: "No, e\u2019 importante"
+  children:
+  - f41ef043-4c55-49df-b74c-90ca8a328d90
+  - 858b48bf-457e-485a-94a6-bfcf0a34ff5d
+  position:
+    serializedVersion: 2
+    x: 506
+    y: 131
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-1521392295955017667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 2c2227bf-34ed-40b4-a442-daf32c803fe4
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: scusa? /sorry?
+  children:
+  - 10af2386-4181-49ae-89bd-a9f2b25b5e90
+  position:
+    serializedVersion: 2
+    x: 179
+    y: 229
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-1486310513508586106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: b3d71ae6-a30b-4d2d-be29-6fb5ead7f3e4
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: A dopo / See you later
+  children: []
+  position:
+    serializedVersion: 2
+    x: 750
+    y: 0
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-312242807317312107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: MainNode
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: Ciao/Hello
+  children:
+  - 10af2386-4181-49ae-89bd-a9f2b25b5e90
+  position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 673d53dc60333cf4fa5c29c663d02f63, type: 3}
+  m_Name: BeachSub
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -312242807317312107}
+  - {fileID: -7730098384425622484}
+  - {fileID: 97053684783165732}
+  - {fileID: -2040628636879690056}
+  - {fileID: 4944675676142409620}
+  - {fileID: -1521392295955017667}
+  - {fileID: -1486310513508586106}
+  - {fileID: 3558688979569966570}
+  - {fileID: -2486020270508324730}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &97053684783165732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: a29dece3-e2b6-4a83-acdd-032e5e03cc69
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: Si, posso aspettare
+  children:
+  - b3d71ae6-a30b-4d2d-be29-6fb5ead7f3e4
+  position:
+    serializedVersion: 2
+    x: 500
+    y: 0
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &3558688979569966570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: f41ef043-4c55-49df-b74c-90ca8a328d90
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: Oh! La mia scultura! Ringrazia Bob per me la prossima volta che lo vedi. /
+    Oh, my sculpture! Thank Bob for me next time you see him.
+  children: []
+  position:
+    serializedVersion: 2
+    x: 756
+    y: 131
+    width: 250
+    height: 100
+  OnEnterAction: talktoHarry
+  OnExitAction: completefirstquest
+  condition:
+    and:
+    - or:
+      - predicate: HadQuest
+        parameters:
+        - Quest1
+        negate: 0
+--- !u!114 &4944675676142409620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 51b2ff5f-7faa-4448-ac23-f7d5679d3444
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: wrong answer
+  children:
+  - 2c2227bf-34ed-40b4-a442-daf32c803fe4
+  position:
+    serializedVersion: 2
+    x: 491
+    y: 260
+    width: 250
+    height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []

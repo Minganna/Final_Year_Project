@@ -102,8 +102,8 @@ MonoBehaviour:
   - 5875e56c-db6f-404f-bb23-d43d94f1cc55
   position:
     serializedVersion: 2
-    x: 887
-    y: 22
+    x: 888
+    y: 21
     width: 250
     height: 100
   OnEnterAction: 

@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectives:
   - reference: 1
-    description: Go to the beach
+    description: Talk to Harry
   - reference: 2
-    description: Talk to the old man friend
+    description: Deliver the sculpture
   rewards:
   - number: 300
     item: gold

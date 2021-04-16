@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BeachScene.unity
     guid: 5bb668d33ac411843b4b1c4edbd094d5
+  - enabled: 1
+    path: Assets/Scenes/Colosseum.unity
+    guid: f02fc36ee31cef8409e3f36fd80e3967
+  - enabled: 1
+    path: Assets/Scenes/Stonehedge.unity
+    guid: b6c1dcd50a04c474eb3a0f7fbe9ef851
   m_configObjects: {}

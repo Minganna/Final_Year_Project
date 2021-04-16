@@ -126,7 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerSpeaking: 0
   Question: 0
-  Text: "adesso, secondo questa mappa, siamo veramente vicini all atua stanza d\u2019albergo!
+  Text: "adesso, secondo questa mappa, siamo veramente vicini alla tua stanza d\u2019albergo!
     / Now, according to the map, we are very close to your hotel room! "
   children:
   - 9917a923-c450-491f-beae-97b06d537bee

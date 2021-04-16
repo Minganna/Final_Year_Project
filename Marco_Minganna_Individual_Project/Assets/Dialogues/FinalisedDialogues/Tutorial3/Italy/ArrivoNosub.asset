@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerSpeaking: 1
   Question: 0
-  Text: 'You are right '
+  Text: You are right
   children:
   - c3963fb6-da22-4ee1-a26a-fbb69dfcc477
   position:
