@@ -54,7 +54,6 @@ public class ComputerInputs : MonoBehaviour
                         {
                             Index = 0;
                         }
-                        
                         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>().StartDialogue(raycastHit.collider.GetComponent<NPCDialogues>(), options[Index]);             
                         cv.UICanvas.SetActive(true);
                         cv.GameCanvas.SetActive(false);

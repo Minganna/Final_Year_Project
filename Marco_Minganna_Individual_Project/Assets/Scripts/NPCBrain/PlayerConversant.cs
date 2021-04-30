@@ -16,18 +16,37 @@ namespace Dialogue
         DialogueNode currentNode = null;
         NPCDialogues currentConverstant = null;
         bool isChoosing = false;
-
+        CommonVariables cv = new CommonVariables();
         public event Action onConversationUpdated;
+        string VoiceActingline;
+        VoiceActing va;
+
 
 
         public void StartDialogue(NPCDialogues newConversant, Dialogue newDialogue)
         {
+            playerName = cv.getName();
             currentConverstant = newConversant;
             currentDialogue = newDialogue;
+            if(newConversant.GetVA()!=null)
+            {
+                va = newConversant.GetVA();
+            }    
             newDialogue.OnValidate();
             currentNode = currentDialogue.GetRootNode();
             TriggerEnterAction();
             onConversationUpdated();
+        }
+
+
+        public void PlayVoice()
+        {
+            if(va!=null)
+            {
+                va.StopPreviousVoice();
+                VoiceActingline = currentNode.GetVoiceTrack();
+                va.PlayVoiceLine(VoiceActingline);
+            }    
         }
 
         public string GetCurrentConversantName()
@@ -99,12 +118,26 @@ namespace Dialogue
             }
         }
 
+        public string GetVoiceActingline()
+        {
+
+            if (currentNode == null)
+            {
+                return "";
+            }
+            else
+            {
+                return currentNode.GetVoiceTrack();
+            }
+        }
+
         public void SelectChoice(DialogueNode chosenNode)
         {
             currentNode = chosenNode;
             TriggerEnterAction();
             isChoosing = false;
         }
+
 
 
 

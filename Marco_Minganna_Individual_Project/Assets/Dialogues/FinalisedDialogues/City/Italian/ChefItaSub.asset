@@ -16,6 +16,7 @@ MonoBehaviour:
   Question: 0
   Text: Otherwise you could visit the park nearby. / oppure potresti visitare il parco
     qui vicino.
+  voicetrack: 6
   children: []
   position:
     serializedVersion: 2
@@ -42,6 +43,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: Can I help you? / Serve aiuto? -yes please= si grazie -no, thanks = no, grazie
+  voicetrack: 1
   children:
   - 8eb7205d-957e-487b-904d-8e945ddc85af
   - e877b362-21c2-46d8-8b43-14d8dd808649
@@ -72,6 +74,7 @@ MonoBehaviour:
   Question: 0
   Text: Otherwise you could visit the park nearby. / oppure potresti visitare il parco
     qui vicino.
+  voicetrack: 6
   children: []
   position:
     serializedVersion: 2
@@ -100,6 +103,7 @@ MonoBehaviour:
   Text: "to reach the hotel you just need to click on the arrow on the top left and
     then on the button that says \u201CTravel here\u201D/ Per arrivarci basta che
     clicchi sulla freccia in alto a sinistra e poi sul tasto \u201CTravel here\u201D "
+  voicetrack: 3
   children: []
   position:
     serializedVersion: 2
@@ -128,6 +132,7 @@ MonoBehaviour:
   Text: "It\u2019s quite far from here, I suggest you to go back to your hotel room
     and travel from there. /e\u2019 abbastanza lontano da qui, ti suggerisco di tornare
     alla tua stanza d\u2019hotel  e partire da l\xEC. "
+  voicetrack: 5
   children:
   - 9d4eaa3f-7b92-4ce7-9c66-31ffa765840b
   position:
@@ -155,6 +160,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Ok then, bye! /ok allora, ciao!
+  voicetrack: 
   children: []
   position:
     serializedVersion: 2
@@ -183,6 +189,7 @@ MonoBehaviour:
   Text: "I see, you just arrived here and you are looking for something to do\u2026
     I suggest you to visit Stonehenge. /Capisco, sei appena arrivato in citt\xE0 e
     stai cercando qualcosa da fare\u2026 ti suggerisco di visitare Stonehenge. "
+  voicetrack: 4
   children:
   - 50ca5201-a6c2-4e2c-9b3e-3e856de9775c
   position:
@@ -217,6 +224,7 @@ MonoBehaviour:
   Text: "I see, you just arrived here and you are looking for something to do\u2026
     I suggest you to visit Stonehenge. /Capisco, sei appena arrivato in citt\xE0 e
     stai cercando qualcosa da fare\u2026 ti suggerisco di visitare Stonehenge. "
+  voicetrack: 4
   children:
   - b6635291-f7ba-4f0f-b7ce-f68a94107de0
   position:
@@ -254,6 +262,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: pardon me? /mi scusi?
+  voicetrack: 7
   children:
   - 0609460c-a065-47bc-ab79-eec7c73d603b
   position:
@@ -312,6 +321,7 @@ MonoBehaviour:
   Text: "It\u2019s quite far from here, I suggest you to go back to your hotel room
     and travel from there. /e\u2019 abbastanza lontano da qui, ti suggerisco di tornare
     alla tua stanza d\u2019hotel  e partire da l\xEC. "
+  voicetrack: 5
   children:
   - 04c1fed6-d09b-4c9b-ad7d-d84cfb869f77
   position:
@@ -339,6 +349,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Hello/ Salve
+  voicetrack: 0
   children:
   - 0609460c-a065-47bc-ab79-eec7c73d603b
   position:
@@ -366,6 +377,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 7fdde12f-8847-4aac-b975-468476086dae
   position:
@@ -393,6 +405,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: no, thanks
+  voicetrack: 
   children:
   - 765049f7-abbe-489e-a35c-c0f7e2e3da73
   position:
@@ -420,6 +433,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: yes please
+  voicetrack: 
   children:
   - 9c35edd0-9d68-4d8d-91b5-4089796f489f
   - 9127b744-83f3-4c81-a361-6da1f259dc4d
@@ -450,6 +464,7 @@ MonoBehaviour:
   Question: 0
   Text: "I see, you are looking for the hotel, it\u2019s very close! /capisco, stai
     cercando l\u2019hotel, \xE9 veramente vicino!"
+  voicetrack: 2
   children:
   - 43218dc2-83a1-492d-9902-14e600855d00
   position:

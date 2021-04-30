@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\Dialogue&amp;Quest\DialogueTrigger.cs" />
     <Compile Include="Assets\Scripts\Dialogue&amp;Quest\DialogueUI.cs" />
     <Compile Include="Assets\Scripts\Dialogue&amp;Quest\NPCDialogues.cs" />
+    <Compile Include="Assets\Scripts\Dialogue&amp;Quest\VoiceActing.cs" />
     <Compile Include="Assets\Scripts\HotelRoom\HotelManager.cs" />
     <Compile Include="Assets\Scripts\LoadingScreen\CarWheel.cs" />
     <Compile Include="Assets\Scripts\LoadingScreen\LoadingScreenManager.cs" />

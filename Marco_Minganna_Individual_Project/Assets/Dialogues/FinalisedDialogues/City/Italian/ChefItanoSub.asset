@@ -16,6 +16,7 @@ MonoBehaviour:
   Question: 0
   Text: "It\u2019s quite far from here, I suggest you to go back to your hotel room
     and travel from there. "
+  voicetrack: 5
   children:
   - e7b7a238-1923-403a-b309-e856edc76f66
   position:
@@ -44,6 +45,7 @@ MonoBehaviour:
   Question: 0
   Text: "It\u2019s quite far from here, I suggest you to go back to your hotel room
     and travel from there. "
+  voicetrack: 5
   children:
   - 742aeeba-5f09-4cc0-9fbf-90b7a259175b
   position:
@@ -71,6 +73,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Hello
+  voicetrack: 0
   children:
   - 39a65167-9d6c-4b32-bc4a-4aa9b11ef2b9
   position:
@@ -78,7 +81,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 250
-    height: 100
+    height: 130
   OnEnterAction: 
   OnExitAction: 
   condition:
@@ -98,12 +101,13 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 02f66dfd-cd3a-4ed2-a15c-46de3cfc3cf2
   position:
     serializedVersion: 2
-    x: 502
-    y: 485
+    x: 360
+    y: 482
     width: 250
     height: 100
   OnEnterAction: 
@@ -125,6 +129,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: pardon me?
+  voicetrack: 7
   children:
   - 39a65167-9d6c-4b32-bc4a-4aa9b11ef2b9
   position:
@@ -181,6 +186,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 'Ok then, bye! '
+  voicetrack: 8
   children: []
   position:
     serializedVersion: 2
@@ -207,6 +213,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: yes please
+  voicetrack: 
   children:
   - b52f0f78-2a18-4eda-901c-d72a9add0a3a
   - 082faf58-1096-4026-ab84-1f57543a187c
@@ -216,7 +223,7 @@ MonoBehaviour:
     x: 500
     y: 0
     width: 250
-    height: 100
+    height: 130
   OnEnterAction: 
   OnExitAction: 
   condition:
@@ -236,6 +243,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: no, thanks
+  voicetrack: 
   children:
   - 6ad78c64-c099-481b-a642-f6e1656221a2
   position:
@@ -264,6 +272,7 @@ MonoBehaviour:
   Question: 0
   Text: "I see, you just arrived here and you are looking for something to do\u2026
     I suggest you to visit Stonehenge. "
+  voicetrack: 4
   children:
   - ae418143-59b3-40cc-b0de-59e551a53d7f
   position:
@@ -301,6 +310,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: "I see, you are looking for the hotel, it\u2019s very close!"
+  voicetrack: 2
   children:
   - 71236b7b-72e7-49be-bd34-4e858fa1d007
   position:
@@ -338,6 +348,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: 'Can I help you? '
+  voicetrack: 1
   children:
   - ea0693ab-4b32-41b3-8bef-ee10713b55d4
   - 7456609e-d3ac-407b-906b-5afb7ecda5b0
@@ -347,7 +358,7 @@ MonoBehaviour:
     x: 250
     y: 0
     width: 250
-    height: 100
+    height: 130
   OnEnterAction: 
   OnExitAction: 
   condition:
@@ -368,6 +379,7 @@ MonoBehaviour:
   Question: 0
   Text: "I see, you just arrived here and you are looking for something to do\u2026
     I suggest you to visit Stonehenge. "
+  voicetrack: 4
   children:
   - 009523c9-28e7-4c0d-81ef-6260bfaeaea0
   position:
@@ -385,6 +397,33 @@ MonoBehaviour:
         parameters:
         - Reach the hotel
         negate: 1
+--- !u!114 &6323048916087439831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: c7cfa8cd-95ed-47a9-ac6d-7ce785260f28
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: 
+  voicetrack: 
+  children: []
+  position:
+    serializedVersion: 2
+    x: 997
+    y: 104
+    width: 250
+    height: 130
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
 --- !u!114 &7980021132363537057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,6 +440,7 @@ MonoBehaviour:
   Question: 0
   Text: "to reach the hotel you just need to click on the arrow on the top left and
     then on the button that says \u201CTravel here\u201D"
+  voicetrack: 3
   children: []
   position:
     serializedVersion: 2
@@ -426,8 +466,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerSpeaking: 0
   Question: 0
-  Text: "It\u2019s quite far from here, I suggest you to go back to your hotel room
-    and travel from there. "
+  Text: Otherwise you could visit the park nearby.
+  voicetrack: 6
   children: []
   position:
     serializedVersion: 2
@@ -454,6 +494,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Otherwise you could visit the park nearby.
+  voicetrack: 6
   children: []
   position:
     serializedVersion: 2

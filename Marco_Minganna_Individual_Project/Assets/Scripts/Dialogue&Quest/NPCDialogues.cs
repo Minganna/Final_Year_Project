@@ -12,6 +12,7 @@ namespace Dialogue
         [SerializeField] Dialogue[] EnglishDialogue;
         [SerializeField] string converstantname;
         [SerializeField] RenderTexture converstantAvatar;
+        [SerializeField] VoiceActing voiceActing;
         CommonVariables cv = new CommonVariables();
 
 
@@ -30,7 +31,8 @@ namespace Dialogue
             }
             else
             {
-                characterDialouges = EnglishDialogue;
+                //characterDialouges = EnglishDialogue;
+                characterDialouges = ItalianDialogue;
             }
             
 
@@ -48,6 +50,11 @@ namespace Dialogue
         public RenderTexture GetAvatar()
         {
             return converstantAvatar;
+        }
+
+        public VoiceActing GetVA()
+        {
+            return voiceActing;
         }
     }
 }

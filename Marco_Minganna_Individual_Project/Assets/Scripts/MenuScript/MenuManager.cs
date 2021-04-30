@@ -10,6 +10,7 @@ public class MenuManager : MonoBehaviour
     private List<GameObject> PlaySettings=new List<GameObject>();
     public List<GameObject> SelectLanguage = new List<GameObject>();
     public List<GameObject> Confirm = new List<GameObject>();
+    public TMP_InputField Name;
     CommonVariables cv = new CommonVariables();
     public void MainButtons(GameObject tag)
     {
@@ -26,6 +27,7 @@ public class MenuManager : MonoBehaviour
                 NextPressed(maincanvas);
                 break;
             case "Confirm(Clone)":
+                cv.SetName(Name.text);
                 cv.setSceneToLoad(3);
                 SceneManager.LoadScene(1);
                 break;

@@ -80,7 +80,8 @@ public class QuestionsAndAnswers : MonoBehaviour
 
         string path = inputs + "Inputs" + outputs + "OutputsData.txt";
         getB.StartTheBrain(path);
-        
+        FindObjectOfType<DialogueUI>().ChangeSuggestion(inputs);
+
 
     }
    private void CreateSuggestionButtons()
@@ -127,7 +128,6 @@ public class QuestionsAndAnswers : MonoBehaviour
                    if(!sgt.Contains(a))
                     {
                         sgt.Add(a);
-                        Debug.Log("adding: " + a);
                     }
                 }
                 else

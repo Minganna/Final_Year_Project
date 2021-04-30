@@ -31,7 +31,7 @@ namespace Dialogue.Editor
         Vector2 draggingCanvansOffset;
 
         const float canvasSize = 4000;
-        const float backgroundSize = 50;
+        const float backgroundSize = 70;
 
 
 
@@ -191,6 +191,7 @@ namespace Dialogue.Editor
             GUILayout.BeginArea(item.GetRect(), style);
 
             item.SetText(EditorGUILayout.TextField(item.GetText()));
+            item.SetVoiceActing(EditorGUILayout.TextField(item.GetVoiceTrack()));
 
             GUILayout.BeginHorizontal();
 

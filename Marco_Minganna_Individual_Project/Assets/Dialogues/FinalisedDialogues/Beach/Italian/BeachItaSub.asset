@@ -40,7 +40,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerSpeaking: 0
   Question: 0
-  Text: I am very concentrate right now, I will speak with you later. / Sono veramente
+  Text: I am trying to focus right now; I will speak with you later. / Sono veramente
     concentrato al momento, parleremo dopo.
   children: []
   position:

@@ -15,13 +15,26 @@ public class CommonVariables
     static bool translations;
     static int sceneToLoad;
 
+    static string Name;
     static string Gender;
 
+
+    public void SetName(string name)
+    {
+        Debug.Log(name);
+        if(name=="")
+        {
+            Name = "Player";
+        }
+        else
+        {
+            Name = name;
+        } 
+    }
 
     public void SetTranslation(bool state)
     {
         translations = state;
-        Debug.Log("current translation state: " + translations);
     }
 
     public void setSceneToLoad(int scene)
@@ -37,12 +50,11 @@ public class CommonVariables
     public void SetLearn(string ltl)
     {
         languageToLearn = ltl;
-        Debug.Log("language to learn: " + languageToLearn);
     }
     public void SetKnown(string lk)
     {
         languageKnown = lk;
-        Debug.Log("language known: " + languageKnown);
+
     }
 
     public void SetGender(string gender)
@@ -76,6 +88,18 @@ public class CommonVariables
     public bool getTranslation()
     {
         return translations;
+    }
+
+    public string getName()
+    {
+        if (Name != null)
+        {
+            return Name;
+        }
+        else
+        {
+            return "Player";
+        }
     }
 
 }

@@ -39,13 +39,22 @@ public class UKITAchanges : MonoBehaviour
         }
         else
         {
-            foreach (GameObject ita in ITAObjects)
+          /*  foreach (GameObject ita in ITAObjects)
             {
                 ita.SetActive(true);
             }
             foreach (GameObject uk in UKObjects)
             {
                 uk.SetActive(false);
+            }
+          */
+            foreach (GameObject ita in ITAObjects)
+            {
+                ita.SetActive(false);
+            }
+            foreach (GameObject uk in UKObjects)
+            {
+                uk.SetActive(true);
             }
         }
     }

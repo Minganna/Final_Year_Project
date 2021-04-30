@@ -16,9 +16,11 @@ namespace Dialogue
         [SerializeField]
         string Text;
         [SerializeField]
+        string voicetrack;
+        [SerializeField]
         List<string> children=new List<string>();
         [SerializeField]
-        Rect position=new Rect(0,0,250,100);
+        Rect position=new Rect(0,0,250,130);
         [SerializeField]
         string OnEnterAction;
         [SerializeField]
@@ -34,6 +36,16 @@ namespace Dialogue
         public string GetText()
         {
             return Text;
+        }
+
+        public string GetVoiceTrack()
+        {
+            return voicetrack;
+        }
+
+        public int GetVoiceTrackint()
+        {
+            return int.Parse(voicetrack);
         }
 
         public List<string> GetChildren()
@@ -84,6 +96,15 @@ namespace Dialogue
             }
         }
 
+        public void SetVoiceActing(string newText)
+        {
+            if (newText != voicetrack)
+            {
+                Undo.RecordObject(this, "Update Dialogue Text");
+                voicetrack = newText;
+                EditorUtility.SetDirty(this);
+            }
+        }
         public void AddChild(string childId)
         {
             Undo.RecordObject(this, "Add Dialogue link");

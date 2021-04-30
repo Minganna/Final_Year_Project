@@ -15,6 +15,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 'I am happy to hear that, Me and my wife lived our entire life here! '
+  voicetrack: 
   children:
   - 8483285b-d7d6-4e45-bcbe-70e3dee0e9de
   position:
@@ -42,6 +43,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: "Oh okay, don\u2019t worry about it."
+  voicetrack: 
   children: []
   position:
     serializedVersion: 2
@@ -68,6 +70,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: "I don\u2019t"
+  voicetrack: 
   children:
   - 7afe4c5d-5d70-4cee-b60e-c5a482e6c4fd
   position:
@@ -95,6 +98,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 'I am sorry to hear that, Me and my wife lived our entire life here! '
+  voicetrack: 
   children:
   - 8483285b-d7d6-4e45-bcbe-70e3dee0e9de
   position:
@@ -123,6 +127,7 @@ MonoBehaviour:
   Question: 0
   Text: 'I am a woodworker you see? And I love to carve animals, so I take inspiration
     from the local fauna. '
+  voicetrack: 
   children:
   - d94a2d37-2e98-497e-9914-c038acce0079
   position:
@@ -150,6 +155,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: pardon me?
+  voicetrack: 
   children:
   - 822158e2-6de5-47d4-8b9d-35ba326afa73
   position:
@@ -177,6 +183,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: you are not from around here, are you?
+  voicetrack: 
   children:
   - 1cd51287-aed6-46ac-b61c-c2a87b5b381b
   - 76e9ec0b-17c9-4d92-8823-e8aefba710a1
@@ -210,6 +217,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: if you do not know, these types of bird are very common in England.
+  voicetrack: 
   children:
   - 573f53c6-6eb0-425a-ae7b-13511dd2740b
   position:
@@ -237,11 +245,12 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: You should find him at the beach.
+  voicetrack: 
   children: []
   position:
     serializedVersion: 2
-    x: 241
-    y: 506
+    x: 263
+    y: 530
     width: 250
     height: 100
   OnEnterAction: 
@@ -268,6 +277,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: yes I can
+  voicetrack: 
   children:
   - 71b530bf-cbe6-4008-bbd8-953a7e307d92
   position:
@@ -337,6 +347,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: pardon me?
+  voicetrack: 
   children:
   - 12176330-9d4d-4211-b343-9df455de0b81
   position:
@@ -364,6 +375,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: No, sorry
+  voicetrack: 
   children:
   - fccabcb3-0c7e-4c5c-ab6e-895573e76d5c
   position:
@@ -391,6 +403,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 'Hello youngster '
+  voicetrack: 
   children:
   - ff449f55-19a4-4894-a642-da7c1f9c7a5b
   - 341cdc23-e76b-4e8a-a740-4d6964769da2
@@ -419,6 +432,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - a77e2b9c-f4d6-4101-8cbb-a3917e874d78
   position:
@@ -446,6 +460,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: I do
+  voicetrack: 
   children:
   - 38a8bc0d-7d92-4100-9e24-341389631551
   position:
@@ -473,6 +488,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 06f4854a-2576-418e-bcec-4dd6d2f71e16
   position:
@@ -500,6 +516,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 'Thank you! You should be able to find him fishing at the beach. '
+  voicetrack: 
   children: []
   position:
     serializedVersion: 2
@@ -526,6 +543,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: ' Could you deliver it in my stead?'
+  voicetrack: 
   children:
   - 35f74a12-a1f0-495a-958d-51f1fbc462c9
   - a5b9e2e2-a82a-4051-89b4-6bf23b683812
@@ -554,6 +572,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - a108b0f4-43cc-4e26-9b9f-90edc3ddbba7
   position:
@@ -582,6 +601,7 @@ MonoBehaviour:
   Question: 0
   Text: "I\u2019m digressing, I have promised my friend that I would deliver the sculpture
     to him today, but these old legs are getting weak."
+  voicetrack: 
   children:
   - 822158e2-6de5-47d4-8b9d-35ba326afa73
   position:
@@ -609,6 +629,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: pardon me?
+  voicetrack: 
   children:
   - d94a2d37-2e98-497e-9914-c038acce0079
   position:
@@ -636,6 +657,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Thank you! My friend commissioned me a seagull sculpture
+  voicetrack: 
   children:
   - 98ae18d0-1316-4a29-87e5-898f76d62607
   position:
@@ -663,6 +685,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - c75e273b-aa47-4444-9bc0-f1e084c32e39
   position:
@@ -690,6 +713,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: pardon me?
+  voicetrack: 
   children:
   - ff449f55-19a4-4894-a642-da7c1f9c7a5b
   position:
@@ -717,6 +741,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: Yes, sure
+  voicetrack: 
   children:
   - 0315b5d9-9726-4124-b75a-3deeca706bf3
   position:
@@ -743,7 +768,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerSpeaking: 1
   Question: 0
-  Text: "No, I\u2019m not "
+  Text: "No, I\u2019m not"
+  voicetrack: 
   children:
   - 12176330-9d4d-4211-b343-9df455de0b81
   position:
@@ -771,6 +797,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: 'Before I forget, could you do me a favour? '
+  voicetrack: 
   children:
   - 0e20a451-6305-4067-95fe-9d3f98c7eff0
   - 279e3099-45ca-44f7-a7bb-2fe31d69a96c
@@ -800,6 +827,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: Oh oh, you just arrived in town! How do you like it?
+  voicetrack: 
   children:
   - fa3b2bea-88bf-4490-a082-9fb7665f4193
   - 326453ea-3695-4670-adb4-51b8a5e5b8ac

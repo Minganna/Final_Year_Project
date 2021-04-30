@@ -22,7 +22,6 @@ public class Brain : MonoBehaviour
         saveloads = new SaveandLoadWeights();
         ann = new ANN(training.numberofImput, training.numberofOutput, training.numberofHidden,
                        training.numberofNperHidden, training.learningRate,training.ActivationFunction,training.ActivationFunctionO);
-
         if (training.train)
         {
             GetTheData();

@@ -117,17 +117,15 @@ namespace UI
                 TMP_InputField UserAnswer = GameObject.FindGameObjectWithTag("Answer").GetComponent<TMP_InputField>();
                 foreach (DialogueNode choice in playerConversant.GetChoices())
                 {
-                    
-                    if(string.Equals(choice.GetText().Trim(), UserAnswer.text.Trim()))
-                    {
-                        playerConversant.SelectChoice(choice);
-                        correctAnswer = true;
-                    }
-                    if(string.Equals(choice.GetText().Trim(), "wrong answer".Trim()))
-                    {
-                        wrongAns = choice;
-                    }
-
+                        if (string.Equals(choice.GetText().Trim(), UserAnswer.text.Trim()))
+                        {
+                            playerConversant.SelectChoice(choice);
+                            correctAnswer = true;
+                        }
+                        if (string.Equals(choice.GetText().Trim(), "wrong answer".Trim()))
+                        {
+                            wrongAns = choice;
+                        }
                 }
                 if(correctAnswer==false)
                 {
@@ -149,6 +147,7 @@ namespace UI
             }
             else
             {
+                playerConversant.PlayVoice();
                 HorizontalLayoutGroup SpriteHor = SpriteMaster.GetComponent<HorizontalLayoutGroup>();
                 SpriteHor.childAlignment = TextAnchor.MiddleRight;
             }

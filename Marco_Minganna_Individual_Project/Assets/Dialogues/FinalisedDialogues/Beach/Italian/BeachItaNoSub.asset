@@ -15,6 +15,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: Yes it can
+  voicetrack: 
   children:
   - a75db170-d1db-4002-a032-e17098039cd7
   position:
@@ -42,6 +43,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: See you later
+  voicetrack: 2
   children: []
   position:
     serializedVersion: 2
@@ -68,6 +70,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Hello
+  voicetrack: 0
   children:
   - 890e9e99-85db-47df-91e3-39579c6898ca
   position:
@@ -94,13 +97,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerSpeaking: 0
   Question: 0
-  Text: sorry?
+  Text: pardon?
+  voicetrack: 5
   children:
   - 890e9e99-85db-47df-91e3-39579c6898ca
   position:
     serializedVersion: 2
-    x: 210
-    y: 224
+    x: 241
+    y: 237
     width: 250
     height: 100
   OnEnterAction: 
@@ -121,7 +125,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerSpeaking: 0
   Question: 0
-  Text: I am very concentrate right now, I will speak with you later.
+  Text: I am trying to focus right now; I will speak with you later.
+  voicetrack: 4
   children: []
   position:
     serializedVersion: 2
@@ -171,6 +176,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Oh, my sculpture! Thank Bob for me next time you see him.
+  voicetrack: 3
   children: []
   position:
     serializedVersion: 2
@@ -202,6 +208,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 9db6d45f-4f3a-4bfd-af0b-7631f143ddaf
   position:
@@ -229,6 +236,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: "No, it\u2019s important"
+  voicetrack: 
   children:
   - 61e17498-6c6d-417f-954a-dd0dd0e0ac46
   - eb60dc76-030e-4b15-a190-e227ef34f0ed
@@ -257,6 +265,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: I am quite busy young man, can it wait?
+  voicetrack: 1
   children:
   - f8ae32dc-e552-4cc1-aa11-b7d74c5c9e05
   - 3422dbdb-fd97-4025-a2e8-f740b0cfded1
