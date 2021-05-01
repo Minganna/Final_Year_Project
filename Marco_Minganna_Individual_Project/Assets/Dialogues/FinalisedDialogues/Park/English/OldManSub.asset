@@ -18,6 +18,7 @@ MonoBehaviour:
     sono anche conosciuti come \u201CCapoverde\u201D per la loro testa verde. /if
     you do not know, these types of duck are very common in Italy, they are known
     as \u201CCapoverde\u201D due to their bright green head.  "
+  voicetrack: 11
   children:
   - 3f1543ae-3d69-4949-9723-761fb6bf11fa
   position:
@@ -45,6 +46,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: Si, certo
+  voicetrack: 
   children:
   - 49a3de57-a00b-4181-8881-0e42c828da68
   position:
@@ -72,6 +74,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: Certo che posso
+  voicetrack: 
   children:
   - 11895126-53e9-4f2b-9920-dad82518523e
   position:
@@ -99,6 +102,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 7d05fa6c-9ce0-45f7-ad82-a66037152673
   position:
@@ -127,6 +131,7 @@ MonoBehaviour:
   Question: 1
   Text: 'Prima che mi dimentico, potresti farmi un favore? /Before I forget, could
     you do me a favour? - Si, certo=Yes, sure  -No, scusa=No, sorry '
+  voicetrack: 8
   children:
   - 5ae5c1cb-651b-4cdf-86ba-4836d624b95b
   - 20bbb326-5161-40c9-82ed-0c04563975ea
@@ -157,6 +162,7 @@ MonoBehaviour:
   Question: 0
   Text: 'Mi fa piacere sentirlo, io e mia moglie abbiamo vissuto qua da sempre! /I
     am happy to hear that, Me and my wife lived our entire life here!  '
+  voicetrack: 5
   children:
   - 700b4810-fc96-4596-9c66-671f13094659
   position:
@@ -184,6 +190,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 151458be-a00e-4056-b028-cb02836a2529
   position:
@@ -211,6 +218,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: perdonami?/pardon me?
+  voicetrack: 2
   children:
   - cf8e9756-b10d-4156-aab3-3dbd4c4ed16c
   position:
@@ -239,6 +247,7 @@ MonoBehaviour:
   Question: 0
   Text: 'Oh mi spiace di sentirlo, io e mia moglie abbiamo vissuto qua da sempre!
     /I am sorry to hear that, Me and my wife lived our entire life here!  '
+  voicetrack: 6
   children:
   - 700b4810-fc96-4596-9c66-671f13094659
   position:
@@ -266,6 +275,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 4e5db1be-b3ed-4d24-bb3c-7394cbacbcff
   position:
@@ -294,6 +304,7 @@ MonoBehaviour:
   Question: 0
   Text: 'Grazie mille! Dovresti trovarlo in spiaggia a pescare. /Thank you! You should
     be able to find him fishing at the beach.  '
+  voicetrack: 
   children: []
   position:
     serializedVersion: 2
@@ -323,6 +334,7 @@ MonoBehaviour:
     ma queste gambe anziane non sono piu\u2019 quelle di una volta. /I\u2019m digressing,
     I have promised my friend that I would deliver the sculpture to him today, but
     these old legs are getting weak. "
+  voicetrack: 
   children:
   - e25aad34-e03d-45ed-a84f-46099e2b6ade
   position:
@@ -350,6 +362,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 'Salve giovanotto /Hello youngster '
+  voicetrack: 0
   children:
   - 3ba9df57-8af3-4227-84df-0017c567dd99
   - ea1d7086-6392-481f-9fea-096bd1f89948
@@ -378,6 +391,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: perdonami? /pardon me?
+  voicetrack: 2
   children: []
   position:
     serializedVersion: 2
@@ -404,6 +418,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: No, scusa
+  voicetrack: 
   children:
   - 77a6e179-b116-4607-8c90-b8c2f9528e96
   position:
@@ -474,6 +489,7 @@ MonoBehaviour:
   Question: 1
   Text: "Non sei di queste parti vero? /you are not from around here, are you? -Non
     lo sono=No I\u2019m not "
+  voicetrack: 3
   children:
   - 41460c60-a5fa-4cde-90f7-0bf32858ea36
   - defdd51f-ada5-4f42-b977-523a9a0c5292
@@ -507,6 +523,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: "Oh va bene, non ti preoccupare.  /Oh okay, don\u2019t worry about it. "
+  voicetrack: 10
   children: []
   position:
     serializedVersion: 2
@@ -535,6 +552,7 @@ MonoBehaviour:
   Text: 'Io sono un falegname sai? Mi piace scolpire animali, per questor prendo ispirazione
     dalla fauna locale. /I am a woodworker you see? And I love to carve animals, so
     I take inspiration from the local fauna.  '
+  voicetrack: 7
   children:
   - cf8e9756-b10d-4156-aab3-3dbd4c4ed16c
   position:
@@ -562,6 +580,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 00b616a1-2748-421e-af82-686b6217e769
   position:
@@ -589,6 +608,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: perdonami/pardon me?
+  voicetrack: 
   children:
   - e25aad34-e03d-45ed-a84f-46099e2b6ade
   position:
@@ -616,6 +636,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: perdonami? /pardon me?
+  voicetrack: 2
   children:
   - 3ba9df57-8af3-4227-84df-0017c567dd99
   position:
@@ -643,6 +664,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: Non mi piace
+  voicetrack: 
   children:
   - 132666c0-fbac-4ea2-be3d-babb60b7f784
   position:
@@ -670,6 +692,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: Non lo sono
+  voicetrack: 
   children:
   - 37cdfa40-810f-4704-9218-53750b32fe6f
   position:
@@ -697,6 +720,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: Mi piace molto
+  voicetrack: 
   children:
   - 1dd08230-669d-486b-aa5e-a81336a6ce4f
   position:
@@ -725,6 +749,7 @@ MonoBehaviour:
   Question: 0
   Text: 'Grazie! Un mio amico ha ordinato una scultura di un Germano reale /Thank
     you! My friend commissioned me a royal germano duck sculpture  '
+  voicetrack: 9
   children:
   - aa5e1ece-1ec3-4d54-8a63-b66296d8e1ad
   position:
@@ -753,6 +778,7 @@ MonoBehaviour:
   Question: 1
   Text: 'Potresti consegnarlo tu per me?  /Could you deliver it in my stead?  -Certo
     che posso= yes I can '
+  voicetrack: 
   children:
   - 2bbff97f-4d56-4862-92e4-6183df34bda4
   - 54f4676d-0ebd-4dd6-824b-7b4dd31bff37
@@ -781,6 +807,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Il mio amico si trova alla spiaggia./you should find him at the beach
+  voicetrack: 1
   children: []
   position:
     serializedVersion: 2
@@ -813,6 +840,7 @@ MonoBehaviour:
   Question: 1
   Text: "Oh oh, sei appena arrivato qui in citt\xE0! Ti piace? /Oh oh, you just arrived
     in town! How do you like it? -Mi piace molto=I do  -Non mi piace=I don\u2019t "
+  voicetrack: 4
   children:
   - 6b933dc6-636c-462f-85c5-62c226182575
   - d5fc49c8-b072-48cf-bbe0-d74beec7d813

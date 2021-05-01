@@ -12,7 +12,7 @@ public class MoveBetweenWorlds : MonoBehaviour
     CommonVariables cv = new CommonVariables();
 
     [SerializeField] 
-    static bool nextAreaUnlocked=false;
+    static bool nextAreaUnlocked=true;
 
     [SerializeField] int NextAreaSceneN;
     [SerializeField] int PreviousAreaSceneN;
@@ -31,6 +31,7 @@ public class MoveBetweenWorlds : MonoBehaviour
         {
             ThisArea.SetActive(false);
             NextArea.SetActive(true);
+            PreviousArea.SetActive(false);
             Movebutton[1].SetActive(true);
             NextWorld(NextAreaSceneN);
             return;
@@ -46,23 +47,21 @@ public class MoveBetweenWorlds : MonoBehaviour
 
     public void MoveToPreviousArea()
     {
-        if(NextArea.activeSelf)
+ 
+        if(ThisArea.activeSelf)
+        {
+                NextArea.SetActive(false);
+                ThisArea.SetActive(false);
+                PreviousArea.SetActive(true);
+                Movebutton[0].SetActive(true);
+                NextWorld(PreviousAreaSceneN);
+            return;
+        }
+        if (NextArea.activeSelf)
         {
             NextArea.SetActive(false);
             ThisArea.SetActive(true);
-            Movebutton[0].SetActive(true);
-            return;
-        }
-        if(ThisArea.activeSelf)
-        {
-            if(PreviousArea)
-            {
-                ThisArea.SetActive(false);
-                PreviousArea.SetActive(true);
-                Movebutton[1].SetActive(false);
-                Movebutton[0].SetActive(true);
-                NextWorld(PreviousAreaSceneN);
-            }
+            Movebutton[1].SetActive(false);
             return;
         }
     }

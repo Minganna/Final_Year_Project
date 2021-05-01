@@ -161,7 +161,7 @@ public class QuestionsAndAnswers : MonoBehaviour
             int TempCorrectguess = 0;
             bitLenght = a.Length;
             List<double> Result=new List<double>();
-            if (Submittedbit.Length != tr.numberofImput && Submittedbit.Length != bitLenght)
+            if (Submittedbit.Length != tr.numberofImput || Submittedbit.Length != bitLenght)
             {
                 for (int i = 0; i < tr.numberofImput; i++)
                 {

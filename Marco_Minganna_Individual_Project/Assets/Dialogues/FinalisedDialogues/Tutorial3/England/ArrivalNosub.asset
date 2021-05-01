@@ -15,6 +15,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: hai ragione
+  voicetrack: 
   children:
   - 49b6d4e1-3dc7-4d29-8997-c449bc45f408
   position:
@@ -42,6 +43,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: I feel good
+  voicetrack: 
   children:
   - eba53ae4-d18d-40f6-8cd1-8198398975b9
   position:
@@ -69,6 +71,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 902612ba-4ad1-4766-808b-1315ed6f6260
   position:
@@ -96,6 +99,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: sorry?
+  voicetrack: 
   children:
   - efc28574-e77b-4d79-874a-fcdac31565cf
   position:
@@ -123,6 +127,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: 'how do you feel? '
+  voicetrack: 
   children:
   - 2b7f6da5-7f76-4dce-bbb7-9bd12cb3d7a4
   - d35e4e01-dc62-41dd-ba7c-daf991950d35
@@ -152,6 +157,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 861be7ad-983b-4079-bfe9-24eafaacd0c8
   position:
@@ -179,6 +185,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: hai bisogno di aiuto per arrivarci?
+  voicetrack: 
   children:
   - f082cbaa-922e-45b2-8e5e-c66ce8ced9f2
   - e8554137-96aa-4a2e-afad-04c2c4f4a485
@@ -208,6 +215,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: cosa ne pensi?
+  voicetrack: 
   children:
   - fb22a965-08d3-485a-b20d-ca6dac3b9da9
   - 6e20a968-d7e5-4936-8a58-5b984f7dc61b
@@ -236,6 +244,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: "ok, per raggiungere il centro citt\xE0 "
+  voicetrack: 
   children:
   - 398015ba-6b7b-4597-aa02-4d99d2ba2c39
   position:
@@ -263,6 +272,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: scusa?
+  voicetrack: 
   children:
   - 65370207-957b-4b43-aef3-6d31f115cbc2
   position:
@@ -290,6 +300,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: me too!!
+  voicetrack: 
   children:
   - 85aaad60-e355-4cb9-a0d3-13f685b6011c
   position:
@@ -352,6 +363,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: si, grazie
+  voicetrack: 
   children:
   - fa09a607-347b-410c-b0fb-2c1729bda009
   position:
@@ -379,6 +391,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: scusa?
+  voicetrack: 
   children:
   - 662d68e8-063b-4457-8709-dbe6b1921006
   position:
@@ -406,6 +419,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: We arrived in Italy!
+  voicetrack: 
   children:
   - efc28574-e77b-4d79-874a-fcdac31565cf
   position:
@@ -433,6 +447,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: no, grazie
+  voicetrack: 
   children:
   - 60b972f9-e287-47ac-8122-b11167fe9f44
   position:
@@ -460,6 +475,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: I feel tired
+  voicetrack: 
   children:
   - eba53ae4-d18d-40f6-8cd1-8198398975b9
   position:
@@ -487,6 +503,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: "perfetto! dobbiamo entrambi raggiungere il centro citt\xE0...."
+  voicetrack: 
   children:
   - 662d68e8-063b-4457-8709-dbe6b1921006
   position:
@@ -514,10 +531,11 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: clicca sulla freccia in alto a destra, e poi sul bottone "Travel here"
+  voicetrack: 
   children: []
   position:
     serializedVersion: 2
-    x: 2558
+    x: 2560
     y: 0
     width: 250
     height: 100
@@ -540,6 +558,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 0092837d-6157-440b-8bbf-0223dcb299e4
   position:
@@ -567,6 +586,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: I have an Idea, from now on, we should only communicate in Italian...
+  voicetrack: 
   children:
   - 65370207-957b-4b43-aef3-6d31f115cbc2
   position:
@@ -594,6 +614,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 'ok, spero di rincontrarti presto! '
+  voicetrack: 
   children: []
   position:
     serializedVersion: 2

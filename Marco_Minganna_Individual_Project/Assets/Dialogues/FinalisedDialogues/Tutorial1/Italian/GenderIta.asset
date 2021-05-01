@@ -15,6 +15,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: 
+  voicetrack: 
   children: []
   position:
     serializedVersion: 2
@@ -22,6 +23,35 @@ MonoBehaviour:
     y: 360
     width: 250
     height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-4754855409363324666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 92c9df39-2943-44c2-8a8d-698a4d3abb25
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: "Se non le va di scrivere, puo\u2019 cliccare sui bottoni che appariranno
+    in alto. "
+  voicetrack: 6
+  children:
+  - af731cc5-6ac9-4bf0-ae1d-16adc243651b
+  position:
+    serializedVersion: 2
+    x: 26
+    y: 805
+    width: 250
+    height: 130
   OnEnterAction: 
   OnExitAction: 
   condition:
@@ -41,6 +71,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: "Perfetto! \xC9 tutto pronto! Le auguro un buon volo."
+  voicetrack: 13
   children: []
   position:
     serializedVersion: 2
@@ -50,6 +81,35 @@ MonoBehaviour:
     height: 100
   OnEnterAction: 
   OnExitAction: Next
+  condition:
+    and: []
+--- !u!114 &-3499350699324633944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 15ae2e2b-4a47-4129-9b87-32f1f1459444
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: "Lei dovra\u2019 rispondere scrivendo nella barra con scritto \u201CEnter
+    text\u2026\u201D "
+  voicetrack: 4
+  children:
+  - 5d65fca7-90bf-417a-994c-ab4615d213f3
+  position:
+    serializedVersion: 2
+    x: 15
+    y: 527
+    width: 250
+    height: 130
+  OnEnterAction: 
+  OnExitAction: 
   condition:
     and: []
 --- !u!114 &-3038350005527045048
@@ -67,6 +127,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 850f3d4b-4b91-49d2-b224-ad0dd4f48e8a
   position:
@@ -94,8 +155,9 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Benvenuto a World in a box tours, la migliore agenzia viaggi della zona!
+  voicetrack: 1
   children:
-  - d0f506bf-ecdd-49dc-af4d-851d29301d83
+  - b8836f94-60f8-465c-a71e-a80636aba5b1
   position:
     serializedVersion: 2
     x: 4
@@ -121,6 +183,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: "per formalit\xE0, potrebbe confermarmi se \xE9 un maschio o una femmina?"
+  voicetrack: 11
   children:
   - 0b695d0d-86a1-4545-b117-5c714cd2399c
   - c42080bf-615c-4266-8365-d85559c0e24e
@@ -150,12 +213,13 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - dd1cbbd9-a20f-4081-8713-a989cbc58c9d
   position:
     serializedVersion: 2
-    x: 306
-    y: 354
+    x: 552
+    y: 329
     width: 250
     height: 100
   OnEnterAction: 
@@ -177,12 +241,13 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Mi scusi?
+  voicetrack: 9
   children:
   - 50e9f771-c597-4ec4-a874-23bd8296bc7b
   position:
     serializedVersion: 2
     x: 600
-    y: 358
+    y: 365
     width: 250
     height: 100
   OnEnterAction: 
@@ -204,6 +269,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: Sono una femmina
+  voicetrack: 
   children:
   - 0a15cca6-3517-44a5-bb2f-14a884cde7f2
   position:
@@ -213,6 +279,34 @@ MonoBehaviour:
     width: 250
     height: 100
   OnEnterAction: Female
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-1705534994817949032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 02caf3fc-ab2f-466e-a439-9f65ba609e97
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: Ogni tanto, le verranno fatte delle domande
+  voicetrack: 3
+  children:
+  - 15ae2e2b-4a47-4129-9b87-32f1f1459444
+  position:
+    serializedVersion: 2
+    x: -4
+    y: 372
+    width: 250
+    height: 130
+  OnEnterAction: 
   OnExitAction: 
   condition:
     and: []
@@ -231,6 +325,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: "Grazie mille! Solo un minuto per finalizzare il suo biglietto\u2026.."
+  voicetrack: 12
   children:
   - dea418f4-7511-4a04-b709-f0eaef82422d
   position:
@@ -239,6 +334,34 @@ MonoBehaviour:
     y: 73
     width: 250
     height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-1283377662126714790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: b8836f94-60f8-465c-a71e-a80636aba5b1
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: Prima di iniziare, le spiego come funziona questo programma
+  voicetrack: 2
+  children:
+  - 02caf3fc-ab2f-466e-a439-9f65ba609e97
+  position:
+    serializedVersion: 2
+    x: -5
+    y: 246
+    width: 250
+    height: 130
   OnEnterAction: 
   OnExitAction: 
   condition:
@@ -259,7 +382,6 @@ MonoBehaviour:
   - {fileID: 9208305305470470932}
   - {fileID: -2861666560063677626}
   - {fileID: 1082852709147822312}
-  - {fileID: 8368555305950659798}
   - {fileID: 6769214356208714589}
   - {fileID: -2659594960369066358}
   - {fileID: 7035775494477700223}
@@ -271,6 +393,12 @@ MonoBehaviour:
   - {fileID: -2037778085157715613}
   - {fileID: -1315658939048365810}
   - {fileID: -4689033273203212971}
+  - {fileID: -1283377662126714790}
+  - {fileID: -1705534994817949032}
+  - {fileID: -3499350699324633944}
+  - {fileID: 6665159076442290350}
+  - {fileID: -4754855409363324666}
+  - {fileID: 3665003024713929279}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &1082852709147822312
 MonoBehaviour:
@@ -287,14 +415,14 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: "Il suo biglietto per l\u2019inghilterra e\u2019 quasi pronto, non vede l\u2019ora?"
+  voicetrack: 8
   children:
-  - 3dd63db1-5335-4808-98c2-44ea7cc905ca
   - 6bc9036f-9191-41da-864b-49d8c91a75db
   - 85faefaa-dd11-4f6c-ac83-12b6158fdd29
   position:
     serializedVersion: 2
-    x: 20
-    y: 219
+    x: 426
+    y: 604
     width: 250
     height: 100
   OnEnterAction: 
@@ -316,6 +444,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 
+  voicetrack: 
   children: []
   position:
     serializedVersion: 2
@@ -323,6 +452,34 @@ MonoBehaviour:
     y: 219
     width: 250
     height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &3665003024713929279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: af731cc5-6ac9-4bf0-ae1d-16adc243651b
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: 'Faccia una prova! '
+  voicetrack: 7
+  children:
+  - d0f506bf-ecdd-49dc-af4d-851d29301d83
+  position:
+    serializedVersion: 2
+    x: 331
+    y: 773
+    width: 250
+    height: 130
   OnEnterAction: 
   OnExitAction: 
   condition:
@@ -342,6 +499,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 'Bene! '
+  voicetrack: 10
   children:
   - 50e9f771-c597-4ec4-a874-23bd8296bc7b
   position:
@@ -350,6 +508,35 @@ MonoBehaviour:
     y: 81
     width: 250
     height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &6665159076442290350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 5d65fca7-90bf-417a-994c-ab4615d213f3
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: "Le risposte devono contenere il numero di parole indicato in rosso vicino
+    al tasto \u201Csubmit\u201D"
+  voicetrack: 5
+  children:
+  - 92c9df39-2943-44c2-8a8d-698a4d3abb25
+  position:
+    serializedVersion: 2
+    x: 51
+    y: 663
+    width: 250
+    height: 130
   OnEnterAction: 
   OnExitAction: 
   condition:
@@ -369,12 +556,13 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: Direi di si
+  voicetrack: 
   children:
   - 436329aa-fbe1-4109-b7cb-c01b8b458d5b
   position:
     serializedVersion: 2
-    x: 311
-    y: 219
+    x: 304
+    y: 210
     width: 250
     height: 100
   OnEnterAction: 
@@ -396,12 +584,13 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Mi scusi?
+  voicetrack: 9
   children:
   - d0f506bf-ecdd-49dc-af4d-851d29301d83
   position:
     serializedVersion: 2
-    x: 22
-    y: 360
+    x: -20
+    y: 1060
     width: 250
     height: 100
   OnEnterAction: 
@@ -423,6 +612,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: Sono un maschio
+  voicetrack: 
   children:
   - 0a15cca6-3517-44a5-bb2f-14a884cde7f2
   position:
@@ -432,33 +622,6 @@ MonoBehaviour:
     width: 250
     height: 100
   OnEnterAction: Male
-  OnExitAction: 
-  condition:
-    and: []
---- !u!114 &8368555305950659798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
-  m_Name: 3dd63db1-5335-4808-98c2-44ea7cc905ca
-  m_EditorClassIdentifier: 
-  PlayerSpeaking: 1
-  Question: 0
-  Text: si un sacco!
-  children:
-  - 436329aa-fbe1-4109-b7cb-c01b8b458d5b
-  position:
-    serializedVersion: 2
-    x: 305
-    y: 97
-    width: 250
-    height: 100
-  OnEnterAction: 
   OnExitAction: 
   condition:
     and: []
@@ -477,6 +640,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Oh, salve!
+  voicetrack: 0
   children:
   - 6b5c53c6-b938-443f-b921-127297b6937d
   position:

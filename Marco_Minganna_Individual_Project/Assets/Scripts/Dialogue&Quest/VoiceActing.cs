@@ -29,6 +29,7 @@ public class VoiceActing : MonoBehaviour
             else
             {
                 AudioClip voice = Resources.Load("VoiceActing/" + path + "/" + "english" + "/" + audio, typeof(AudioClip)) as AudioClip;
+                //AudioClip voice = Resources.Load("VoiceActing/" + path + "/" + "italian" + "/" + audio, typeof(AudioClip)) as AudioClip;
                 VoiceLines.PlayOneShot(voice);
             }
            

@@ -15,6 +15,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: Mi piace molto
+  voicetrack: 
   children:
   - 5c245b89-a0df-4c70-b982-4d843808d1b7
   position:
@@ -42,6 +43,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - b9cf7c61-b63b-4eb8-a143-b679d4eb8078
   position:
@@ -69,6 +71,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: perdonami?
+  voicetrack: 2
   children:
   - fe91d87c-cce8-46b4-a0e6-4dfee12d2f13
   position:
@@ -96,6 +99,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Grazie! Un mio amico ha ordinato una scultura di un Germano reale,
+  voicetrack: 9
   children:
   - f81e225c-4f10-406b-be01-c9ad205ce2ed
   position:
@@ -123,6 +127,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: ' Potresti consegnarlo tu per me? '
+  voicetrack: 
   children:
   - a6cfd58f-0002-44b7-8906-62e4ab60e26d
   - b7ef05ba-7eb7-4b62-bc5c-3c537e599cd0
@@ -152,6 +157,7 @@ MonoBehaviour:
   Question: 0
   Text: "Ma sto divagando, ho promesso al mio amico che avrei consegnato oggi la scultura,
     ma queste gambe anziane non sono piu\u2019 quelle di una volta."
+  voicetrack: 
   children:
   - fcf7e544-b057-472d-9a01-b065962033f3
   position:
@@ -179,6 +185,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 48a3d3a6-574f-40d6-89d8-b64b445b3ad7
   position:
@@ -206,6 +213,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: "Oh oh, sei appena arrivato qui in citt\xE0! Ti piace?"
+  voicetrack: 4
   children:
   - f5728cba-92ff-4172-b041-74d2a1e60c71
   - e02ceb32-6476-4940-8a06-59c3c3c704d6
@@ -236,6 +244,7 @@ MonoBehaviour:
   Question: 0
   Text: Io sono un falegname sai? Mi piace scolpire animali, per questo prendo ispirazione
     dalla fauna locale.
+  voicetrack: 7
   children:
   - 69cd8ecf-06bc-4cd1-9b00-640c60f9a0c0
   position:
@@ -244,6 +253,33 @@ MonoBehaviour:
     y: 0
     width: 250
     height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-5224136068655594356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: c2c3042e-953f-48e3-8e6b-ff2c24786566
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 1
+  Question: 0
+  Text: 
+  voicetrack: 
+  children: []
+  position:
+    serializedVersion: 2
+    x: 1777
+    y: 107
+    width: 250
+    height: 130
   OnEnterAction: 
   OnExitAction: 
   condition:
@@ -263,6 +299,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: Non mi piace
+  voicetrack: 
   children:
   - 30f56b76-36b7-420d-94ba-b130505bc48e
   position:
@@ -290,6 +327,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: perdonami?
+  voicetrack: 2
   children:
   - c704d6e3-1aef-416e-a9f0-c2d9f4ba7d53
   position:
@@ -317,6 +355,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Oh mi spiace di sentirlo, io e mia moglie abbiamo vissuto qua da sempre!
+  voicetrack: 6
   children:
   - 8b7d1d7f-5c42-4699-ac76-6a0ea733e31d
   position:
@@ -344,6 +383,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Il mio amico si trova alla spiaggia.
+  voicetrack: 1
   children: []
   position:
     serializedVersion: 2
@@ -375,6 +415,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Mi fa piacere sentirlo, io e mia moglie abbiamo vissuto qua da sempre!
+  voicetrack: 5
   children:
   - 8b7d1d7f-5c42-4699-ac76-6a0ea733e31d
   position:
@@ -402,6 +443,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 'Oh va bene, non ti preoccupare. '
+  voicetrack: 10
   children: []
   position:
     serializedVersion: 2
@@ -428,6 +470,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: Si, certo
+  voicetrack: 
   children:
   - e97544d8-04df-4535-adaf-2890c2b36a01
   position:
@@ -455,6 +498,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: Prima che mi dimentico, potresti farmi un favore?
+  voicetrack: 8
   children:
   - b1c0fd48-f040-4fa8-8db9-0047ad938054
   - 99cb0b1f-ca32-428d-88a9-b556c6eba78f
@@ -523,6 +567,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: Non sei di queste parti vero?
+  voicetrack: 3
   children:
   - a51fe0c4-3ec9-43f0-a9df-50045f6755a4
   - 4876e7b5-ebfd-4118-9f5c-7d26b600aeba
@@ -556,6 +601,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 9e222815-4acb-4cad-b635-f02c6e20637a
   position:
@@ -583,6 +629,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: No, scusa
+  voicetrack: 
   children:
   - 82dbe3db-28e0-4eb6-b717-a082aaa2b859
   position:
@@ -610,6 +657,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: Certo che posso
+  voicetrack: 
   children:
   - 32984a4d-4b2e-4da9-bfa2-d62d2eccca6f
   position:
@@ -637,6 +685,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Salve giovanotto
+  voicetrack: 0
   children:
   - fe91d87c-cce8-46b4-a0e6-4dfee12d2f13
   - dfcad12e-23ce-44bd-ad1b-ac2d99e92c49
@@ -665,6 +714,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: Non lo sono
+  voicetrack: 
   children:
   - c704d6e3-1aef-416e-a9f0-c2d9f4ba7d53
   position:
@@ -692,6 +742,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: perdonami?
+  voicetrack: 
   children:
   - fcf7e544-b057-472d-9a01-b065962033f3
   position:
@@ -719,6 +770,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 'Grazie mille! Dovresti trovarlo in spiaggia a pescare. '
+  voicetrack: 
   children: []
   position:
     serializedVersion: 2
@@ -746,6 +798,7 @@ MonoBehaviour:
   Question: 0
   Text: "Se non ne sei a conoscenza, e\u2019 un tipo di anatra molto comune in Italia,
     sono anche conosciuti come \u201CCapoverde\u201D per la loro testa verde."
+  voicetrack: 11
   children:
   - 7aabb9e5-38b2-4907-bc00-082db36c0470
   position:

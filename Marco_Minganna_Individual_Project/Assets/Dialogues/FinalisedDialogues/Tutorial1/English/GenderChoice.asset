@@ -15,6 +15,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: I'm a girl
+  voicetrack: 
   children:
   - d92cecb9-155f-472b-ae8c-68dc531f00f3
   position:
@@ -42,6 +43,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 'Good! '
+  voicetrack: 10
   children:
   - c8b16422-7936-4de9-964f-6d9ebd3ba28f
   position:
@@ -50,6 +52,34 @@ MonoBehaviour:
     y: 34
     width: 250
     height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &-4493623464354741910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: b36d3063-906b-4b0a-8f67-7a8c93bd245d
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: "Before starting, I\u2019ll explain how this program works."
+  voicetrack: 2
+  children:
+  - 76c94ba9-a19d-4ed9-9f8b-55d41be651c8
+  position:
+    serializedVersion: 2
+    x: -1
+    y: 193
+    width: 250
+    height: 130
   OnEnterAction: 
   OnExitAction: 
   condition:
@@ -69,6 +99,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 
+  voicetrack: 
   children: []
   position:
     serializedVersion: 2
@@ -95,6 +126,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: "Thank you! Just a minute to finalize your ticket\u2026\u2026"
+  voicetrack: 12
   children:
   - e7611fff-92f9-4823-9cf1-bf127695d628
   position:
@@ -122,6 +154,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: I am
+  voicetrack: 
   children:
   - 4e1e4f86-409e-45a3-875e-be58bdfb944d
   position:
@@ -149,12 +182,13 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 47e7932c-4359-4bad-8794-62379559f9bd
   position:
     serializedVersion: 2
-    x: 315
-    y: 276
+    x: 274
+    y: 181
     width: 250
     height: 100
   OnEnterAction: 
@@ -178,7 +212,6 @@ MonoBehaviour:
   - {fileID: 1083390643794427881}
   - {fileID: 8670114529198407678}
   - {fileID: -329010791654811044}
-  - {fileID: 5365773778262464775}
   - {fileID: -198758516035677810}
   - {fileID: 3128376853637262839}
   - {fileID: -4626963330037989531}
@@ -189,6 +222,12 @@ MonoBehaviour:
   - {fileID: 4971530012126070571}
   - {fileID: -2101802749570021570}
   - {fileID: 4896759689384537792}
+  - {fileID: -4493623464354741910}
+  - {fileID: 1219027175481307487}
+  - {fileID: 4266005747523892377}
+  - {fileID: 1508625389611823926}
+  - {fileID: 2440213060220083125}
+  - {fileID: 5940739921579700861}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &1083390643794427881
 MonoBehaviour:
@@ -205,14 +244,101 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Welcome to World in a Box tours, the best travel agency in the area!
+  voicetrack: 1
   children:
-  - 64f0cfcc-66c7-4626-ba1c-034fe85bfd4b
+  - b36d3063-906b-4b0a-8f67-7a8c93bd245d
   position:
     serializedVersion: 2
     x: -2
     y: 97
     width: 250
     height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &1219027175481307487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 76c94ba9-a19d-4ed9-9f8b-55d41be651c8
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: Sometimes, you will be asked some questions
+  voicetrack: 3
+  children:
+  - 2c791ee7-eb4a-4424-80d2-86fdccaee634
+  position:
+    serializedVersion: 2
+    x: -14
+    y: 328
+    width: 250
+    height: 130
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &1508625389611823926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: cdebd71e-c850-41aa-bad5-0bc3b52420eb
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: "The answers will need to include the number of words shown in red near the
+    \u201Csubmit\u201D button"
+  voicetrack: 5
+  children:
+  - 7051a69d-5154-4bae-b030-5c096cc4ea14
+  position:
+    serializedVersion: 2
+    x: -5
+    y: 614
+    width: 250
+    height: 130
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &2440213060220083125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 7051a69d-5154-4bae-b030-5c096cc4ea14
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: "If you don\u2019t feel like writing, you can also click on the buttons that
+    will appear at the top of the screen."
+  voicetrack: 6
+  children:
+  - fd4c899b-d8d0-4541-bf9e-bb9ca4d46683
+  position:
+    serializedVersion: 2
+    x: 2
+    y: 741
+    width: 250
+    height: 130
   OnEnterAction: 
   OnExitAction: 
   condition:
@@ -232,6 +358,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Oh, hello there!
+  voicetrack: 0
   children:
   - 1461558b-cf6d-48c1-b6e2-9a608e810044
   position:
@@ -258,15 +385,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerSpeaking: 0
   Question: 0
-  Text: pardon me?
+  Text: I beg your pardon?
+  voicetrack: 9
   children:
   - 64f0cfcc-66c7-4626-ba1c-034fe85bfd4b
   position:
     serializedVersion: 2
-    x: 27
-    y: 371
+    x: 260
+    y: 805
     width: 250
     height: 100
+  OnEnterAction: 
+  OnExitAction: 
+  condition:
+    and: []
+--- !u!114 &4266005747523892377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
+  m_Name: 2c791ee7-eb4a-4424-80d2-86fdccaee634
+  m_EditorClassIdentifier: 
+  PlayerSpeaking: 0
+  Question: 0
+  Text: "You will need to reply by writing in the bar that says \u201CEnter text..\u201D"
+  voicetrack: 4
+  children:
+  - cdebd71e-c850-41aa-bad5-0bc3b52420eb
+  position:
+    serializedVersion: 2
+    x: -7
+    y: 470
+    width: 250
+    height: 130
   OnEnterAction: 
   OnExitAction: 
   condition:
@@ -286,6 +442,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 'Perfect! Everything is ready! I hope you enjoy your flight. '
+  voicetrack: 13
   children: []
   position:
     serializedVersion: 2
@@ -311,7 +468,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerSpeaking: 0
   Question: 0
-  Text: pardon me?
+  Text: I beg your pardon?
+  voicetrack: 9
   children:
   - c8b16422-7936-4de9-964f-6d9ebd3ba28f
   position:
@@ -339,6 +497,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 9162d79f-b52a-4030-9373-a3d0a062471c
   position:
@@ -366,6 +525,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: I'm a boy
+  voicetrack: 
   children:
   - d92cecb9-155f-472b-ae8c-68dc531f00f3
   position:
@@ -378,7 +538,7 @@ MonoBehaviour:
   OnExitAction: 
   condition:
     and: []
---- !u!114 &5365773778262464775
+--- !u!114 &5940739921579700861
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -388,19 +548,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
-  m_Name: dd29639d-1200-44c1-9abd-e5c2715c0d64
+  m_Name: fd4c899b-d8d0-4541-bf9e-bb9ca4d46683
   m_EditorClassIdentifier: 
-  PlayerSpeaking: 1
+  PlayerSpeaking: 0
   Question: 0
-  Text: I guess
+  Text: "Let\u2019s try it!"
+  voicetrack: 7
   children:
-  - 4e1e4f86-409e-45a3-875e-be58bdfb944d
+  - 64f0cfcc-66c7-4626-ba1c-034fe85bfd4b
   position:
     serializedVersion: 2
-    x: 295
-    y: 153
+    x: 260
+    y: 589
     width: 250
-    height: 100
+    height: 130
   OnEnterAction: 
   OnExitAction: 
   condition:
@@ -420,6 +581,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: Just as a formality, could you please confirm if you are a boy or a girl?
+  voicetrack: 11
   children:
   - 5a4e3af0-f3e4-4ac4-b7ee-2fcbf837387c
   - 32ddd80e-d7f9-4df4-8471-f9301889ea53
@@ -449,14 +611,14 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: Your ticket for Italy is almost ready, are you excited to start your journey?
+  voicetrack: 8
   children:
   - 9bad8c6e-94cd-4a32-9202-5d91c2032078
-  - dd29639d-1200-44c1-9abd-e5c2715c0d64
   - 63cfd806-21ac-4712-97d4-766750640c2e
   position:
     serializedVersion: 2
-    x: 9
-    y: 194
+    x: 578
+    y: 571
     width: 250
     height: 100
   OnEnterAction: 

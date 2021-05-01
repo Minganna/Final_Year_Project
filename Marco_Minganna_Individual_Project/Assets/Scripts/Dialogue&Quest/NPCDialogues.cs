@@ -31,8 +31,8 @@ namespace Dialogue
             }
             else
             {
-                //characterDialouges = EnglishDialogue;
-                characterDialouges = ItalianDialogue;
+                characterDialouges = EnglishDialogue;
+                //characterDialouges = ItalianDialogue;
             }
             
 
