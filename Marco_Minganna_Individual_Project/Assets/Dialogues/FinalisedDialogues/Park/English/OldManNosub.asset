@@ -127,7 +127,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: ' Potresti consegnarlo tu per me? '
-  voicetrack: 
+  voicetrack: 13
   children:
   - a6cfd58f-0002-44b7-8906-62e4ab60e26d
   - b7ef05ba-7eb7-4b62-bc5c-3c537e599cd0
@@ -157,7 +157,7 @@ MonoBehaviour:
   Question: 0
   Text: "Ma sto divagando, ho promesso al mio amico che avrei consegnato oggi la scultura,
     ma queste gambe anziane non sono piu\u2019 quelle di una volta."
-  voicetrack: 
+  voicetrack: 12
   children:
   - fcf7e544-b057-472d-9a01-b065962033f3
   position:
@@ -742,7 +742,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: perdonami?
-  voicetrack: 
+  voicetrack: 2
   children:
   - fcf7e544-b057-472d-9a01-b065962033f3
   position:
@@ -770,7 +770,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 'Grazie mille! Dovresti trovarlo in spiaggia a pescare. '
-  voicetrack: 
+  voicetrack: 14
   children: []
   position:
     serializedVersion: 2

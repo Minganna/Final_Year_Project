@@ -304,7 +304,7 @@ MonoBehaviour:
   Question: 0
   Text: 'Grazie mille! Dovresti trovarlo in spiaggia a pescare. /Thank you! You should
     be able to find him fishing at the beach.  '
-  voicetrack: 
+  voicetrack: 14
   children: []
   position:
     serializedVersion: 2
@@ -334,7 +334,7 @@ MonoBehaviour:
     ma queste gambe anziane non sono piu\u2019 quelle di una volta. /I\u2019m digressing,
     I have promised my friend that I would deliver the sculpture to him today, but
     these old legs are getting weak. "
-  voicetrack: 
+  voicetrack: 12
   children:
   - e25aad34-e03d-45ed-a84f-46099e2b6ade
   position:
@@ -608,7 +608,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: perdonami/pardon me?
-  voicetrack: 
+  voicetrack: 2
   children:
   - e25aad34-e03d-45ed-a84f-46099e2b6ade
   position:
@@ -778,7 +778,7 @@ MonoBehaviour:
   Question: 1
   Text: 'Potresti consegnarlo tu per me?  /Could you deliver it in my stead?  -Certo
     che posso= yes I can '
-  voicetrack: 
+  voicetrack: 13
   children:
   - 2bbff97f-4d56-4862-92e4-6183df34bda4
   - 54f4676d-0ebd-4dd6-824b-7b4dd31bff37

@@ -9,6 +9,7 @@ public class VoiceActing : MonoBehaviour
     [SerializeField]
     string path;
     CommonVariables cv = new CommonVariables();
+    AudioClip voice;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,12 +24,13 @@ public class VoiceActing : MonoBehaviour
             if(cv.GetLearn()!=null)
             {
                 Debug.Log(cv.GetLearn().Trim().ToLower());
-                AudioClip voice = Resources.Load("VoiceActing/" + path + "/" + cv.GetLearn().Trim().ToLower() + "/" + audio, typeof(AudioClip)) as AudioClip;
+                string currentpath = "VoiceActing/" + path + "/" + cv.GetLearn().Trim().ToLower() + "/" + audio;
+                voice = Resources.Load(currentpath, typeof(AudioClip)) as AudioClip;
                 VoiceLines.PlayOneShot(voice);
             }
             else
             {
-                AudioClip voice = Resources.Load("VoiceActing/" + path + "/" + "english" + "/" + audio, typeof(AudioClip)) as AudioClip;
+                 voice = Resources.Load("VoiceActing/" + path + "/" + "english" + "/" + audio, typeof(AudioClip)) as AudioClip;
                 //AudioClip voice = Resources.Load("VoiceActing/" + path + "/" + "italian" + "/" + audio, typeof(AudioClip)) as AudioClip;
                 VoiceLines.PlayOneShot(voice);
             }
@@ -36,6 +38,14 @@ public class VoiceActing : MonoBehaviour
         }
       
     }
+
+    public void PlayVoiceLinebutton()
+    {
+        StopPreviousVoice();
+        Debug.Log(voice);
+        VoiceLines.PlayOneShot(voice);
+    }
+
 
     public void StopPreviousVoice()
     {

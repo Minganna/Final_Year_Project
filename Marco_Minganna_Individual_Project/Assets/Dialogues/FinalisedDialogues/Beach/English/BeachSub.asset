@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerSpeaking: 0
   Question: 1
-  Text: "Sono impegnato al momento, puoi aspettare? /I am quite busy young man, can
-    it wait? - Si, posso aspettare = Yes I can - No, e\u2019 importante = No, it\u2019s
-    important "
+  Text: 'Sono impegnato al momento, puoi aspettare? /I am quite busy young man, can
+    it wait? - posso aspettare = Yes it can - non posso = No, I can''t '
+  voicetrack: 1
   children:
   - a29dece3-e2b6-4a83-acdd-032e5e03cc69
   - 774f355b-7ab5-4166-a4c2-04db24f52f53
@@ -47,6 +47,7 @@ MonoBehaviour:
   Question: 0
   Text: Sono veramente concentrato al momento, parleremo dopo. / I am very concentrate
     right now, I will speak with you later.
+  voicetrack: 5
   children: []
   position:
     serializedVersion: 2
@@ -72,14 +73,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerSpeaking: 1
   Question: 0
-  Text: "No, e\u2019 importante"
+  Text: Non posso
+  voicetrack: 
   children:
   - f41ef043-4c55-49df-b74c-90ca8a328d90
   - 858b48bf-457e-485a-94a6-bfcf0a34ff5d
   position:
     serializedVersion: 2
-    x: 506
-    y: 131
+    x: 489
+    y: 136
     width: 250
     height: 100
   OnEnterAction: 
@@ -101,6 +103,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: scusa? /sorry?
+  voicetrack: 2
   children:
   - 10af2386-4181-49ae-89bd-a9f2b25b5e90
   position:
@@ -128,6 +131,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: A dopo / See you later
+  voicetrack: 3
   children: []
   position:
     serializedVersion: 2
@@ -154,6 +158,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Ciao/Hello
+  voicetrack: 0
   children:
   - 10af2386-4181-49ae-89bd-a9f2b25b5e90
   position:
@@ -203,7 +208,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerSpeaking: 1
   Question: 0
-  Text: Si, posso aspettare
+  Text: Posso aspettare
+  voicetrack: 
   children:
   - b3d71ae6-a30b-4d2d-be29-6fb5ead7f3e4
   position:
@@ -232,11 +238,12 @@ MonoBehaviour:
   Question: 0
   Text: Oh! La mia scultura! Ringrazia Bob per me la prossima volta che lo vedi. /
     Oh, my sculpture! Thank Bob for me next time you see him.
+  voicetrack: 4
   children: []
   position:
     serializedVersion: 2
     x: 756
-    y: 131
+    y: 133
     width: 250
     height: 100
   OnEnterAction: talktoHarry
@@ -244,7 +251,7 @@ MonoBehaviour:
   condition:
     and:
     - or:
-      - predicate: HadQuest
+      - predicate: HasQuest
         parameters:
         - Quest1
         negate: 0
@@ -263,6 +270,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 2c2227bf-34ed-40b4-a442-daf32c803fe4
   position:

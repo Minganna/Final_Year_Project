@@ -100,7 +100,7 @@ MonoBehaviour:
   Question: 0
   Text: se riesci a capire me, sono sicura che non avrai problemi con la gente del
     posto!
-  voicetrack: 
+  voicetrack: 12
   children:
   - 7aa61d74-b74a-464f-8b3e-8af0ccb18c6d
   position:
@@ -128,7 +128,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: How will we travel to England?
-  voicetrack: 
+  voicetrack: 15
   children:
   - c41a0205-ce67-4207-8c03-69b84a1ab83e
   - 1e9b0b03-9fc9-4dfb-9ae2-3e0b12f2ff67
@@ -157,7 +157,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: scusa?
-  voicetrack: 
+  voicetrack: 4
   children:
   - a3ffab8e-b661-451f-9019-b66ee0d25abf
   position:
@@ -185,7 +185,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: "\xE9 la prima volta anche per te?"
-  voicetrack: 
+  voicetrack: 3
   children:
   - 3944c94e-9186-4902-91ab-46c74295c115
   - 23140471-faed-432e-8c5a-fb40d4e17299
@@ -215,7 +215,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: scusa?
-  voicetrack: 
+  voicetrack: 4
   children:
   - a5609386-2445-4ec6-874d-a2ef62ded169
   position:
@@ -298,7 +298,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: ci vediamo in Inghilterra!
-  voicetrack: 
+  voicetrack: 9
   children: []
   position:
     serializedVersion: 2
@@ -325,7 +325,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: "hanno annunciato il gate! \xE8 ora di andare!"
-  voicetrack: 
+  voicetrack: 8
   children:
   - 88c56185-e119-435e-adf8-5bc65049d77d
   position:
@@ -353,7 +353,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Ciao!!
-  voicetrack: 
+  voicetrack: 0
   children:
   - b9c38e1d-48f7-4f6d-a933-11da6d3cb942
   position:
@@ -381,7 +381,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: bene, prossima domanda!
-  voicetrack: 
+  voicetrack: 14
   children:
   - efca8009-a81b-47ec-a045-dfeddf5397b8
   position:
@@ -567,7 +567,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: scusa?
-  voicetrack: 
+  voicetrack: 4
   children:
   - 06479c0b-f8b7-4a47-8c93-1e5cfc2a9efa
   position:
@@ -679,7 +679,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: bene! allora sicuramente non avrai problemi con la gente del posto!
-  voicetrack: 
+  voicetrack: 6
   children:
   - ab8fb211-9f22-4270-a5f6-b51a6c277115
   position:
@@ -707,7 +707,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: ma potrei farti delle domande in inglese
-  voicetrack: 
+  voicetrack: 11
   children:
   - 96369d87-8f64-4760-9272-05284a7f7501
   position:
@@ -735,7 +735,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: bene, sono sicura che non avrai nessun problema in inghilterra!
-  voicetrack: 
+  voicetrack: 16
   children:
   - ab8fb211-9f22-4270-a5f6-b51a6c277115
   position:
@@ -763,7 +763,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: how are you today?
-  voicetrack: 
+  voicetrack: 13
   children:
   - f7a97a47-aa07-4aa8-8504-2d7fa4f87dfe
   - e78c607f-7ba9-4654-9988-ab69354521b6
@@ -793,7 +793,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Mi chiamo Barbara, piacere di conoscerti!
-  voicetrack: 
+  voicetrack: 1
   children:
   - f86495bd-4bda-469f-8611-675eba42f2c4
   position:
@@ -822,7 +822,7 @@ MonoBehaviour:
   Question: 0
   Text: oh, non ti preoccupare, sono sicura che riuscirai a comunicare con la gente
     del posto!
-  voicetrack: 
+  voicetrack: 7
   children:
   - ab8fb211-9f22-4270-a5f6-b51a6c277115
   position:
@@ -850,7 +850,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: "okay, non so se  pu\xF2 esserti di aiuto"
-  voicetrack: 
+  voicetrack: 10
   children:
   - c8be0616-3378-4bb7-9427-bd09b2c80cc2
   position:
@@ -878,7 +878,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: scusa?
-  voicetrack: 
+  voicetrack: 4
   children:
   - da5b3f0a-6813-44ef-8dc2-3e95350678be
   position:
@@ -906,7 +906,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: oh capisco, tu parli inglese?
-  voicetrack: 
+  voicetrack: 5
   children:
   - 41a8d9ad-a22a-4775-b6f7-b2f1ad9225d6
   - e9fac77d-af4f-4538-b786-4361a1d6e12e
@@ -942,8 +942,8 @@ MonoBehaviour:
   - 8bae03d6-8497-4d24-8ae8-9079e0041c56
   position:
     serializedVersion: 2
-    x: 2365
-    y: 392
+    x: 2123
+    y: 388
     width: 250
     height: 100
   OnEnterAction: 
@@ -965,7 +965,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: "non ho mai lasciato l'italia... mi sento cos\xEC nervosa!"
-  voicetrack: 
+  voicetrack: 2
   children:
   - 06479c0b-f8b7-4a47-8c93-1e5cfc2a9efa
   position:

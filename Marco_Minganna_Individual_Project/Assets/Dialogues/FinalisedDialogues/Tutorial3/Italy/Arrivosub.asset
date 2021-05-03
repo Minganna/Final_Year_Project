@@ -15,6 +15,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: ok, spero di rincontrarti presto!  / ok, I hope to see you soon!
+  voicetrack: 9
   children: []
   position:
     serializedVersion: 2
@@ -41,6 +42,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: yes, please
+  voicetrack: 
   children:
   - d9014fe9-8e4d-46b4-b916-9786f3fb28c3
   position:
@@ -68,6 +70,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: Come ti senti?
+  voicetrack: 1
   children:
   - 20689de0-09a3-4b95-88b8-3ce7111c60cf
   - 079453e5-107b-44cc-a87b-f66af9f90005
@@ -97,6 +100,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: What do you think? /cosa ne pensi? -You are right = hai ragione
+  voicetrack: 4
   children:
   - 8e3b8b3e-7615-4214-9506-08290436c9f0
   - 35837bbc-a15d-4b95-9747-6cfe710882d6
@@ -126,6 +130,7 @@ MonoBehaviour:
   Question: 1
   Text: 'do you need help to arrive there? /hai bisogno di aiuto per arrivarci? -
     yes, please = si, grazie - no thanks = no, grazie '
+  voicetrack: 7
   children:
   - ff7fd830-da07-4eec-8d8d-ef77c55666c1
   - c80f1129-a311-4318-b169-5f7cf24dc5f9
@@ -155,6 +160,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - ae8de295-6606-4c1f-a246-e29bbc7d1ce9
   position:
@@ -183,6 +189,7 @@ MonoBehaviour:
   Question: 0
   Text: "perfect, it seems that we both need to reach the city center /perfetto! dobbiamo
     entrambi raggiungere il centro citt\xE0.... "
+  voicetrack: 6
   children:
   - 4a31b6bf-41a0-4177-8784-c6d2dd72cbf2
   position:
@@ -210,6 +217,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: Mi sento stanco
+  voicetrack: 
   children:
   - 42a1d025-b81c-4dc6-97ad-ae79d82cabd9
   position:
@@ -237,6 +245,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 0cfc2280-5c7f-48bc-b9a7-97274eb51b21
   position:
@@ -281,7 +290,6 @@ MonoBehaviour:
   - {fileID: 5195346199507381577}
   - {fileID: 8835874523455886804}
   - {fileID: 8041187616477379571}
-  - {fileID: 7222258551710442005}
   - {fileID: -9165193066821750908}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &2236934812751671349
@@ -299,6 +307,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Siamo arrivati in inghilterra!
+  voicetrack: 0
   children:
   - af1fdcc6-5f63-405b-a88e-75ba50a7a245
   position:
@@ -326,6 +335,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: scusa?
+  voicetrack: 10
   children:
   - af1fdcc6-5f63-405b-a88e-75ba50a7a245
   position:
@@ -353,6 +363,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Anche io!!
+  voicetrack: 2
   children:
   - bd4e65f0-a929-4514-8c1e-41a48ca07f69
   position:
@@ -380,6 +391,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 1aa7aae7-eb07-4197-842a-f0440058919a
   position:
@@ -407,6 +419,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: Mi sento bene
+  voicetrack: 
   children:
   - 42a1d025-b81c-4dc6-97ad-ae79d82cabd9
   position:
@@ -434,6 +447,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: no, thanks
+  voicetrack: 
   children:
   - dd23057f-0403-43fc-af66-4028feabedb4
   position:
@@ -461,6 +475,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: you are right
+  voicetrack: 
   children:
   - f41a8efc-5c00-4772-a2c8-b8940eefd00d
   position:
@@ -488,6 +503,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: "Ho un idea, da questo momento, dovremmo iniziare a parlare solo in inglese\u2026"
+  voicetrack: 3
   children:
   - e82861f7-cc7c-4d3a-90a9-147116231b0d
   position:
@@ -498,33 +514,6 @@ MonoBehaviour:
     height: 100
   OnEnterAction: 
   OnExitAction: 
-  condition:
-    and: []
---- !u!114 &7222258551710442005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
-  m_Name: 255d7dfa-6e85-4133-8b37-e90a5b6238f7
-  m_EditorClassIdentifier: 
-  PlayerSpeaking: 0
-  Question: 0
-  Text: click on the arrow on the top right corner and then on the button "Travel
-    here"/ clicca sulla freccia in alto a destra, e poi sul bottone "Travel here"
-  children: []
-  position:
-    serializedVersion: 2
-    x: 2389
-    y: 28
-    width: 250
-    height: 100
-  OnEnterAction: 
-  OnExitAction: MoveAllowed
   condition:
     and: []
 --- !u!114 &7624092556162495745
@@ -542,6 +531,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: sorry? -scusa?
+  voicetrack: 5
   children:
   - e82861f7-cc7c-4d3a-90a9-147116231b0d
   position:
@@ -568,9 +558,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerSpeaking: 0
   Question: 0
-  Text: "ok, to reach the city center /ok, per raggiungere il centro citt\xE0 "
-  children:
-  - 255d7dfa-6e85-4133-8b37-e90a5b6238f7
+  Text: "ok, to reach the city center click on the arrow on the top right corner and
+    then on the button \"Travel here\" /ok, per raggiungere il centro citt\xE0 clicca
+    sulla freccia in alto a destra, e poi sul bottone \"Travel here\""
+  voicetrack: 8
+  children: []
   position:
     serializedVersion: 2
     x: 2139
@@ -596,6 +588,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: sorry? -scusa?
+  voicetrack: 5
   children:
   - 4a31b6bf-41a0-4177-8784-c6d2dd72cbf2
   position:

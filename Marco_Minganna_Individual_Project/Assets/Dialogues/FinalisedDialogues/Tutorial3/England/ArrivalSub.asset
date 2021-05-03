@@ -16,6 +16,7 @@ MonoBehaviour:
   Question: 0
   Text: "perfetto! dobbiamo entrambi raggiungere il centro citt\xE0.... /perfect,
     it seems that we both need to reach the city center"
+  voicetrack: 6
   children:
   - a1c2d580-a87b-4e74-bed8-b47ac6914874
   position:
@@ -43,6 +44,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: I feel good
+  voicetrack: 
   children:
   - be1a13b1-ca2f-414d-a582-e6b4c6b9f88a
   position:
@@ -70,6 +72,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: I feel tired
+  voicetrack: 
   children:
   - be1a13b1-ca2f-414d-a582-e6b4c6b9f88a
   position:
@@ -97,6 +100,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - faddd4f7-5adf-4443-9979-aedb71694556
   position:
@@ -124,6 +128,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: no, grazie
+  voicetrack: 
   children:
   - b733fc3d-db63-4b4b-9b46-7903fd7871a6
   position:
@@ -151,6 +156,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 5229073e-9e52-469d-8b2d-7c48dcfda077
   position:
@@ -178,6 +184,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: sorry
+  voicetrack: 10
   children:
   - ba862eb0-bc4c-4a82-af15-00fb2c285514
   position:
@@ -205,6 +212,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: ok, spero di rincontrarti presto!  / ok, I hope to see you soon!
+  voicetrack: 9
   children: []
   position:
     serializedVersion: 2
@@ -231,6 +239,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: scusa? /sorry?
+  voicetrack: 5
   children:
   - a1c2d580-a87b-4e74-bed8-b47ac6914874
   position:
@@ -258,6 +267,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: me too!!
+  voicetrack: 2
   children:
   - 339ce769-1da0-44eb-94d7-79e2cc23a7e0
   position:
@@ -303,7 +313,6 @@ MonoBehaviour:
   - {fileID: -306939712938230833}
   - {fileID: -1214307821011684281}
   - {fileID: 6179723337558153321}
-  - {fileID: 870931034094173365}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &618799530262548616
 MonoBehaviour:
@@ -320,6 +329,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - ceeb93a2-4b39-43ea-a368-e1c86f5bea2b
   position:
@@ -330,33 +340,6 @@ MonoBehaviour:
     height: 100
   OnEnterAction: 
   OnExitAction: 
-  condition:
-    and: []
---- !u!114 &870931034094173365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae08b4295bc8feb4baabb4512d66f2c2, type: 3}
-  m_Name: 7c1d21ad-815d-464b-b90d-1276985b1981
-  m_EditorClassIdentifier: 
-  PlayerSpeaking: 0
-  Question: 0
-  Text: clicca sulla freccia in alto a destra, e poi sul bottone "Travel here" /click
-    on the arrow on the top right corner and then on the button "Travel here"
-  children: []
-  position:
-    serializedVersion: 2
-    x: 2507
-    y: 25
-    width: 250
-    height: 100
-  OnEnterAction: 
-  OnExitAction: MoveAllowed
   condition:
     and: []
 --- !u!114 &2532265704745020781
@@ -374,6 +357,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: si, grazie
+  voicetrack: 
   children:
   - 515e126f-c88c-4f2e-8de1-5c4237f63291
   position:
@@ -401,6 +385,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: 'how do you feel? '
+  voicetrack: 1
   children:
   - 4ffd0a43-381e-4d8b-be0c-c4410cd1c3fb
   - b05ee005-8397-4cf2-b2d8-e66e3c53f15b
@@ -430,6 +415,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: hai ragione
+  voicetrack: 
   children:
   - 35293f2f-b372-48c7-920e-c6333350e176
   position:
@@ -456,9 +442,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerSpeaking: 0
   Question: 0
-  Text: "ok, per raggiungere il centro citt\xE0 /ok, to reach the city center"
-  children:
-  - 7c1d21ad-815d-464b-b90d-1276985b1981
+  Text: "ok, per raggiungere il centro citt\xE0 clicca sulla freccia in alto a destra,
+    e poi sul bottone \"Travel here\" /ok, to reach the city center click on the arrow
+    on the top right corner and then on the button \"Travel here\""
+  voicetrack: 8
+  children: []
   position:
     serializedVersion: 2
     x: 2257
@@ -484,6 +472,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: scusa? /sorry?
+  voicetrack: 5
   children:
   - 169ddcff-f53c-41b0-b273-a15f9446d76c
   position:
@@ -511,6 +500,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: I have an Idea, from now on, we should only communicate in Italian...
+  voicetrack: 3
   children:
   - 169ddcff-f53c-41b0-b273-a15f9446d76c
   position:
@@ -538,6 +528,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: We arrived in Italy!
+  voicetrack: 0
   children:
   - ba862eb0-bc4c-4a82-af15-00fb2c285514
   position:
@@ -566,6 +557,7 @@ MonoBehaviour:
   Question: 1
   Text: hai bisogno di aiuto per arrivarci? /do you need help to arrive there? -si,
     grazie=yes, please -no, grazie= no thanks
+  voicetrack: 7
   children:
   - 0fe392db-44b6-4516-9a8e-9a6201ad57c9
   - fb444f51-547b-49fa-919d-5ce28fbfe186
@@ -595,6 +587,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: cosa ne pensi? /what do you think?  -hai ragione = you are right
+  voicetrack: 4
   children:
   - cdb32ff1-36b8-4459-b026-8fa7802fa539
   - e5d0cf30-d909-4e09-b7a8-9da2febd8cd7

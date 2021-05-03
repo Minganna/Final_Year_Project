@@ -15,6 +15,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: I don't
+  voicetrack: 
   children:
   - a011f14f-fe5b-4c73-be02-3c49db489d6a
   position:
@@ -42,6 +43,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 'sorry? '
+  voicetrack: 4
   children:
   - a93a0dd4-7add-43b4-89de-6ea6eda0f6ef
   position:
@@ -69,6 +71,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: I do
+  voicetrack: 
   children:
   - ec1e06ec-b3fc-44f4-a2ee-fea5658b9d0a
   position:
@@ -96,6 +99,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: My name is Barbara, nice to meet you!!!
+  voicetrack: 1
   children:
   - 3d864f18-74ce-4d10-88ec-f5063461c54a
   position:
@@ -123,6 +127,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: yes it is
+  voicetrack: 
   children:
   - 69bf8ba7-85ed-477a-8341-82230e250a28
   position:
@@ -151,6 +156,7 @@ MonoBehaviour:
   Question: 0
   Text: if you can understand me, I am sure you will be able to understand the locals
     as well!
+  voicetrack: 10
   children:
   - 9886eaa3-49d4-4e3f-b3f7-c764b893e205
   position:
@@ -178,6 +184,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - bd73150a-60d2-4c07-b738-7f05ad8aee95
   position:
@@ -205,12 +212,13 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Very well! question number one!
+  voicetrack: 11
   children:
   - 28cbcb0a-1b4f-45ca-9d1b-16f89964bb49
   position:
     serializedVersion: 2
-    x: 1523
-    y: 585
+    x: 1683
+    y: 598
     width: 250
     height: 100
   OnEnterAction: 
@@ -232,6 +240,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: Is this your first time travelling abroad too?
+  voicetrack: 3
   children:
   - 2bb583e1-d0db-40c9-85e2-7ebd0f22282b
   - c1386871-62f7-48f3-b83e-39998675d662
@@ -261,6 +270,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: oh I see... Do you speak Italian?
+  voicetrack: 5
   children:
   - 55cf7749-7af2-4373-b2e9-73c386b933f5
   - 890dcc1c-ba00-4b42-9116-fb0e08dc95e4
@@ -291,6 +301,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 'see you in Italy! '
+  voicetrack: 17
   children: []
   position:
     serializedVersion: 2
@@ -317,6 +328,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: ok, well I am sure you will be fine in Italy!
+  voicetrack: 15
   children:
   - 020a9359-f224-4bc4-8ea9-4e3d50929ba9
   position:
@@ -344,6 +356,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: con un aereo
+  voicetrack: 
   children:
   - 78e9ece7-bfe7-441a-8d46-26839d3b74a5
   position:
@@ -371,6 +384,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: sorry??
+  voicetrack: 4
   children:
   - 6c78253f-19b6-409e-9896-3e2fd569bd94
   position:
@@ -398,6 +412,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 23895a29-38a2-45d7-93ed-eba975e455f6
   position:
@@ -425,6 +440,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 'Hello! '
+  voicetrack: 0
   children:
   - 7733a8b0-be7f-4f8c-a68e-6e10bbce55c8
   position:
@@ -452,6 +468,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: con un aeroplano
+  voicetrack: 
   children:
   - 78e9ece7-bfe7-441a-8d46-26839d3b74a5
   position:
@@ -479,6 +496,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: come stai oggi?
+  voicetrack: 12
   children:
   - fa3bdbb4-95b5-46bf-9a84-a1343ceb0dfa
   - bec9b6f1-cfbb-4957-8f4d-cdc884cc856c
@@ -556,6 +574,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: con che mezzo di trasporto viaggeremo per arrivare in Italia?
+  voicetrack: 14
   children:
   - 714c16b1-802c-42ed-bb2c-b131fd3ad43f
   - e72ad6fe-b3f9-4ba3-a4be-9251e67a19af
@@ -585,6 +604,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - bfbd81d0-4bac-45a0-905d-3f7376f66381
   position:
@@ -612,6 +632,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: sorry??
+  voicetrack: 4
   children:
   - 69bf8ba7-85ed-477a-8341-82230e250a28
   position:
@@ -639,6 +660,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: not sure
+  voicetrack: 
   children:
   - 803c866f-ca82-4bd4-8886-3c4f7667551f
   position:
@@ -666,12 +688,13 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: sorry?
+  voicetrack: 4
   children:
   - 78e9ece7-bfe7-441a-8d46-26839d3b74a5
   position:
     serializedVersion: 2
-    x: 3247
-    y: 576
+    x: 3374
+    y: 584
     width: 250
     height: 100
   OnEnterAction: 
@@ -693,6 +716,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 
+  voicetrack: 
   children: []
   position:
     serializedVersion: 2
@@ -719,6 +743,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: "I have never left the UK before\u2026. I feel so nervous!"
+  voicetrack: 2
   children:
   - 6c78253f-19b6-409e-9896-3e2fd569bd94
   position:
@@ -746,6 +771,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: no it isn't
+  voicetrack: 
   children:
   - 69bf8ba7-85ed-477a-8341-82230e250a28
   position:
@@ -773,6 +799,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: okay, next question!
+  voicetrack: 13
   children:
   - 6d34ffb9-43db-4a49-9c31-ef4e1a41c96c
   position:
@@ -800,6 +827,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: abbastanza bene
+  voicetrack: 
   children:
   - a93a0dd4-7add-43b4-89de-6ea6eda0f6ef
   position:
@@ -827,6 +855,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: molto bene
+  voicetrack: 
   children:
   - a93a0dd4-7add-43b4-89de-6ea6eda0f6ef
   position:
@@ -854,6 +883,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: oh okay, I don't know if it might help
+  voicetrack: 8
   children:
   - a73ef08a-6ab7-4da4-8584-d7ffc81e05c9
   position:
@@ -881,6 +911,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: nice!! you will not have any issue talking with the locals then!
+  voicetrack: 6
   children:
   - 020a9359-f224-4bc4-8ea9-4e3d50929ba9
   position:
@@ -908,12 +939,13 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: sto bene
+  voicetrack: 
   children:
   - a93a0dd4-7add-43b4-89de-6ea6eda0f6ef
   position:
     serializedVersion: 2
-    x: 2087
-    y: 348
+    x: 2003
+    y: 338
     width: 250
     height: 100
   OnEnterAction: 
@@ -935,6 +967,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: but I can ask you some question in Italian
+  voicetrack: 9
   children:
   - be039631-c72f-4393-9634-189c6f162cc9
   position:
@@ -962,6 +995,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: oh... I am sure you will be fine!
+  voicetrack: 7
   children:
   - 020a9359-f224-4bc4-8ea9-4e3d50929ba9
   position:
@@ -989,6 +1023,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: look, they announced the gate! it's time to go!
+  voicetrack: 16
   children:
   - 09919a71-df75-4db7-ab0e-3e8c48aa1809
   position:

@@ -15,6 +15,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: '... /...'
+  voicetrack: 
   children: []
   position:
     serializedVersion: 2
@@ -57,6 +58,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: ' Quack Quack /Quack Quack'
+  voicetrack: 0
   children:
   - 358d8d3f-5550-4252-837c-68a8b407a096
   position:

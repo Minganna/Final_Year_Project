@@ -15,6 +15,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Sono veramente concentrato al momento, parleremo dopo.
+  voicetrack: 5
   children: []
   position:
     serializedVersion: 2
@@ -41,6 +42,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 4d79862e-8bee-4d01-91a7-1cb14836fd06
   position:
@@ -67,14 +69,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerSpeaking: 1
   Question: 0
-  Text: "No, e\u2019 importante"
+  Text: Non posso
+  voicetrack: 
   children:
   - 1f4f1eda-089c-44fc-8587-d75e47e70ca7
   - 169cec4f-1f5c-4ff2-8482-b92bd0b8c111
   position:
     serializedVersion: 2
-    x: 305
-    y: 123
+    x: 286
+    y: 126
     width: 250
     height: 100
   OnEnterAction: 
@@ -119,6 +122,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: Sono impegnato al momento, puoi aspettare?
+  voicetrack: 1
   children:
   - 6fd859ef-022d-4ea1-9104-e9980443fac1
   - 9a0b7d40-bc19-4c38-bba4-97a6ba126002
@@ -148,6 +152,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: scusa?
+  voicetrack: 2
   children:
   - 69a78b08-bec3-45d3-85e5-07e2f4583b1d
   position:
@@ -175,6 +180,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Salve
+  voicetrack: 0
   children:
   - 69a78b08-bec3-45d3-85e5-07e2f4583b1d
   position:
@@ -202,6 +208,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: A dopo
+  voicetrack: 3
   children: []
   position:
     serializedVersion: 2
@@ -228,6 +235,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Oh! La mia scultura! Ringrazia Bob per me la prossima volta che lo vedi.
+  voicetrack: 4
   children: []
   position:
     serializedVersion: 2
@@ -258,13 +266,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerSpeaking: 1
   Question: 0
-  Text: Si, posso aspettare
+  Text: Posso aspettare
+  voicetrack: 
   children:
   - 15830c0f-d8aa-4e39-aaf0-49e3438861c1
   position:
     serializedVersion: 2
-    x: 250
-    y: 0
+    x: 265
+    y: 1
     width: 250
     height: 100
   OnEnterAction: 
