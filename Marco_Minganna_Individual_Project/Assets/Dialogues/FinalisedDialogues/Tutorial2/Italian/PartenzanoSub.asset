@@ -166,7 +166,7 @@ MonoBehaviour:
     y: 265
     width: 250
     height: 100
-  OnEnterAction: 
+  OnEnterAction: translation
   OnExitAction: 
   condition:
     and: []

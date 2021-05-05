@@ -16,6 +16,7 @@ MonoBehaviour:
   Question: 1
   Text: "Oh oh, you just arrived in town! How do you like it? /Oh oh, sei appena arrivato
     qui in citt\xE0! Ti piace? -I do=Mi piace molto -I don\u2019t=Non mi piace"
+  voicetrack: 3
   children:
   - 31cf36d3-643f-42be-bb70-04ddd6ba1d11
   - f0db8449-f7a5-4fe9-9bb3-eb06f9f18515
@@ -46,6 +47,7 @@ MonoBehaviour:
   Question: 1
   Text: "you are not from around here, are you?/Non sei di queste parti vero? -No
     I\u2019m not=Non lo sono"
+  voicetrack: 1
   children:
   - 68e66d3e-8d74-4ab7-831c-776aaccca316
   - 179ffaa0-e42d-4f1b-977b-f822c41a8bb4
@@ -80,6 +82,7 @@ MonoBehaviour:
   Question: 0
   Text: "if you do not know, these types of bird are very common in England. /Se non
     ne sei a conoscenza, e\u2019 un tipo di volatile molto comune in Inghilterra."
+  voicetrack: 10
   children:
   - 97db1707-af91-4cb5-aa23-26fa03a02b7e
   position:
@@ -107,6 +110,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: No, sorry
+  voicetrack: 
   children:
   - 119ded69-38ef-4a43-b9b0-800eb649bfbe
   position:
@@ -134,6 +138,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: You should find him at the beach./dovresti trovarlo alla spiaggia.
+  voicetrack: 14
   children: []
   position:
     serializedVersion: 2
@@ -168,6 +173,7 @@ MonoBehaviour:
     to him today, but these old legs are getting weak. /Ma sto divagando, ho promesso
     al mio amico che avrei consegnato oggi la scultura, ma queste gambe anziane non
     sono piu\u2019 quelle di una volta."
+  voicetrack: 11
   children:
   - 6b70d2d4-eb1e-4938-9a97-4d628817ed2c
   position:
@@ -195,6 +201,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Hello youngster /Salve giovanotto
+  voicetrack: 0
   children:
   - 032c6cb4-2ba1-45ec-8196-b896ef8cdd0d
   - 4a9dcd6a-fcb4-4a63-9b68-6cd7ebb2341c
@@ -223,6 +230,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: I don't
+  voicetrack: 
   children:
   - f2e66376-5307-4f6b-bc96-aad1b4d5be35
   position:
@@ -251,6 +259,7 @@ MonoBehaviour:
   Question: 0
   Text: I am sorry to hear that, Me and my wife lived our entire life here! /Oh mi
     spiace di sentirlo, io e mia moglie abbiamo vissuto qua da sempre!
+  voicetrack: 5
   children:
   - c9671c30-6cab-46bf-8626-a2fb9c0d20fa
   position:
@@ -279,6 +288,7 @@ MonoBehaviour:
   Question: 1
   Text: Could you deliver it in my stead? /Potresti consegnarlo tu per me? -yes I
     can=Certo che posso
+  voicetrack: 12
   children:
   - e5a31837-0770-4f7e-9f8c-4b6a1f4734b0
   - bb6ab3db-bdcd-4125-b7f3-d2301dbeeae0
@@ -309,6 +319,7 @@ MonoBehaviour:
   Text: 'I am a woodworker you see? And I love to carve animals, so I take inspiration
     from the local fauna. /Io sono un falegname sai? Mi piace scolpire animali, per
     questor prendo ispirazione dalla fauna locale.  '
+  voicetrack: 6
   children:
   - 4d3488ba-7558-4f32-8013-b4f3fd69552c
   position:
@@ -336,6 +347,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - b642d58f-f211-4301-b190-0df3abad148b
   position:
@@ -363,6 +375,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: pardon me? /perdonami?
+  voicetrack: 2
   children:
   - 032c6cb4-2ba1-45ec-8196-b896ef8cdd0d
   position:
@@ -390,6 +403,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: "Oh okay, don\u2019t worry about it. /Oh va bene, non ti preoccupare. "
+  voicetrack: 8
   children: []
   position:
     serializedVersion: 2
@@ -416,6 +430,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: Yes, sure
+  voicetrack: 
   children:
   - 3ab5a0bc-727c-470f-916e-56a74bb5cc29
   position:
@@ -444,6 +459,7 @@ MonoBehaviour:
   Question: 0
   Text: 'Thank you! You should be able to find him fishing at the beach. /Grazie mille!
     Dovresti trovarlo in spiaggia a pescare. '
+  voicetrack: 13
   children: []
   position:
     serializedVersion: 2
@@ -470,6 +486,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - f8fe7b94-e874-406d-afb3-197ec4f57c35
   position:
@@ -539,6 +556,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: yes I can
+  voicetrack: 
   children:
   - 115a2e69-4e4d-4d98-a3b9-4f678912b0d2
   position:
@@ -566,6 +584,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: pardon me? /perdonami?
+  voicetrack: 2
   children:
   - 6b70d2d4-eb1e-4938-9a97-4d628817ed2c
   position:
@@ -593,6 +612,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: pardon me? perdonami?
+  voicetrack: 2
   children:
   - 4c7e9130-b9e3-403c-98bf-cb6fbec59e9b
   position:
@@ -620,6 +640,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: "No I\u2019m not"
+  voicetrack: 
   children:
   - 4c7e9130-b9e3-403c-98bf-cb6fbec59e9b
   position:
@@ -648,6 +669,7 @@ MonoBehaviour:
   Question: 1
   Text: Before I forget, could you do me a favour?  /Prima che mi dimentico, potresti
     farmi un favore? -Yes, sure=si, certo -No, sorry=No, scusa
+  voicetrack: 7
   children:
   - 4d475fd5-1563-4311-a8de-38b55e853ad0
   - f2556947-abeb-432f-90b5-e45fc254202a
@@ -677,6 +699,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 724ec409-511a-4901-84f1-d454ff3d7b23
   position:
@@ -704,6 +727,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - f2d6e5f0-5008-454c-8651-97ab8f4155e0
   position:
@@ -731,6 +755,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: 'I do '
+  voicetrack: 
   children:
   - 7109dd42-e2f9-46c1-836f-ed814f9f9cf0
   position:
@@ -759,6 +784,7 @@ MonoBehaviour:
   Question: 0
   Text: I am happy to hear that, Me and my wife lived our entire life here! /Mi fa
     piacere sentirlo, io e mia moglie abbiamo vissuto qua da sempre!
+  voicetrack: 4
   children:
   - c9671c30-6cab-46bf-8626-a2fb9c0d20fa
   position:
@@ -787,6 +813,7 @@ MonoBehaviour:
   Question: 0
   Text: Thank you! My friend commissioned me a seagull sculpture, /Grazie! Un mio
     amico ha ordinato una scultura di un gabbiano,
+  voicetrack: 9
   children:
   - 08c92290-4f1c-44d7-b9db-5ce12b113c54
   position:
@@ -814,6 +841,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: pardon me? perdonami?
+  voicetrack: 2
   children:
   - 4d3488ba-7558-4f32-8013-b4f3fd69552c
   position:

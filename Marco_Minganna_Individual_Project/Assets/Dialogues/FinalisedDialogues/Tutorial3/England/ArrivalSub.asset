@@ -454,7 +454,7 @@ MonoBehaviour:
     width: 250
     height: 100
   OnEnterAction: 
-  OnExitAction: 
+  OnExitAction: MoveAllowed
   condition:
     and: []
 --- !u!114 &6270978142821948972

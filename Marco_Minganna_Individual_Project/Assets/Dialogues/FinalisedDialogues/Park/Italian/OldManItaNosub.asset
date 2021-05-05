@@ -15,7 +15,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 'I am happy to hear that, Me and my wife lived our entire life here! '
-  voicetrack: 
+  voicetrack: 4
   children:
   - 8483285b-d7d6-4e45-bcbe-70e3dee0e9de
   position:
@@ -43,7 +43,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: "Oh okay, don\u2019t worry about it."
-  voicetrack: 
+  voicetrack: 8
   children: []
   position:
     serializedVersion: 2
@@ -98,7 +98,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 'I am sorry to hear that, Me and my wife lived our entire life here! '
-  voicetrack: 
+  voicetrack: 5
   children:
   - 8483285b-d7d6-4e45-bcbe-70e3dee0e9de
   position:
@@ -127,7 +127,7 @@ MonoBehaviour:
   Question: 0
   Text: 'I am a woodworker you see? And I love to carve animals, so I take inspiration
     from the local fauna. '
-  voicetrack: 
+  voicetrack: 6
   children:
   - d94a2d37-2e98-497e-9914-c038acce0079
   position:
@@ -155,7 +155,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: pardon me?
-  voicetrack: 
+  voicetrack: 2
   children:
   - 822158e2-6de5-47d4-8b9d-35ba326afa73
   position:
@@ -183,7 +183,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: you are not from around here, are you?
-  voicetrack: 
+  voicetrack: 1
   children:
   - 1cd51287-aed6-46ac-b61c-c2a87b5b381b
   - 76e9ec0b-17c9-4d92-8823-e8aefba710a1
@@ -217,7 +217,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: if you do not know, these types of bird are very common in England.
-  voicetrack: 
+  voicetrack: 10
   children:
   - 573f53c6-6eb0-425a-ae7b-13511dd2740b
   position:
@@ -245,7 +245,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: You should find him at the beach.
-  voicetrack: 
+  voicetrack: 14
   children: []
   position:
     serializedVersion: 2
@@ -347,7 +347,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: pardon me?
-  voicetrack: 
+  voicetrack: 2
   children:
   - 12176330-9d4d-4211-b343-9df455de0b81
   position:
@@ -403,14 +403,14 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 'Hello youngster '
-  voicetrack: 
+  voicetrack: 0
   children:
   - ff449f55-19a4-4894-a642-da7c1f9c7a5b
   - 341cdc23-e76b-4e8a-a740-4d6964769da2
   position:
     serializedVersion: 2
-    x: 1
-    y: 320
+    x: 446
+    y: 322
     width: 250
     height: 100
   OnEnterAction: 
@@ -516,7 +516,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 'Thank you! You should be able to find him fishing at the beach. '
-  voicetrack: 
+  voicetrack: 13
   children: []
   position:
     serializedVersion: 2
@@ -543,7 +543,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: ' Could you deliver it in my stead?'
-  voicetrack: 
+  voicetrack: 12
   children:
   - 35f74a12-a1f0-495a-958d-51f1fbc462c9
   - a5b9e2e2-a82a-4051-89b4-6bf23b683812
@@ -601,7 +601,7 @@ MonoBehaviour:
   Question: 0
   Text: "I\u2019m digressing, I have promised my friend that I would deliver the sculpture
     to him today, but these old legs are getting weak."
-  voicetrack: 
+  voicetrack: 11
   children:
   - 822158e2-6de5-47d4-8b9d-35ba326afa73
   position:
@@ -629,7 +629,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: pardon me?
-  voicetrack: 
+  voicetrack: 2
   children:
   - d94a2d37-2e98-497e-9914-c038acce0079
   position:
@@ -657,7 +657,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Thank you! My friend commissioned me a seagull sculpture
-  voicetrack: 
+  voicetrack: 9
   children:
   - 98ae18d0-1316-4a29-87e5-898f76d62607
   position:
@@ -713,7 +713,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: pardon me?
-  voicetrack: 
+  voicetrack: 2
   children:
   - ff449f55-19a4-4894-a642-da7c1f9c7a5b
   position:
@@ -797,7 +797,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: 'Before I forget, could you do me a favour? '
-  voicetrack: 
+  voicetrack: 7
   children:
   - 0e20a451-6305-4067-95fe-9d3f98c7eff0
   - 279e3099-45ca-44f7-a7bb-2fe31d69a96c
@@ -827,7 +827,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: Oh oh, you just arrived in town! How do you like it?
-  voicetrack: 
+  voicetrack: 3
   children:
   - fa3b2bea-88bf-4490-a082-9fb7665f4193
   - 326453ea-3695-4670-adb4-51b8a5e5b8ac

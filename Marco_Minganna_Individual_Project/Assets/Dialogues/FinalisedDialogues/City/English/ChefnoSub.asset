@@ -74,7 +74,7 @@ MonoBehaviour:
   Question: 0
   Text: "Per arrivarci basta che clicchi sulla freccia in alto a sinistra e poi sul
     tasto \u201CTravel here\u201D "
-  voicetrack: 
+  voicetrack: 4
   children: []
   position:
     serializedVersion: 2
@@ -101,7 +101,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: "capisco, stai cercando l\u2019hotel, \xE9 veramente vicino!"
-  voicetrack: 
+  voicetrack: 3
   children:
   - 5875e56c-db6f-404f-bb23-d43d94f1cc55
   position:
@@ -140,7 +140,7 @@ MonoBehaviour:
   Question: 0
   Text: "Capisco, sei appena arrivato in citt\xE0 e stai cercando qualcosa da fare\u2026
     ti suggerisco di visitare il Colosseo"
-  voicetrack: 
+  voicetrack: 5
   children:
   - 82b8453d-4dc6-477d-99bc-5b1fe83f684d
   position:
@@ -179,7 +179,7 @@ MonoBehaviour:
   Question: 0
   Text: "e\u2019 abbastanza lontano da qui, ti suggerisco di tornare alla tua stanza
     d\u2019hotel  e partire da l\xEC. "
-  voicetrack: 
+  voicetrack: 6
   children:
   - c905c503-2b69-407d-988d-6bbf4e0351f5
   position:
@@ -207,7 +207,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: oppure potresti visitare il parco qui vicino.
-  voicetrack: 
+  voicetrack: 7
   children: []
   position:
     serializedVersion: 2
@@ -234,7 +234,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: oppure potresti visitare il parco qui vicino.
-  voicetrack: 
+  voicetrack: 7
   children: []
   position:
     serializedVersion: 2
@@ -292,8 +292,8 @@ MonoBehaviour:
   children: []
   position:
     serializedVersion: 2
-    x: 830
-    y: 344
+    x: 868
+    y: 351
     width: 250
     height: 100
   OnEnterAction: 
@@ -372,13 +372,13 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Salve
-  voicetrack: 
+  voicetrack: 0
   children:
   - 665efd2c-d00d-4c87-8daa-5f4310b7bc7e
   position:
     serializedVersion: 2
     x: 24
-    y: 29
+    y: 36
     width: 250
     height: 100
   OnEnterAction: 
@@ -401,7 +401,7 @@ MonoBehaviour:
   Question: 0
   Text: "Capisco, sei appena arrivato in citt\xE0 e stai cercando qualcosa da fare\u2026
     ti suggerisco di visitare il Colosseo"
-  voicetrack: 
+  voicetrack: 5
   children:
   - 0c696886-0fcd-4d70-a348-c5499502cd14
   position:
@@ -434,7 +434,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: 'Serve aiuto? '
-  voicetrack: 
+  voicetrack: 1
   children:
   - d2772a60-c995-4c3f-a683-2e2264142196
   - 16ec81ae-02e3-460b-8472-a4abf744158b
@@ -464,7 +464,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: puoi ripetere?
-  voicetrack: 
+  voicetrack: 2
   children:
   - 665efd2c-d00d-4c87-8daa-5f4310b7bc7e
   position:
@@ -493,7 +493,7 @@ MonoBehaviour:
   Question: 0
   Text: "e\u2019 abbastanza lontano da qui, ti suggerisco di tornare alla tua stanza
     d\u2019hotel  e partire da l\xEC. "
-  voicetrack: 
+  voicetrack: 6
   children:
   - eadf5d6c-6234-4e30-8340-636e27fbc784
   position:

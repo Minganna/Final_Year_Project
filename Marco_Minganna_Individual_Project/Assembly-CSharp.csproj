@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\CommonScript\CommonVariables.cs" />
     <Compile Include="Assets\Scripts\CommonScript\ComputerInputs.cs" />
     <Compile Include="Assets\Scripts\CommonScript\Condition.cs" />
+    <Compile Include="Assets\Scripts\CommonScript\Exit.cs" />
     <Compile Include="Assets\Scripts\CommonScript\IpredicateEvaluator.cs" />
     <Compile Include="Assets\Scripts\CommonScript\MobilePhoneImputs.cs" />
     <Compile Include="Assets\Scripts\CommonScript\NPCHasStillDialogue.cs" />

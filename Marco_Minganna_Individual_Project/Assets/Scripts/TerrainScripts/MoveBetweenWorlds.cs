@@ -12,7 +12,7 @@ public class MoveBetweenWorlds : MonoBehaviour
     CommonVariables cv = new CommonVariables();
 
     [SerializeField] 
-    static bool nextAreaUnlocked=true;
+    static bool nextAreaUnlocked=false;
 
     [SerializeField] int NextAreaSceneN;
     [SerializeField] int PreviousAreaSceneN;

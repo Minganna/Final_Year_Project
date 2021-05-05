@@ -15,6 +15,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 
+  voicetrack: 
   children: []
   position:
     serializedVersion: 2
@@ -41,6 +42,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Salve / Hello
+  voicetrack: 0
   children:
   - 5949a988-4de9-4cd5-84e0-1260be8d7228
   position:
@@ -69,6 +71,7 @@ MonoBehaviour:
   Question: 0
   Text: oppure potresti visitare il parco qui vicino./otherwise you could visit the
     park nearby
+  voicetrack: 7
   children: []
   position:
     serializedVersion: 2
@@ -97,6 +100,7 @@ MonoBehaviour:
   Text: "e\u2019 abbastanza lontano da qui, ti suggerisco di tornare alla tua stanza
     d\u2019hotel  e partire da l\xEC. /It\u2019s quite far from here, I suggest you
     to go back to your hotel room and travel from there. "
+  voicetrack: 6
   children:
   - 43801a1d-1a68-459a-859d-d94326a5ad4f
   position:
@@ -126,6 +130,7 @@ MonoBehaviour:
   Text: "e\u2019 abbastanza lontano da qui, ti suggerisco di tornare alla tua stanza
     d\u2019hotel  e partire da l\xEC. /It\u2019s quite far from here, I suggest you
     to go back to your hotel room and travel from there. "
+  voicetrack: 6
   children:
   - 96388c58-262c-4d35-a15c-999fb730734f
   position:
@@ -154,6 +159,7 @@ MonoBehaviour:
   Question: 0
   Text: "capisco, stai cercando l\u2019hotel, \xE9 veramente vicino! / I see, you
     are looking for the hotel, it\u2019s very close! "
+  voicetrack: 3
   children:
   - 0fc6848b-0fd3-4063-838e-4b5e9efbcac8
   position:
@@ -191,6 +197,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: Serve aiuto? / Can I help you? -si grazie=yes please -no,grazie=no,thanks
+  voicetrack: 1
   children:
   - 095441fe-e782-4c3c-a8ab-3f1d06b12b49
   - af03787e-daea-47ff-9bff-052996bd76c7
@@ -220,6 +227,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: 'ok allora, ciao! / Ok then, bye! '
+  voicetrack: 
   children: []
   position:
     serializedVersion: 2
@@ -247,6 +255,7 @@ MonoBehaviour:
   Question: 0
   Text: oppure potresti visitare il parco qui vicino./otherwise you could visit the
     park nearby
+  voicetrack: 7
   children: []
   position:
     serializedVersion: 2
@@ -304,6 +313,7 @@ MonoBehaviour:
   Text: "Per arrivarci basta che clicchi sulla freccia in alto a sinistra e poi sul
     tasto \u201CTravel here\u201D /to reach the hotel you just need to click on the
     arrow on the top left and then on the button that says \u201CTravel here\u201D"
+  voicetrack: 4
   children: []
   position:
     serializedVersion: 2
@@ -330,6 +340,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: si grazie
+  voicetrack: 
   children:
   - bbe481ca-9e6c-4493-921a-8061d43e088e
   - 0561fadf-6188-43d0-8442-f47bf318ee85
@@ -361,6 +372,7 @@ MonoBehaviour:
   Text: "Capisco, sei appena arrivato in citt\xE0 e stai cercando qualcosa da fare\u2026
     ti suggerisco di visitare il Colosseo/I see, you just arrived here and you are
     looking for something to do\u2026 I suggest you to visit the Colosseum. "
+  voicetrack: 5
   children:
   - 0ea6bd34-1db2-4d6e-bde5-0973e2da4344
   position:
@@ -398,6 +410,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: no, grazie
+  voicetrack: 
   children:
   - 3fbf55a7-8d89-431d-8b9c-c1cd16f7a207
   position:
@@ -427,6 +440,7 @@ MonoBehaviour:
   Text: "Capisco, sei appena arrivato in citt\xE0 e stai cercando qualcosa da fare\u2026
     ti suggerisco di visitare il Colosseo/I see, you just arrived here and you are
     looking for something to do\u2026 I suggest you to visit the Colosseum. "
+  voicetrack: 5
   children:
   - c8fe985a-14ca-444c-80cc-bc1d3dc0dcac
   position:
@@ -459,6 +473,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 82bf62f2-aede-4068-97cc-5274f58425db
   position:
@@ -486,6 +501,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: puoi ripetere / could you repete that?
+  voicetrack: 2
   children:
   - 5949a988-4de9-4cd5-84e0-1260be8d7228
   position:

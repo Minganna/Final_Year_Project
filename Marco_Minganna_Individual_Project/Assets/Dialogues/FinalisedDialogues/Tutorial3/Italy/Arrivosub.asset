@@ -15,7 +15,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: ok, spero di rincontrarti presto!  / ok, I hope to see you soon!
-  voicetrack: 9
+  voicetrack: 8
   children: []
   position:
     serializedVersion: 2
@@ -561,16 +561,16 @@ MonoBehaviour:
   Text: "ok, to reach the city center click on the arrow on the top right corner and
     then on the button \"Travel here\" /ok, per raggiungere il centro citt\xE0 clicca
     sulla freccia in alto a destra, e poi sul bottone \"Travel here\""
-  voicetrack: 8
+  voicetrack: 9
   children: []
   position:
     serializedVersion: 2
     x: 2139
-    y: 28
+    y: 27
     width: 250
     height: 100
   OnEnterAction: 
-  OnExitAction: 
+  OnExitAction: MoveAllowed
   condition:
     and: []
 --- !u!114 &8835874523455886804
