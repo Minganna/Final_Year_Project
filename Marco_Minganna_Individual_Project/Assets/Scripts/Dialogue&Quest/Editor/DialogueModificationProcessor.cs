@@ -3,8 +3,14 @@ using System.Collections.Generic;
 using UnityEditor;
 using System.IO;
 
+/// <summary>
+/// namespace used for the dialogue editors classes
+/// </summary>
 namespace Dialogue.Editor
 {
+    /// <summary>
+    /// used to keep the changes in the dialogue such as rename 
+    /// </summary>
     public class DialogueModificationProcessor : UnityEditor.AssetModificationProcessor
     {
         private static AssetMoveResult OnWillMoveAsset(string sourcePath,string destinationPath)

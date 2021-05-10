@@ -4,13 +4,11 @@ using UnityEngine;
 using Dialogue;
 using UnityEngine.UI;
 
+/// <summary>
+/// Class used to interact with the NPC
+/// </summary>
 public class ComputerInputs : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
-        {
-
-        }
 
     // Turn on the bit using an OR operation:
     public void Show()

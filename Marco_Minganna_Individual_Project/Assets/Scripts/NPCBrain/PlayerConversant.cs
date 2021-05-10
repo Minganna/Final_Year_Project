@@ -7,22 +7,58 @@ using Core;
 
 namespace Dialogue
 {
+    /// <summary>
+    /// This class is used to keep track of the status of the current dialogue
+    /// </summary>
     public class PlayerConversant : MonoBehaviour
     {
-
+        /// <summary>
+        /// Variable that keep track of the player name
+        /// </summary>
         [SerializeField]string playerName;
+        /// <summary>
+        /// Variable that keep track of the player avatar render texture
+        /// </summary>
         [SerializeField] RenderTexture playerAvatar;
+        /// <summary>
+        /// The current dialogue 
+        /// </summary>
         Dialogue currentDialogue;
+        /// <summary>
+        /// the current dialogue node 
+        /// </summary>
         DialogueNode currentNode = null;
+        /// <summary>
+        /// Variable that keep track of the AI conversant 
+        /// </summary>
         NPCDialogues currentConverstant = null;
+        /// <summary>
+        /// Variable that is keeping track if the player is choosing an answer for a question
+        /// </summary>
         bool isChoosing = false;
+        /// <summary>
+        /// Class that keep track of the common static variables
+        /// </summary>
         CommonVariables cv = new CommonVariables();
+        /// <summary>
+        /// Used to call a DialogueUI function
+        /// </summary>
         public event Action onConversationUpdated;
+        /// <summary>
+        /// A string that keeps track of the current voiceActing line
+        /// </summary>
         string VoiceActingline;
+        /// <summary>
+        /// the Voiceacting manager script
+        /// </summary>
         VoiceActing va;
 
 
-
+        /// <summary>
+        /// This function is used to start the dialogue
+        /// </summary>
+        /// <param name="newConversant"></param>
+        /// <param name="newDialogue"></param>
         public void StartDialogue(NPCDialogues newConversant, Dialogue newDialogue)
         {
             playerName = cv.getName();
@@ -38,7 +74,9 @@ namespace Dialogue
             onConversationUpdated();
         }
 
-
+        /// <summary>
+        /// Function used to play the voice line linked to the current text
+        /// </summary>
         public void PlayVoice()
         {
             if(va!=null)
@@ -48,7 +86,10 @@ namespace Dialogue
                 va.PlayVoiceLine(VoiceActingline);
             }    
         }
-
+        /// <summary>
+        /// Function used to update the name displayed based on who is talking
+        /// </summary>
+        /// <returns></returns>
         public string GetCurrentConversantName()
         {
             if(isChoosing)
@@ -61,7 +102,10 @@ namespace Dialogue
             }
         }
 
-
+        /// <summary>
+        /// Function used to update the avatar based on who is talking
+        /// </summary>
+        /// <returns></returns>
         public RenderTexture GetCurrentAvatar()
         {
             if (isChoosing)
@@ -74,6 +118,9 @@ namespace Dialogue
             }
         }
 
+        /// <summary>
+        /// Function used to exit the dialogue and close the UI
+        /// </summary>
         public void Quit()
         {
             TriggerQuitExitAction();
@@ -83,17 +130,27 @@ namespace Dialogue
             isChoosing = false;
             onConversationUpdated();
         }
-
+        /// <summary>
+        /// Used to make sure that a dialogue is stored in the dialogue variable
+        /// </summary>
+        /// <returns></returns>
         public bool isActive()
         {
             return currentDialogue != null;
         }
-
+        /// <summary>
+        /// getter for the isChoosing variable
+        /// </summary>
+        /// <returns></returns>
         public bool IsChoosing()
         {
             return isChoosing;
         }
 
+        /// <summary>
+        /// used to get the dialogue text
+        /// </summary>
+        /// <returns></returns>
         public string GetText()
         {
             if(currentNode==null)
@@ -105,7 +162,10 @@ namespace Dialogue
                return currentNode.GetText();
             }    
         }
-
+        /// <summary>
+        /// getter for the isQuestion variable
+        /// </summary>
+        /// <returns></returns>
         public bool GetIsQuestion()
         {
             if (currentNode == null)
@@ -117,7 +177,10 @@ namespace Dialogue
                 return currentNode.IsQuestion();
             }
         }
-
+        /// <summary>
+        /// Getter for the variable that store the name of the voiceline track
+        /// </summary>
+        /// <returns></returns>
         public string GetVoiceActingline()
         {
 
@@ -130,7 +193,10 @@ namespace Dialogue
                 return currentNode.GetVoiceTrack();
             }
         }
-
+        /// <summary>
+        /// used to select the node that the player choose during a question
+        /// </summary>
+        /// <param name="chosenNode"></param>
         public void SelectChoice(DialogueNode chosenNode)
         {
             currentNode = chosenNode;
@@ -140,7 +206,9 @@ namespace Dialogue
 
 
 
-
+        /// <summary>
+        /// used to move to the next dialogue node
+        /// </summary>
         public void Next()
         {
 
@@ -161,17 +229,29 @@ namespace Dialogue
             onConversationUpdated();
         }
 
+        /// <summary>
+        /// used to get all the possible choice when there is a question
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<DialogueNode> GetChoices()
         {
             return filterOnCondition(currentDialogue.GetPlayerChildren(currentNode));
         }
 
-
+        /// <summary>
+        /// check if there is a child node connected to the current node
+        /// </summary>
+        /// <returns></returns>
         public bool hasNext()
         {
             return filterOnCondition(currentDialogue.GetAllChildren(currentNode)).Count()>0;
         }
 
+        /// <summary>
+        /// check if the conditions are meet
+        /// </summary>
+        /// <param name="inputNode"></param>
+        /// <returns></returns>
         private IEnumerable<DialogueNode> filterOnCondition(IEnumerable<DialogueNode> inputNode)
         {
             foreach(var node in inputNode)
@@ -189,6 +269,9 @@ namespace Dialogue
             return GetComponents<IpredicateEvaluator>();
         }
 
+        /// <summary>
+        /// called when entering a node
+        /// </summary>
         private void TriggerEnterAction()
         {
             if(currentNode!= null)
@@ -196,6 +279,9 @@ namespace Dialogue
                 TriggerAction(currentNode.GetOnEnterAction());
             }
         }
+        /// <summary>
+        /// called when exiting a node
+        /// </summary>
         private void TriggerExitAction()
         {
             if (currentNode != null)
@@ -206,7 +292,9 @@ namespace Dialogue
               
             }
         }
-
+        /// <summary>
+        /// called when closing a dialogue
+        /// </summary>
         private void TriggerQuitExitAction()
         {
             if (currentNode != null)
@@ -222,7 +310,10 @@ namespace Dialogue
 
             }
         }
-
+        /// <summary>
+        /// used to call a specific behaviour when needed
+        /// </summary>
+        /// <param name="action"></param>
         private void TriggerAction(string action)
         {
             if (action == "") return;

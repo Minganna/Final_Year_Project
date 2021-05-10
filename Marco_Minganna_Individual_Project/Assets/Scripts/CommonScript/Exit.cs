@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// used to exit the game
+/// </summary>
 public class Exit : MonoBehaviour
 {
     void Update()

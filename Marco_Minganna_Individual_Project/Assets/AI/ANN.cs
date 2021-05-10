@@ -2,13 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This class is used for the Artificial Neural Network logic
+/// </summary>
 public class ANN{
 
+	/// <summary>
+	/// Variable used to determine the number of inputs required
+	/// </summary>
 	public int numInputs;
+	/// <summary>
+	/// Variable used to determine the number of inputs expected
+	/// </summary>
 	public int numOutputs;
+	/// <summary>
+	/// The number of hidden layers
+	/// </summary>
 	public int numHidden;
+	/// <summary>
+	/// the number of neuron per hidden layers
+	/// </summary>
 	public int numNPerHidden;
 	public double alpha;
+	/// <summary>
+	/// List that is used to determine what activation funtion is requested per hidden layers and for the last output
+	/// </summary>
     List<int> Activationfunctions=new List<int>();
 	List<Layer> layers = new List<Layer>();
 
@@ -38,7 +56,12 @@ public class ANN{
 			layers.Add(new Layer(numOutputs, numInputs));
 		}
 	}
-
+	/// <summary>
+	/// This function is used to train the ANN for a specific input/output situation
+	/// </summary>
+	/// <param name="inputValues"></param>
+	/// <param name="desiredOutput"></param>
+	/// <returns></returns>
 	public List<double> Train(List<double> inputValues, List<double> desiredOutput)
 	{
 		List<double> outputValues = new List<double>();
@@ -47,6 +70,11 @@ public class ANN{
 		return outputValues;
 	}
 
+	/// <summary>
+	/// this function is used to calculate the output
+	/// </summary>
+	/// <param name="inputValues"></param>
+	/// <returns></returns>
 	public List<double> CalcOutput(List<double> inputValues)
 	{
 		List<double> inputs = new List<double>();
@@ -95,6 +123,10 @@ public class ANN{
 		return outputValues;
 	}
 
+	/// <summary>
+	/// this function is used to export the weights and the bias
+	/// </summary>
+	/// <returns></returns>
 	public string PrintWeights()
 	{
 		string weightStr = "";
@@ -114,6 +146,10 @@ public class ANN{
 		return weightStr;
 	}
 
+	/// <summary>
+	/// this function is used to load the previously saved weights
+	/// </summary>
+	/// <param name="weightStr"></param>
 	public void LoadWeights(string weightStr)
 	{
 		if(weightStr == "") return;
@@ -134,7 +170,11 @@ public class ANN{
             }
 		}
 	}
-	
+	/// <summary>
+	///  this funtion is used during the training process to update the weights based on the error
+	/// </summary>
+	/// <param name="outputs"></param>
+	/// <param name="desiredOutput"></param>
 	void UpdateWeights(List<double> outputs, List<double> desiredOutput)
 	{
 		double error;
@@ -175,7 +215,12 @@ public class ANN{
 		}
 
 	}
-
+	/// <summary>
+	/// This function is used to calculate the output base on the selected activation function
+	/// </summary>
+	/// <param name="value"></param>
+	/// <param name="functocall"></param>
+	/// <returns></returns>
 	double ActivationFunction(double value,int functocall)
 	{
         double result=0.0f;

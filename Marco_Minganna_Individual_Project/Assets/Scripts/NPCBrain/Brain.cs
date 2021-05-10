@@ -2,17 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This class is used to call and interact with the ANN
+/// </summary>
 public class Brain : MonoBehaviour
 {
-
+    /// <summary>
+    /// a reference to the ann 
+    /// </summary>
     ANN ann;
     SaveandLoadWeights saveloads;
     TraintheANN training;
+    /// <summary>
+    /// the input required
+    /// </summary>
     List<double>[] inputsData;
+    /// <summary>
+    /// the output expected
+    /// </summary>
     List<double>[] outputsData;
 
 
-    // Start is called before the first frame update
+    /// <summary>
+    /// used to start the brain when the dialogue reach a question
+    /// </summary>
+    /// <param name="path"></param>
     public void StartTheBrain(string path)
     {
 
@@ -43,7 +57,13 @@ public class Brain : MonoBehaviour
             saveloads.SaveWeights(training.usage, training.numberofImput, training.numberofOutput, content);
         }
     }
-
+    /// <summary>
+    /// run the ann to collect the outputs
+    /// </summary>
+    /// <param name="inputs"></param>
+    /// <param name="outputs"></param>
+    /// <param name="train"></param>
+    /// <returns></returns>
     List<double> Run(List<double> inputs, List<double> outputs, bool train)
     {
         if(train)
@@ -68,7 +88,6 @@ public class Brain : MonoBehaviour
             return (ann.CalcOutput(inputs));
         }
     }
-
 
     void GetTheData()
     {

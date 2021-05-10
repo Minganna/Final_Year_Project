@@ -3,15 +3,36 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
 using TMPro;
+/// <summary>
+/// the main menu manager class
+/// </summary>
 public class MenuManager : MonoBehaviour
 {
+    /// <summary>
+    /// list of the main items showed in the menu-play and settings
+    /// </summary>
     private List<GameObject> PlaySettings=new List<GameObject>();
+    /// <summary>
+    /// list of the menu items related to the language they know and looking to learn
+    /// </summary>
     public List<GameObject> SelectLanguage = new List<GameObject>();
+    /// <summary>
+    ///  list of confirmation buttons
+    /// </summary>
     public List<GameObject> Confirm = new List<GameObject>();
+    /// <summary>
+    /// variable that stores the name of the player
+    /// </summary>
     public TMP_InputField Name;
+    /// <summary>
+    /// The script that keep track of the common static strings
+    /// </summary>
     CommonVariables cv = new CommonVariables();
+    /// <summary>
+    /// function used to determine the action to take when the button is pressed
+    /// </summary>
+    /// <param name="tag"></param>
     public void MainButtons(GameObject tag)
     {
         GameObject maincanvas = GameObject.FindGameObjectWithTag("MasterMenu");
@@ -28,8 +49,16 @@ public class MenuManager : MonoBehaviour
                 break;
             case "Confirm(Clone)":
                 cv.SetName(Name.text);
-                cv.setSceneToLoad(3);
-                SceneManager.LoadScene(1);
+                Debug.Log(cv.GetLearn());
+                if(cv.GetLearn()=="English"|| cv.GetLearn() == "Italian")
+                {
+                    cv.setSceneToLoad(3);
+                    SceneManager.LoadScene(1);
+                }   
+                else
+                {
+                    BackToMainMenu(maincanvas, tag);
+                }
                 break;
             default:
                 break;
@@ -38,7 +67,10 @@ public class MenuManager : MonoBehaviour
 
        
     }
-
+    /// <summary>
+    /// function used to deactivate the menu part needed
+    /// </summary>
+    /// <param name="tag"></param>
     void DeactivateStartandSettings(GameObject tag)
     {
         GameObject[] menuitems = GameObject.FindGameObjectsWithTag(tag.tag);
@@ -54,7 +86,10 @@ public class MenuManager : MonoBehaviour
             }
         }
     }
-
+    /// <summary>
+    /// used to destroy the menu items needed
+    /// </summary>
+    /// <returns></returns>
     List<string> DestroymenuItems()
     {
         GameObject[] LanguageUI = GameObject.FindGameObjectsWithTag("LanguageMenu");
@@ -79,7 +114,11 @@ public class MenuManager : MonoBehaviour
         }
         return datafromdropdown;
     }
-
+    /// <summary>
+    /// used to go back to the main menu
+    /// </summary>
+    /// <param name="maincanvas"></param>
+    /// <param name="pressed"></param>
     void BackToMainMenu(GameObject maincanvas,GameObject pressed)
     {
         DestroymenuItems();
@@ -89,7 +128,11 @@ public class MenuManager : MonoBehaviour
         }
     }
 
-
+    /// <summary>
+    /// function called when the play button is pressed
+    /// </summary>
+    /// <param name="maincanvas"></param>
+    /// <param name="tag"></param>
     void PlayPressed(GameObject maincanvas,GameObject tag)
     {
         DeactivateStartandSettings(tag);
@@ -114,7 +157,10 @@ public class MenuManager : MonoBehaviour
 
         }
     }
-
+    /// <summary>
+    /// function called when the next button is pressed
+    /// </summary>
+    /// <param name="maincanvas"></param>
     void NextPressed(GameObject maincanvas)
     {
         List<string> SelectedValues = new List<string>();
@@ -124,7 +170,9 @@ public class MenuManager : MonoBehaviour
         cv.setTransp("car");
         ConfirmationPart();
     }
-
+    /// <summary>
+    /// called to show the last part of the menu, where the player need to confirm that the info are correct
+    /// </summary>
     private void ConfirmationPart()
     {
         GameObject maincanvas = GameObject.FindGameObjectWithTag("MasterMenu");

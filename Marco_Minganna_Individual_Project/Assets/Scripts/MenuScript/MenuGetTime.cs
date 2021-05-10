@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// class used to change the lighting in the menu in regards of the hour
+/// </summary>
 public class MenuGetTime : MonoBehaviour
 {
     // Start is called before the first frame update

@@ -15,6 +15,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: I am fine
+  voicetrack: 
   children:
   - 49c241b8-b63d-4ba2-a1e3-4a577747a90a
   position:
@@ -42,6 +43,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Hello young man!
+  voicetrack: 
   children:
   - 421d737c-adfa-4517-9a51-c0fc88110ca9
   - de6f49f4-8cd9-4dfa-a0eb-26f2fee37ad0
@@ -50,7 +52,7 @@ MonoBehaviour:
     x: 18
     y: 452
     width: 250
-    height: 100
+    height: 130
   OnEnterAction: 
   OnExitAction: 
   condition:
@@ -96,6 +98,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - d2254f1a-f22a-4007-8224-2a67f764f898
   position:
@@ -123,6 +126,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: I am okay
+  voicetrack: 
   children:
   - 49c241b8-b63d-4ba2-a1e3-4a577747a90a
   position:
@@ -150,6 +154,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: Do you need help?
+  voicetrack: 
   children:
   - d75e1860-bb26-4ffa-a28c-04f3a094ba40
   - 6059773a-cfc9-45e1-8776-39827d955361
@@ -178,6 +183,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 7184d112-8ae6-4e9b-ab36-c3ae877578c2
   position:
@@ -205,6 +211,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: pardon me?
+  voicetrack: 
   children:
   - 421d737c-adfa-4517-9a51-c0fc88110ca9
   position:
@@ -232,6 +239,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: New map unlocked
+  voicetrack: 
   children: []
   position:
     serializedVersion: 2
@@ -258,6 +266,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 1
   Text: How are you?
+  voicetrack: 
   children:
   - 2a815a61-36dd-40bf-b3d9-5adb77c7d457
   - d5162b52-5d59-4937-9083-8dc3892f22ad
@@ -292,6 +301,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: pardon me?
+  voicetrack: 
   children:
   - 49c241b8-b63d-4ba2-a1e3-4a577747a90a
   position:
@@ -319,6 +329,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Did you find him?
+  voicetrack: 
   children: []
   position:
     serializedVersion: 2
@@ -350,6 +361,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: yes please
+  voicetrack: 
   children:
   - 14185548-dcd4-4655-801a-e27ed9196433
   position:

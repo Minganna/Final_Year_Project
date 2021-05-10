@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// function used to animate the car wheels in the loading screen 
+/// </summary>
 public class CarWheel : MonoBehaviour
 {
     [SerializeField]
+    ///the list contains the 4 wheels of the car
     List<GameObject> carWheels = new List<GameObject>();
     // Start is called before the first frame update
     void Start()

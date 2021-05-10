@@ -5,19 +5,29 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
+/// <summary>
+/// this script is used as a manager for the Hotel scene
+/// </summary>
 public class HotelManager : MonoBehaviour
 {
     [SerializeField]
+    ///the list of buttons of the scene to visit
     List<GameObject> Buttons;
     [SerializeField]
+    ///list of snowglobes in the snowglobe section
     List<GameObject> SnowGlobes;
     [SerializeField]
+    ///the actual game souvenirs
     List<GameObject> GlobesSuvenirs;
     [SerializeField]
+    ///the render teture linked to the globes
     List<Texture> globeTex;
     [SerializeField]
+    /// the panels that contain the data (buttons, souvenirs and translations)
     List<GameObject> Panels;
-
+    /// <summary>
+    /// The script that keep track of the common static strings
+    /// </summary>
     CommonVariables cv = new CommonVariables();
 
     // Update is called once per frame
@@ -28,7 +38,9 @@ public class HotelManager : MonoBehaviour
             suvenir.transform.Rotate(0.0f, 0.7f, 0.0f);
         }
     }
-
+    /// <summary>
+    /// Used to load the turisting spot, colosseum in Italy and Stonehenge in UK
+    /// </summary>
     public void GotoTuristicScene()
     {
         if (cv.GetLearn() != null)
@@ -47,7 +59,9 @@ public class HotelManager : MonoBehaviour
             SceneManager.LoadScene(9);
         }
     }
-
+    /// <summary>
+    /// used to load the snowglobes
+    /// </summary>
     public void ShowGlobes()
     {
         ShowPanels(0);
@@ -61,6 +75,10 @@ public class HotelManager : MonoBehaviour
         }
 
     }
+    /// <summary>
+    /// use to load the correct panel to display the right informations
+    /// </summary>
+    /// <param name="panel"></param>
     public void ShowPanels(int panel)
     {
        if(panel==1)
@@ -75,6 +93,9 @@ public class HotelManager : MonoBehaviour
         }
 
     }
+    /// <summary>
+    /// used to load the buttons with the location the player can visit
+    /// </summary>
     public void ShowButtons()
     {
         ShowPanels(0);
@@ -88,13 +109,19 @@ public class HotelManager : MonoBehaviour
         }
 
     }
-
+    /// <summary>
+    /// used to travel to a specific scene
+    /// </summary>
+    /// <param name="areaNumber"></param>
     public void GoToArea(int areaNumber)
     {
         SceneManager.LoadScene(areaNumber);
 
     }
-
+    /// <summary>
+    /// used to show the render texture of the snowglobe linked to the image
+    /// </summary>
+    /// <param name="ButtonPressed"></param>
     public void showSnowGlobe(GameObject ButtonPressed)
     {
         Wallet wallet= FindObjectOfType<Wallet>();

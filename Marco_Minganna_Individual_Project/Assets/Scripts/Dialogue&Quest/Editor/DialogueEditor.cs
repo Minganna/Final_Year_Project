@@ -7,15 +7,27 @@ using System;
 
 namespace Dialogue.Editor
 {
+    /// <summary>
+    /// the dialogue editor class, used to create the window and visualize the nodes
+    /// </summary>
     public class DialogueEditor : EditorWindow
     {
+        /// <summary>
+        /// keep track of the selected dialogue in the unity editor
+        /// </summary>
         Dialogue selectedDialogue=null;
+        /// <summary>
+        /// the current position in the window 
+        /// </summary>
         Vector2 scrollPosition;
         [NonSerialized]
+        ///the color and style of the node when NPc is talking
         GUIStyle nodeStyle;
         [NonSerialized]
+        ///the color and style of the node when player is talking
         GUIStyle PlayerStyle;
         [NonSerialized]
+        ///keep track of the node the player is draggin
         DialogueNode draggingNode = null;
         [NonSerialized]
         Vector2 draggingOffset;
@@ -37,12 +49,14 @@ namespace Dialogue.Editor
 
 
         [MenuItem("Window/Dialogue Editor")]
+        ///create the window editor
         public static void ShowEditorWindow()
         {
             GetWindow(typeof(DialogueEditor), false, "Dialogue Editor");
         }
 
         [OnOpenAsset(1)]
+        ///open the window if a dialogue is double clicked
         public static bool OnOpenAsset(int instanceID,int line)
         {
             Dialogue dialogue= EditorUtility.InstanceIDToObject(instanceID) as Dialogue;
@@ -55,6 +69,9 @@ namespace Dialogue.Editor
             return false;
         }
 
+        /// <summary>
+        /// function used to change the node style and update them when the editor is enabled
+        /// </summary>
         private void OnEnable()
         {
             Selection.selectionChanged += OneSelectionChanged;
@@ -70,6 +87,9 @@ namespace Dialogue.Editor
             PlayerStyle.border = new RectOffset(12, 12, 12, 12);
         }
 
+        /// <summary>
+        /// used to updat the view for any change
+        /// </summary>
         private void OneSelectionChanged()
         {
             Dialogue newDialogue = Selection.activeObject as Dialogue;
@@ -79,7 +99,9 @@ namespace Dialogue.Editor
                 Repaint();
             }
         }
-
+        /// <summary>
+        /// function used to display in the window the informations needed
+        /// </summary>
         private void OnGUI()
         {
             if(selectedDialogue==null)
@@ -126,6 +148,9 @@ namespace Dialogue.Editor
             
         }
 
+        /// <summary>
+        /// function used to drag nodes around or to change the position in the canvas
+        /// </summary>
         private void processEvents()
         {
             if(Event.current.type==EventType.MouseDown&&draggingNode==null)
@@ -165,6 +190,11 @@ namespace Dialogue.Editor
             }
         }
 
+        /// <summary>
+        /// function used to update the node position to the mouse position
+        /// </summary>
+        /// <param name="mousePosition"></param>
+        /// <returns></returns>
         private DialogueNode GetNodeAtPoint(Vector2 mousePosition)
         {
             DialogueNode foundNode = null;
@@ -180,7 +210,10 @@ namespace Dialogue.Editor
 
 
 
-
+        /// <summary>
+        /// function used to add or draw the nodes
+        /// </summary>
+        /// <param name="item"></param>
         private void DrawNode(DialogueNode item)
         {
             GUIStyle style = nodeStyle;
@@ -230,6 +263,10 @@ namespace Dialogue.Editor
             GUILayout.EndArea();
         }
 
+        /// <summary>
+        /// function used to link and unlink the nodes
+        /// </summary>
+        /// <param name="item"></param>
         private void LinkingNodes(DialogueNode item)
         {
             if (LinkingParentNode == null)
@@ -266,6 +303,10 @@ namespace Dialogue.Editor
             }
         }
 
+        /// <summary>
+        /// function used to draw a line between the two linked nodes
+        /// </summary>
+        /// <param name="item"></param>
         private void DrawConnections(DialogueNode item)
         {
             Vector3 startPosition = new Vector2(item.GetRect().xMax, item.GetRect().center.y);
