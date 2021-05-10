@@ -1,1 +1,1 @@
-Please export clone this project to check the index file
+Please clone this project in your computer to check the index file
