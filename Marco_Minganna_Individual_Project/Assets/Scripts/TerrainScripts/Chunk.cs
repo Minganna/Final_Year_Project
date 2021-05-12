@@ -2,10 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// class used to combine and organise the quads created in the block class
+/// </summary>
 public class Chunk {
-
+	/// <summary>
+	/// the material applied to the grounds objects
+	/// </summary>
 	public Material cubeMaterial;
-    public Material fluidMaterial;
+	/// <summary>
+	/// material applied to the liquid objects
+	/// </summary>
+	public Material fluidMaterial;
 	public Block[,,] chunkData;
 	public GameObject chunk;
     public GameObject fluid;

@@ -65,6 +65,7 @@ public class HotelManager : MonoBehaviour
     public void ShowGlobes()
     {
         ShowPanels(0);
+        ShowPanels(2);
         foreach (GameObject snow in SnowGlobes)
         {
             snow.SetActive(true);
@@ -91,6 +92,16 @@ public class HotelManager : MonoBehaviour
             Panels[panel].SetActive(true);
             Panels[panel + 1].SetActive(false);
         }
+        if (panel == 3)
+        {
+            Panels[panel].SetActive(true);
+            Panels[panel - 1].SetActive(false);
+        }
+        if (panel == 2)
+        {
+            Panels[panel].SetActive(true);
+            Panels[panel + 1].SetActive(false);
+        }
 
     }
     /// <summary>
@@ -99,7 +110,8 @@ public class HotelManager : MonoBehaviour
     public void ShowButtons()
     {
         ShowPanels(0);
-        foreach(GameObject snow in SnowGlobes)
+        ShowPanels(2);
+        foreach (GameObject snow in SnowGlobes)
         {
             snow.SetActive(false);
         }
@@ -131,7 +143,15 @@ public class HotelManager : MonoBehaviour
             wallet.removeCoinsToWallet(int.Parse(ButtonPressed.GetComponentInChildren<TextMeshProUGUI>().text));
             ButtonPressed.SetActive(false);
             RawImage globeUnlocked = SnowGlobes[int.Parse(ButtonPressed.name)].GetComponent<RawImage>();
-            globeUnlocked.texture = globeTex[int.Parse(ButtonPressed.name)];
+            if(int.Parse(ButtonPressed.name)<4)
+            {
+                globeUnlocked.texture = globeTex[int.Parse(ButtonPressed.name)];
+            }
+            else
+            {
+                globeUnlocked.texture = globeTex[int.Parse(ButtonPressed.name)-4];
+            }
+           
         }
     }
 }

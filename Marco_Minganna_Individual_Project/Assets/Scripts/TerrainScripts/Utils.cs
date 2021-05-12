@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// class used to allow natural looking shape to the terrain
+/// </summary>
 public class Utils {
 
 	static int maxHeight = 25;

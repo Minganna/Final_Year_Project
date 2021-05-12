@@ -3,10 +3,14 @@ using UnityEditor;
 #endif
 using UnityEngine;
 
-namespace TheTide.utils
+/// <summary>
+/// namespace used for the script that allow the creation of meshes
+/// </summary>
+namespace CreateMesh
 {
     [ExecuteInEditMode]
     [RequireComponent(typeof(MeshFilter))]
+    ///class used to serialize and create a prefab of a mesh created in run time
     public class SerializeMesh : MonoBehaviour
     {
         [HideInInspector] [SerializeField] Vector2[] uv;

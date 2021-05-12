@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEditor;
 using System.IO;
 
+/// <summary>
+/// class used to identify the each texture in the atlas
+/// </summary>
 public class GetTexturedata : MonoBehaviour {
 
     public Sprite GrassTop;
@@ -84,9 +87,4 @@ public class GetTexturedata : MonoBehaviour {
 
        // Debug.Log("New Vector2(" +GrassTopVectors[0]+"), "+ "New Vector2(" + GrassTopVectors[1] + "), "+ "New Vector2(" + GrassTopVectors[2] + "), "+ "New Vector2(" + GrassTopVectors[3] + "); ");
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

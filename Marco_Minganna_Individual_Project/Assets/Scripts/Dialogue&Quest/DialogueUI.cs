@@ -127,6 +127,7 @@ namespace UI
         }
          void UpdateUI()
         {
+
             gameObject.SetActive(playerConversant.isActive());
             if(!playerConversant.isActive())
             {
@@ -198,7 +199,11 @@ namespace UI
             }
            
             MainButton.gameObject.SetActive(playerConversant.hasNext());
-   
+            if (!playerConversant.hasNext() && GameObject.Find("QuitButton"))
+            {
+                Animator quitb= GameObject.Find("QuitButton").GetComponent<Animator>();
+                quitb.SetBool("Exit", true);
+            }
 
         }
 

@@ -123,6 +123,8 @@ namespace Dialogue
         /// </summary>
         public void Quit()
         {
+            Animator quitb = GameObject.Find("QuitButton").GetComponent<Animator>();
+            quitb.SetBool("Exit", false);
             TriggerQuitExitAction();
             currentConverstant = null;
             currentDialogue = null;

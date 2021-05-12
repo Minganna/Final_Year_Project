@@ -58,7 +58,7 @@ public class Brain : MonoBehaviour
         }
     }
     /// <summary>
-    /// run the ann to collect the outputs
+    /// run the ann to collect the outputs (more than one)
     /// </summary>
     /// <param name="inputs"></param>
     /// <param name="outputs"></param>
@@ -76,6 +76,12 @@ public class Brain : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// run the ann to collect the outputs
+    /// </summary>
+    /// <param name="inputs"></param>
+    /// <param name="train"></param>
+    /// <returns></returns>
     public List<double> Run(List<double> inputs, bool train)
     {
         List<double> outputs = new List<double>();
@@ -88,6 +94,7 @@ public class Brain : MonoBehaviour
             return (ann.CalcOutput(inputs));
         }
     }
+
 
     void GetTheData()
     {
@@ -127,7 +134,6 @@ public class Brain : MonoBehaviour
             }
         }
     }
-
 
     void UseTheDataToTrain()
     {

@@ -2,11 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+/// <summary>
+/// Manager script for the tutorial level
+/// </summary>
 public class TutorialManager : MonoBehaviour
 {
     CommonVariables cv=new CommonVariables();
     [SerializeField] TextMesh Departures;
+    /// <summary>
+    /// change the text in the airport depending if is the arrival or departing airport
+    /// </summary>
     [SerializeField] bool isArrival;
 
 
@@ -15,6 +20,9 @@ public class TutorialManager : MonoBehaviour
         cv.SetTranslation(state);
     }
 
+    /// <summary>
+    /// used to move to the next scene
+    /// </summary>
     public void NextScene()
     {
         cv.setTransp("plane");

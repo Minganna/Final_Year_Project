@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// class that keep track of the entire terrain created in chunks
+/// </summary>
 public class World : MonoBehaviour {
 
 	public Material textureAtlas;

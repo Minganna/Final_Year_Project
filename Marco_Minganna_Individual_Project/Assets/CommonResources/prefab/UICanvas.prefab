@@ -2022,6 +2022,7 @@ GameObject:
   - component: {fileID: 7223459220943793142}
   - component: {fileID: 7223459220943793143}
   - component: {fileID: 7223459220943793140}
+  - component: {fileID: 8242964519855122753}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -2147,6 +2148,25 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!95 &8242964519855122753
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7223459220943793146}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 15e3ab5ac8ce766468a584e15cf01523, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7223459221034595326
 GameObject:
   m_ObjectHideFlags: 0

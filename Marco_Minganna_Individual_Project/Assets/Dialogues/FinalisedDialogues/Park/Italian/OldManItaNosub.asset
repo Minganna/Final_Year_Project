@@ -599,7 +599,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerSpeaking: 0
   Question: 0
-  Text: "I\u2019m digressing, I have promised my friend that I would deliver the sculpture
+  Text: "I\u2019m rambling, I have promised my friend that I would deliver the sculpture
     to him today, but these old legs are getting weak."
   voicetrack: 11
   children:

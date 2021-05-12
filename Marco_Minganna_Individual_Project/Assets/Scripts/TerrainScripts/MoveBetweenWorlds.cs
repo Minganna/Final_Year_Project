@@ -3,10 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// class used to move the player between the scenes
+/// </summary>
 public class MoveBetweenWorlds : MonoBehaviour
 {
+    /// <summary>
+    /// variable used to visualised the miniature of the next area in the boxworld
+    /// </summary>
     [SerializeField] GameObject NextArea;
+    /// <summary>
+    /// variable used to visualised the miniature of the current area in the boxworld
+    /// </summary>
     [SerializeField] GameObject ThisArea;
+    /// <summary>
+    /// variable used to visualised the miniature of the hotel area in the boxworld
+    /// </summary>
     [SerializeField] GameObject PreviousArea;
     [SerializeField] GameObject[] Movebutton;
     CommonVariables cv = new CommonVariables();
@@ -19,11 +31,16 @@ public class MoveBetweenWorlds : MonoBehaviour
 
     int MoveTo;
 
-
+    /// <summary>
+    /// locker used to confirm that the player followed the tutorial for moving between areas
+    /// </summary>
     public void SetAreaUnlock()
     {
         nextAreaUnlocked = true;
     }
+    /// <summary>
+    /// the logic used to move to the next area
+    /// </summary>
     public void MoveToNextArea()
     {
 
@@ -44,7 +61,9 @@ public class MoveBetweenWorlds : MonoBehaviour
             return;
         }
     }
-
+    /// <summary>
+    /// logic used to allow the player to move to the hotel 
+    /// </summary>
     public void MoveToPreviousArea()
     {
  
@@ -70,6 +89,9 @@ public class MoveBetweenWorlds : MonoBehaviour
     {
         MoveTo = next;
     }
+    /// <summary>
+    /// function used to change scene
+    /// </summary>
     public void ChangeScene()
     {
         cv.setTransp("train");

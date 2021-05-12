@@ -15,6 +15,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: See you later / A dopo
+  voicetrack: 2
   children: []
   position:
     serializedVersion: 2
@@ -42,6 +43,7 @@ MonoBehaviour:
   Question: 0
   Text: I am trying to focus right now; I will speak with you later. / Sono veramente
     concentrato al momento, parleremo dopo.
+  voicetrack: 4
   children: []
   position:
     serializedVersion: 2
@@ -68,6 +70,7 @@ MonoBehaviour:
   PlayerSpeaking: 1
   Question: 0
   Text: wrong answer
+  voicetrack: 
   children:
   - 9eed7157-8260-4a67-9edf-27142e0155a2
   position:
@@ -95,6 +98,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: sorry? / scusa?
+  voicetrack: 5
   children: []
   position:
     serializedVersion: 2
@@ -143,7 +147,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerSpeaking: 1
   Question: 0
-  Text: 'Yes it can '
+  Text: Yes it can
+  voicetrack: 
   children:
   - 2e423c5f-d074-4b0e-841d-cae7027bfd2c
   position:
@@ -172,6 +177,7 @@ MonoBehaviour:
   Question: 1
   Text: "I am quite busy young man, can it wait?/Sono impegnato al momento, puoi aspettare?-Yes
     it can = Si, posso aspettare  -No, it\u2019s important =No, e\u2019 importante "
+  voicetrack: 1
   children:
   - 5134af92-01fe-4a13-86b3-2d8f02d747df
   - f77a9015-7c85-48e0-9dbb-2f4d89c3f8c6
@@ -202,6 +208,7 @@ MonoBehaviour:
   Question: 0
   Text: Oh, my sculpture! Thank Bob for me next time you see him. / Oh! La mia scultura!
     Ringrazia Bob per me la prossima volta che lo vedi.
+  voicetrack: 3
   children: []
   position:
     serializedVersion: 2
@@ -232,7 +239,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerSpeaking: 1
   Question: 0
-  Text: "No, it\u2019s important "
+  Text: "No, it\u2019s important"
+  voicetrack: 
   children:
   - 848621e7-5dd6-418c-b82a-5a9cbec07942
   - 4ad0991b-631f-4a26-a74b-82134a7deb18
@@ -261,6 +269,7 @@ MonoBehaviour:
   PlayerSpeaking: 0
   Question: 0
   Text: Hello/Salve
+  voicetrack: 0
   children:
   - 9c07abef-fc5e-4921-8d82-384eaa301dfe
   position:

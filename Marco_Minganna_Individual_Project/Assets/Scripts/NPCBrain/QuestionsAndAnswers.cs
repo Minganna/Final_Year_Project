@@ -7,20 +7,34 @@ using UnityEngine.UI;
 using UI;
 using System;
 
+/// <summary>
+/// Class that connect the dialogue answer logic to the brain
+/// </summary>
 public class QuestionsAndAnswers : MonoBehaviour
 {
+    /// <summary>
+    /// Keep track of the brain gameobject
+    /// </summary>
     GameObject brain;
     string Question;
+    /// <summary>
+    /// list that stores the user answer
+    /// </summary>
     List<string> Answers;
+    /// <summary>
+    /// The script that keep track of the common static strings
+    /// </summary>
     CommonVariables cv;
 
     int bitLenght=0;
-
+    /// <summary>
+    /// The prefab for the suggestions button appearing on top of the screen
+    /// </summary>
     [SerializeField] Button SuggestionButton;
-
+    
     List<string[]> bit;
 
-    // Start is called before the first frame update
+    // Used to start the logic used in the dialogue
     public void StartConverstation(bool logic, bool StartUp, List<string> ans)
     {
     
@@ -31,6 +45,12 @@ public class QuestionsAndAnswers : MonoBehaviour
         }
   
     }
+    /// <summary>
+    /// Part of Start conversation, used to set up the dialogue and prepare the brain for accepting inputs if needed
+    /// </summary>
+    /// <param name="logic"></param>
+    /// <param name="StartUp"></param>
+    /// <param name="ans"></param>
     private void ConversationSetUP(bool logic,bool StartUp, List<string> ans)
     {
         brain = GameObject.FindGameObjectWithTag("Brain");
@@ -62,7 +82,9 @@ public class QuestionsAndAnswers : MonoBehaviour
         return cv;
     }
    
-
+    /// <summary>
+    /// prepare the number of input and output needed for the ANN
+    /// </summary>
     void StartBrain()
     {
         Brain getB = brain.GetComponent<Brain>();
@@ -84,6 +106,9 @@ public class QuestionsAndAnswers : MonoBehaviour
 
 
     }
+    /// <summary>
+    /// Create the suggestions buttons on the top of the screen based from the prefab
+    /// </summary>
    private void CreateSuggestionButtons()
     {
         List<string[]> Allsuggest = GetInput();
@@ -149,7 +174,11 @@ public class QuestionsAndAnswers : MonoBehaviour
         
        return splitteda;
     }
-
+    /// <summary>
+    /// Part of the logic used to check if the answer submitted by the player is correct
+    /// </summary>
+    /// <param name="Submitted"></param>
+    /// <returns></returns>
     List<double> AnswerCheck(string Submitted)
     {
         List<double> TrueResult= new List<double>();
@@ -206,7 +235,9 @@ public class QuestionsAndAnswers : MonoBehaviour
         }
         return TrueResult;
     }
-
+    /// <summary>
+    /// initial part of the funtion used to check the answer given by the player
+    /// </summary>
     public void CheckCorrectAnswer()
     {
         string name = GameObject.FindGameObjectWithTag("NextSubmitButton").GetComponent<TMP_Text>().text;
@@ -240,13 +271,19 @@ public class QuestionsAndAnswers : MonoBehaviour
     }
 
 
-
+    /// <summary>
+    /// After the answer is checked update the UI to proceed with the dialogue
+    /// </summary>
     public void UpdateUI()
     {
         DialogueUI updateui = GameObject.FindGameObjectWithTag("DialogueMaster").GetComponent<DialogueUI>();
         updateui.Next();
     }
-     void UpdateUI(List<double> output)
+    /// <summary>
+    /// After the answer is checked update the UI to proceed with the dialogueAfter the answer is checked update the UI to proceed with the dialogue used if more than one output
+    /// </summary>
+    /// <param name="output"></param>
+    void UpdateUI(List<double> output)
     {
         Debug.Log((float)output[0] + " , " + (float)output[1]);
         DialogueUI updateui = GameObject.FindGameObjectWithTag("DialogueMaster").GetComponent<DialogueUI>();

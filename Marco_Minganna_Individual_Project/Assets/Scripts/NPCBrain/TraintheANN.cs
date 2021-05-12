@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEditor;
 using System.IO;
 
+/// <summary>
+/// class used to train the ANN and to store the data used for the AI
+/// </summary>
 public class TraintheANN : MonoBehaviour
 {
     //required fields
@@ -49,9 +52,11 @@ public class TraintheANN : MonoBehaviour
 
 }
 
+
 #if UNITY_EDITOR
 [CustomEditor(typeof(TraintheANN))]
 [CanEditMultipleObjects]
+///Editor class used to train the ANN
 public class Training : Editor
 {
     SerializedProperty ListLenght;

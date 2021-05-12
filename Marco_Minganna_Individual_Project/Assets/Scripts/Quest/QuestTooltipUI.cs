@@ -6,6 +6,9 @@ using System;
 
 namespace QuestUI
 {
+    /// <summary>
+    /// class used to organize the data in the tooltip
+    /// </summary>
     public class QuestTooltipUI : MonoBehaviour
     {
         [SerializeField] TextMeshProUGUI title;
@@ -13,6 +16,11 @@ namespace QuestUI
         [SerializeField] GameObject objectivePrefab;
         [SerializeField] GameObject objectiveIncompletePrefab;
         [SerializeField] TextMeshProUGUI rewardText;
+
+        /// <summary>
+        /// used to set up the information regarding the quest 
+        /// </summary>
+        /// <param name="status"></param>
         public void SetUp(QuestStatus status)
         {
             Quest quest = status.GetQuest();
@@ -38,6 +46,11 @@ namespace QuestUI
 
         }
 
+        /// <summary>
+        /// used to update the reward text in the tooltip
+        /// </summary>
+        /// <param name="quest"></param>
+        /// <returns></returns>
         private string GetRewardText(Quest quest)
         {
             string reward = "";
